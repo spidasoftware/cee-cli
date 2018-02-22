@@ -1,0 +1,39 @@
+{
+  "name": "cee-cli",
+  "version": "0.0.3",
+  "description": "Calc Enterprise Engine Command Line Interface",
+  "main": "cli.js",
+  "scripts": {
+    "prepublish": "scripts/prepublish.sh"
+  },
+  "keywords": [
+    "cee",
+    "cli"
+  ],
+  "author": "SPIDASoftware",
+  "license": "ISC",
+  "engines": {
+    "node": ">= 4.0.0"
+  },
+  "files": [
+    "cli.js",
+    "cmds",
+    "lib",
+    "calc-versions.txt",
+    "schema",
+    "scripts/prepublish.sh"
+  ],
+  "dependencies": {
+    "ajv": "^4.1.5",
+    "bluebird": "^3.4.1",
+    "co": "^4.6.0",
+    "lodash": "^4.13.1",
+    "mkdirp": "^0.5.1",
+    "prompt": "^1.0.0",
+    "request": "^2.72.0",
+    "yargs": "^4.7.1"
+  },
+  "bin": {
+    "cee-cli": "cli.js"
+  }
+}
