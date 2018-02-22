@@ -84,3 +84,22 @@ Get jobs, unless stdout is specified.  Jobs will be written to files in the dire
 
 Copyright SPIDASoftware 2016
 
+Usage: cee-cli analyze [json..]
+
+Send analysis or job in each file to CEE, then optionally poll CEE until analysis is complete  and retrieve results.  If polling is enabled analysis results will be written to a directory specified by the output parameter.
+
+Options:
+  -h, --help           Show help  [boolean]
+  -f, --config         Config file  [default: "/Users/michaelratliff/.config/cee.json"]
+  -p, --poll           Poll CEE and write analysis results when complete  [boolean]
+  -b, --callback       Callback URL with results
+  -a, --array          Expect input files to contain an array of jobs or analyses instead of a single job or analysis  [boolean]
+  -o, --output         Analysis Result output  [default: "results"]
+  -j, --job            Expect json files to be jobs instead of analysis (Passed callback and calcVersion will be ignored)  [boolean]
+  -v, --engineVersion  Version of calc to analyze against  [default: "7.0.1"]
+  -d, --clientData     File containing client data (expect json args to be a structure only; requires analysisCase)
+  -c, --analysisCase   File containing analysis case (expect json args to be a structure only; requires clientData)
+
+Examples:
+  cee-cli analyze -p pole1.json pole2.json
+

@@ -16,7 +16,7 @@ const yargs = require('yargs')
     .command(require('./cmds/setup'))
     .command(require('./cmds/status'))
     .command(require('./cmds/get'))
-    .epilog('Copyright SPIDASoftware 2016')
+    .epilog('Copyright SPIDASoftware 2018')
     .help();
 
 const argv = yargs.argv;
