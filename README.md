@@ -80,7 +80,7 @@ Display status for jobs
 ### Get
 `cee-cli get [jobId.. | --offset n]`
 
-Get jobs, unless stdout is specified.  Jobs will be written to files in the directory specified by the output parameter.  Jobs can be specified by id or using --offset and --limit to get the last x (--offset) jobs starting at job y (--limit).
+Get jobs, unless stdout is specified.  Jobs will be written to files in the directory specified by the output parameter.  Jobs can be specified by id or using --offset and --limit to get the last x (--limit) jobs starting at job y (--offset).
 
 #### Options
   * `-h, --help`    Show help  [boolean]
