@@ -10,7 +10,7 @@ const _ = require('lodash');
 const api = require('../lib/api');
 
 const command = 'get [jobId..]';
-const desc = 'Get jobs, unless stdout is specified.  Jobs will be written to files in the directory specified by the output parameter.';
+const desc = 'Get jobs, unless stdout is specified.  Jobs will be written to files in the directory specified by the output parameter.  Jobs can be specified by id or using --offset and --limit to get the last x (--offset) jobs starting at job y (--limit).';
 
 module.exports = {
     command,
