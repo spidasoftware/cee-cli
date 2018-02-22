@@ -6,7 +6,7 @@ MY_PATH=${BASH_SOURCE%/*}
 npm install
 
 [[ -x $MY_PATH/calc-versions.txt ]] || cp $MY_PATH/../cee/master/calc-versions.txt .
-[[ -d $MY_PATH/schema ]] || cp -R $MY_PATH/../../schema/resources/schema .
+[[ -d $MY_PATH/schema ]] || cp -R $MY_PATH/../schema/resources/schema .
 
 for os in linux macos win; do 
 	for arch in x64 x86; do
