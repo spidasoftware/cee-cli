@@ -1,6 +1,11 @@
 #!/usr/bin/env node
 'use strict';
 
+process.on('unhandledRejection', (reason, p) => {
+    console.error(reason);
+    process.exit(-1);
+});
+
 const yargs = require('yargs')
     .help('h')
     .alias('h','help')

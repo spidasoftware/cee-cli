@@ -1,0 +1,2116 @@
+{
+   "clientItems" : [
+      {
+         "poissonRatio" : 0.3,
+         "classOfPole" : "H3",
+         "allowable" : {
+            "unit" : "PASCAL",
+            "value" : 53779106.8867132
+         },
+         "species" : "Southern Pine",
+         "shape" : "ROUND",
+         "wallThickness" : {
+            "value" : -1,
+            "unit" : "METRE"
+         },
+         "aliases" : [],
+         "height" : {
+            "value" : 15.24,
+            "unit" : "METRE"
+         },
+         "modulus" : {
+            "unit" : "PASCAL",
+            "value" : 10997137882.6035
+         },
+         "density" : {
+            "value" : 624.720071584445,
+            "unit" : "KILOGRAM_PER_CUBIC_METRE"
+         },
+         "materialCategory" : "WOOD",
+         "ptc" : {
+            "unit" : "METRE",
+            "value" : 0.838200254
+         },
+         "taper" : 0.145
+      },
+      {
+         "coreStrands" : 1,
+         "expansionCoefficient" : {
+            "unit" : "PER_CELSIUS",
+            "value" : 1.89496818e-05
+         },
+         "numberOfConductors" : 1,
+         "size" : "1/0 Triplex Bus",
+         "strength" : {
+            "value" : 19839.0684040618,
+            "unit" : "NEWTON"
+         },
+         "weight" : {
+            "unit" : "NEWTON_PER_METRE",
+            "value" : 5.88134288369417
+         },
+         "description" : "Janthina - Triplex ACSR Neutral",
+         "calculation" : "DYNAMIC",
+         "modulus" : {
+            "value" : 78255495277.4609,
+            "unit" : "PASCAL"
+         },
+         "diameter" : {
+            "value" : 0.023999952,
+            "unit" : "METRE"
+         },
+         "crossArea" : {
+            "unit" : "SQUARE_METRE",
+            "value" : 6.2451488e-05
+         },
+         "aliases" : [
+            {
+               "tensionGroupName" : "45m",
+               "id" : "1/0 Triplex Bus 45m"
+            },
+            {
+               "id" : "1/0 Triplex Bus 60m",
+               "tensionGroupName" : "60m"
+            }
+         ],
+         "tensionGroups" : [
+            {
+               "name" : "45m",
+               "temperature" : {
+                  "value" : -3.15796771448933e-14,
+                  "unit" : "CELSIUS"
+               },
+               "groups" : [
+                  {
+                     "tension" : {
+                        "value" : 2570,
+                        "unit" : "NEWTON"
+                     },
+                     "distance" : {
+                        "value" : 72,
+                        "unit" : "METRE"
+                     }
+                  },
+                  {
+                     "tension" : {
+                        "unit" : "NEWTON",
+                        "value" : 44442
+                     },
+                     "distance" : {
+                        "value" : 1523.6952,
+                        "unit" : "METRE"
+                     }
+                  }
+               ]
+            },
+            {
+               "temperature" : {
+                  "value" : -3.15796771448933e-14,
+                  "unit" : "CELSIUS"
+               },
+               "groups" : [
+                  {
+                     "distance" : {
+                        "unit" : "METRE",
+                        "value" : 1523.6952
+                     },
+                     "tension" : {
+                        "value" : 44442,
+                        "unit" : "NEWTON"
+                     }
+                  },
+                  {
+                     "tension" : {
+                        "unit" : "NEWTON",
+                        "value" : 2913
+                     },
+                     "distance" : {
+                        "value" : 93,
+                        "unit" : "METRE"
+                     }
+                  }
+               ],
+               "name" : "60m"
+            }
+         ],
+         "conductorStrands" : 6,
+         "usageGroups" : [
+            "SECONDARY"
+         ]
+      },
+      {
+         "description" : "3/0 ACSR - Pigeon",
+         "calculation" : "DYNAMIC",
+         "modulus" : {
+            "unit" : "PASCAL",
+            "value" : 78255495277.4609
+         },
+         "diameter" : {
+            "value" : 0.0127508,
+            "unit" : "METRE"
+         },
+         "crossArea" : {
+            "value" : 9.9161092e-05,
+            "unit" : "SQUARE_METRE"
+         },
+         "aliases" : [
+            {
+               "id" : "3/0 ACSR 45m",
+               "tensionGroupName" : "45m"
+            },
+            {
+               "id" : "3/0 ACSR 60m",
+               "tensionGroupName" : "60m"
+            },
+            {
+               "id" : "3/0 ACSR 75m",
+               "tensionGroupName" : "75m"
+            },
+            {
+               "tensionGroupName" : "Reduced",
+               "id" : "3/0 ACSR-Reduced"
+            }
+         ],
+         "conductorStrands" : 6,
+         "tensionGroups" : [
+            {
+               "groups" : [
+                  {
+                     "tension" : {
+                        "unit" : "NEWTON",
+                        "value" : 1521
+                     },
+                     "distance" : {
+                        "value" : 72,
+                        "unit" : "METRE"
+                     }
+                  },
+                  {
+                     "distance" : {
+                        "value" : 1523.6952,
+                        "unit" : "METRE"
+                     },
+                     "tension" : {
+                        "unit" : "NEWTON",
+                        "value" : 44442
+                     }
+                  }
+               ],
+               "temperature" : {
+                  "value" : -3.15796771448933e-14,
+                  "unit" : "CELSIUS"
+               },
+               "name" : "45m"
+            },
+            {
+               "groups" : [
+                  {
+                     "tension" : {
+                        "value" : 44442,
+                        "unit" : "NEWTON"
+                     },
+                     "distance" : {
+                        "unit" : "METRE",
+                        "value" : 1523.6952
+                     }
+                  },
+                  {
+                     "distance" : {
+                        "unit" : "METRE",
+                        "value" : 93
+                     },
+                     "tension" : {
+                        "value" : 1716,
+                        "unit" : "NEWTON"
+                     }
+                  }
+               ],
+               "temperature" : {
+                  "unit" : "CELSIUS",
+                  "value" : -3.15796771448933e-14
+               },
+               "name" : "60m"
+            },
+            {
+               "name" : "75m",
+               "temperature" : {
+                  "unit" : "CELSIUS",
+                  "value" : -3.15796771448933e-14
+               },
+               "groups" : [
+                  {
+                     "tension" : {
+                        "value" : 44442,
+                        "unit" : "NEWTON"
+                     },
+                     "distance" : {
+                        "unit" : "METRE",
+                        "value" : 1523.6952
+                     }
+                  },
+                  {
+                     "tension" : {
+                        "unit" : "NEWTON",
+                        "value" : 1992
+                     },
+                     "distance" : {
+                        "unit" : "METRE",
+                        "value" : 116
+                     }
+                  }
+               ]
+            },
+            {
+               "temperature" : {
+                  "unit" : "CELSIUS",
+                  "value" : -3.15796771448933e-14
+               },
+               "groups" : [
+                  {
+                     "tension" : {
+                        "unit" : "NEWTON",
+                        "value" : 473
+                     },
+                     "distance" : {
+                        "unit" : "METRE",
+                        "value" : 40
+                     }
+                  },
+                  {
+                     "tension" : {
+                        "unit" : "NEWTON",
+                        "value" : 458
+                     },
+                     "distance" : {
+                        "unit" : "METRE",
+                        "value" : 20
+                     }
+                  },
+                  {
+                     "distance" : {
+                        "value" : 1523.6952,
+                        "unit" : "METRE"
+                     },
+                     "tension" : {
+                        "unit" : "NEWTON",
+                        "value" : 44482
+                     }
+                  },
+                  {
+                     "tension" : {
+                        "unit" : "NEWTON",
+                        "value" : 475
+                     },
+                     "distance" : {
+                        "value" : 50,
+                        "unit" : "METRE"
+                     }
+                  },
+                  {
+                     "tension" : {
+                        "unit" : "NEWTON",
+                        "value" : 469
+                     },
+                     "distance" : {
+                        "unit" : "METRE",
+                        "value" : 30
+                     }
+                  }
+               ],
+               "name" : "Reduced"
+            }
+         ],
+         "usageGroups" : [
+            "PRIMARY",
+            "NEUTRAL"
+         ],
+         "coreStrands" : 1,
+         "numberOfConductors" : 1,
+         "strength" : {
+            "unit" : "NEWTON",
+            "value" : 29625.1559576349
+         },
+         "expansionCoefficient" : {
+            "value" : 1.89496818e-05,
+            "unit" : "PER_CELSIUS"
+         },
+         "size" : "3/0 ACSR",
+         "weight" : {
+            "value" : 3.36535401731979,
+            "unit" : "NEWTON_PER_METRE"
+         }
+      },
+      {
+         "weight" : {
+            "value" : 4.59707942522,
+            "unit" : "NEWTON_PER_METRE"
+         },
+         "strength" : {
+            "value" : 29002.4049314985,
+            "unit" : "NEWTON"
+         },
+         "numberOfConductors" : 1,
+         "expansionCoefficient" : {
+            "value" : 2.304e-05,
+            "unit" : "PER_CELSIUS"
+         },
+         "size" : "336.4 ASC",
+         "coreStrands" : 0,
+         "conductorStrands" : 19,
+         "tensionGroups" : [
+            {
+               "name" : "30m",
+               "groups" : [
+                  {
+                     "tension" : {
+                        "value" : 983.056976972571,
+                        "unit" : "NEWTON"
+                     },
+                     "distance" : {
+                        "value" : 55.7784,
+                        "unit" : "METRE"
+                     }
+                  },
+                  {
+                     "tension" : {
+                        "unit" : "NEWTON",
+                        "value" : 44442.1821580677
+                     },
+                     "distance" : {
+                        "value" : 1523.6952,
+                        "unit" : "METRE"
+                     }
+                  }
+               ],
+               "temperature" : {
+                  "value" : -3.15796771448933e-14,
+                  "unit" : "CELSIUS"
+               }
+            },
+            {
+               "groups" : [
+                  {
+                     "distance" : {
+                        "unit" : "METRE",
+                        "value" : 1523.6952
+                     },
+                     "tension" : {
+                        "value" : 44442.1821580677,
+                        "unit" : "NEWTON"
+                     }
+                  },
+                  {
+                     "tension" : {
+                        "unit" : "NEWTON",
+                        "value" : 2077.31949432665
+                     },
+                     "distance" : {
+                        "unit" : "METRE",
+                        "value" : 71.9328
+                     }
+                  }
+               ],
+               "temperature" : {
+                  "value" : -3.15796771448933e-14,
+                  "unit" : "CELSIUS"
+               },
+               "name" : "45m"
+            },
+            {
+               "temperature" : {
+                  "value" : -3.15796771448933e-14,
+                  "unit" : "CELSIUS"
+               },
+               "groups" : [
+                  {
+                     "tension" : {
+                        "unit" : "NEWTON",
+                        "value" : 44442.1821580677
+                     },
+                     "distance" : {
+                        "unit" : "METRE",
+                        "value" : 1523.6952
+                     }
+                  },
+                  {
+                     "distance" : {
+                        "unit" : "METRE",
+                        "value" : 92.964
+                     },
+                     "tension" : {
+                        "value" : 2353.1092344728,
+                        "unit" : "NEWTON"
+                     }
+                  }
+               ],
+               "name" : "60m"
+            },
+            {
+               "name" : "75m",
+               "temperature" : {
+                  "value" : -3.15796771448933e-14,
+                  "unit" : "CELSIUS"
+               },
+               "groups" : [
+                  {
+                     "distance" : {
+                        "unit" : "METRE",
+                        "value" : 1523.6952
+                     },
+                     "tension" : {
+                        "value" : 44442.1821580677,
+                        "unit" : "NEWTON"
+                     }
+                  },
+                  {
+                     "distance" : {
+                        "unit" : "METRE",
+                        "value" : 116.1288
+                     },
+                     "tension" : {
+                        "value" : 2726.75985015469,
+                        "unit" : "NEWTON"
+                     }
+                  }
+               ]
+            },
+            {
+               "name" : "Reduced",
+               "temperature" : {
+                  "value" : -3.15796771448933e-14,
+                  "unit" : "CELSIUS"
+               },
+               "groups" : [
+                  {
+                     "distance" : {
+                        "unit" : "METRE",
+                        "value" : 40
+                     },
+                     "tension" : {
+                        "value" : 1129,
+                        "unit" : "NEWTON"
+                     }
+                  },
+                  {
+                     "tension" : {
+                        "unit" : "NEWTON",
+                        "value" : 1150
+                     },
+                     "distance" : {
+                        "value" : 20,
+                        "unit" : "METRE"
+                     }
+                  },
+                  {
+                     "tension" : {
+                        "value" : 44442.1821580677,
+                        "unit" : "NEWTON"
+                     },
+                     "distance" : {
+                        "value" : 1523.6952,
+                        "unit" : "METRE"
+                     }
+                  },
+                  {
+                     "distance" : {
+                        "value" : 50,
+                        "unit" : "METRE"
+                     },
+                     "tension" : {
+                        "unit" : "NEWTON",
+                        "value" : 1142
+                     }
+                  },
+                  {
+                     "distance" : {
+                        "unit" : "METRE",
+                        "value" : 30
+                     },
+                     "tension" : {
+                        "value" : 1106,
+                        "unit" : "NEWTON"
+                     }
+                  }
+               ]
+            }
+         ],
+         "usageGroups" : [
+            "PRIMARY",
+            "NEUTRAL"
+         ],
+         "crossArea" : {
+            "value" : 0.000170580304,
+            "unit" : "SQUARE_METRE"
+         },
+         "aliases" : [
+            {
+               "tensionGroupName" : "30m",
+               "id" : "336 ASC 30m"
+            },
+            {
+               "id" : "336 ASC 45m",
+               "tensionGroupName" : "45m"
+            },
+            {
+               "tensionGroupName" : "60m",
+               "id" : "336 ASC 60m"
+            },
+            {
+               "id" : "336 ASC 75m",
+               "tensionGroupName" : "75m"
+            },
+            {
+               "tensionGroupName" : "Reduced",
+               "id" : "336 ASC-Reduced"
+            }
+         ],
+         "diameter" : {
+            "value" : 0.016891,
+            "unit" : "METRE"
+         },
+         "modulus" : {
+            "unit" : "PASCAL",
+            "value" : 59294912721.2479
+         },
+         "description" : "336.4 ASC/AAC - Tulip",
+         "calculation" : "DYNAMIC"
+      },
+      {
+         "tensionGroups" : [
+            {
+               "name" : "Full",
+               "temperature" : {
+                  "value" : 15.5555555555556,
+                  "unit" : "CELSIUS"
+               },
+               "groups" : [
+                  {
+                     "tension" : {
+                        "unit" : "NEWTON",
+                        "value" : 169.032421379899
+                     },
+                     "distance" : {
+                        "unit" : "METRE",
+                        "value" : 1523.6952
+                     }
+                  }
+               ]
+            },
+            {
+               "name" : "Slack",
+               "groups" : [
+                  {
+                     "distance" : {
+                        "unit" : "METRE",
+                        "value" : 1523.6952
+                     },
+                     "tension" : {
+                        "value" : 16.9032421379899,
+                        "unit" : "NEWTON"
+                     }
+                  }
+               ],
+               "temperature" : {
+                  "unit" : "CELSIUS",
+                  "value" : 15.5555555555556
+               }
+            }
+         ],
+         "conductorStrands" : 1,
+         "usageGroups" : [
+            "COMMUNICATION",
+            "COMMUNICATION_SERVICE"
+         ],
+         "diameter" : {
+            "value" : 0.00635,
+            "unit" : "METRE"
+         },
+         "crossArea" : {
+            "unit" : "SQUARE_METRE",
+            "value" : 5.16128e-07
+         },
+         "aliases" : [],
+         "calculation" : "DYNAMIC",
+         "description" : "0.25 Inch Cable Service",
+         "modulus" : {
+            "value" : 115831922525.228,
+            "unit" : "PASCAL"
+         },
+         "weight" : {
+            "value" : 0.96319759385562,
+            "unit" : "NEWTON_PER_METRE"
+         },
+         "numberOfConductors" : 1,
+         "expansionCoefficient" : {
+            "unit" : "PER_CELSIUS",
+            "value" : 1.692e-05
+         },
+         "size" : "CSV0250",
+         "strength" : {
+            "unit" : "NEWTON",
+            "value" : 671.681463904335
+         },
+         "coreStrands" : 0
+      },
+      {
+         "tensionGroups" : [
+            {
+               "temperature" : {
+                  "unit" : "CELSIUS",
+                  "value" : 9.99999999999997
+               },
+               "groups" : [
+                  {
+                     "tension" : {
+                        "unit" : "NEWTON",
+                        "value" : 15012.7479515042
+                     },
+                     "distance" : {
+                        "value" : 1523.6952,
+                        "unit" : "METRE"
+                     }
+                  }
+               ],
+               "name" : "Full"
+            },
+            {
+               "name" : "Slack",
+               "temperature" : {
+                  "value" : 9.99999999999997,
+                  "unit" : "CELSIUS"
+               },
+               "groups" : [
+                  {
+                     "tension" : {
+                        "value" : 1499.05068434279,
+                        "unit" : "NEWTON"
+                     },
+                     "distance" : {
+                        "value" : 1523.6952,
+                        "unit" : "METRE"
+                     }
+                  }
+               ]
+            }
+         ],
+         "usageGroups" : [
+            "GUY"
+         ],
+         "conductorStrands" : 7,
+         "aliases" : [
+            {
+               "id" : "3/8\" Grade 180"
+            }
+         ],
+         "crossArea" : {
+            "value" : 5.1096672e-05,
+            "unit" : "SQUARE_METRE"
+         },
+         "diameter" : {
+            "value" : 0.009144,
+            "unit" : "METRE"
+         },
+         "calculation" : "STATIC",
+         "description" : "1x7 Galvanized Guy Wire",
+         "modulus" : {
+            "value" : 172368932329.209,
+            "unit" : "PASCAL"
+         },
+         "weight" : {
+            "unit" : "NEWTON_PER_METRE",
+            "value" : 3.94035379304572
+         },
+         "strength" : {
+            "unit" : "NEWTON",
+            "value" : 60050.9918060168
+         },
+         "numberOfConductors" : 1,
+         "expansionCoefficient" : {
+            "unit" : "PER_CELSIUS",
+            "value" : 1.152e-05
+         },
+         "size" : "3/8\" Grade 180",
+         "coreStrands" : 0
+      },
+      {
+         "aliases" : [],
+         "size" : "10\" Double Helix (Class 3) 1\" Rod (USF)",
+         "strength" : {
+            "unit" : "NEWTON",
+            "value" : 151239.534918857
+         }
+      },
+      {
+         "size" : "10\" Single Helix (Class 3) 1\" Rod (USF)",
+         "strength" : {
+            "value" : 106757.318766252,
+            "unit" : "NEWTON"
+         },
+         "aliases" : []
+      },
+      {
+         "distanceToBottom" : {
+            "value" : 0.3048,
+            "unit" : "METRE"
+         },
+         "lateralArea" : {
+            "unit" : "SQUARE_METRE",
+            "value" : 0.3075090624
+         },
+         "valuePerLength" : {
+            "value" : 0,
+            "unit" : "METRE"
+         },
+         "distanceToTop" : {
+            "unit" : "METRE",
+            "value" : 0.6096
+         },
+         "weight" : {
+            "value" : 378.098837297142,
+            "unit" : "NEWTON"
+         },
+         "shape" : "ROUND",
+         "size" : "Roadway - 16 ft",
+         "aliases" : [],
+         "offset" : {
+            "unit" : "METRE",
+            "value" : 4.8768
+         },
+         "throughHoleDiameter" : {
+            "value" : -0.0015875,
+            "unit" : "METRE"
+         },
+         "type" : {
+            "name" : "STREET_LIGHT",
+            "industry" : "UTILITY"
+         },
+         "poleSideArea" : {
+            "unit" : "SQUARE_METRE",
+            "value" : 0.0808256448
+         }
+      },
+      {
+         "shape" : "ROUND",
+         "weight" : {
+            "unit" : "NEWTON",
+            "value" : 6.67233242289075
+         },
+         "strength" : {
+            "value" : 70059.4904403529,
+            "unit" : "NEWTON"
+         },
+         "horizontalOffset" : {
+            "value" : 0.34798,
+            "unit" : "METRE"
+         },
+         "size" : "15kV Deadend (U00024) ",
+         "lateralArea" : {
+            "value" : 0.0176515776,
+            "unit" : "SQUARE_METRE"
+         },
+         "verticalOffset" : {
+            "unit" : "METRE",
+            "value" : 0
+         },
+         "throughHoleDiameter" : {
+            "unit" : "METRE",
+            "value" : -0.0015875
+         },
+         "poleSideArea" : {
+            "unit" : "SQUARE_METRE",
+            "value" : 0.004171346496
+         },
+         "type" : "DEADEND",
+         "aliases" : []
+      },
+      {
+         "horizontalOffset" : {
+            "unit" : "METRE",
+            "value" : 0.57658
+         },
+         "strength" : {
+            "value" : 6005.09918060168,
+            "unit" : "NEWTON"
+         },
+         "size" : "28kV Universal (U00002) 9\" Bracket",
+         "shape" : "ROUND",
+         "weight" : {
+            "value" : 64.4992134212772,
+            "unit" : "NEWTON"
+         },
+         "lateralArea" : {
+            "unit" : "SQUARE_METRE",
+            "value" : 0.0292644576
+         },
+         "poleSideArea" : {
+            "value" : 0.00580644,
+            "unit" : "SQUARE_METRE"
+         },
+         "type" : "BRACKET",
+         "verticalOffset" : {
+            "value" : -0.1016,
+            "unit" : "METRE"
+         },
+         "throughHoleDiameter" : {
+            "value" : -0.0015875,
+            "unit" : "METRE"
+         },
+         "aliases" : []
+      },
+      {
+         "poleSideArea" : {
+            "value" : 0.0176515776,
+            "unit" : "SQUARE_METRE"
+         },
+         "type" : "POLE_TOP",
+         "verticalOffset" : {
+            "unit" : "METRE",
+            "value" : 0.34798
+         },
+         "throughHoleDiameter" : {
+            "value" : -0.0015875,
+            "unit" : "METRE"
+         },
+         "aliases" : [],
+         "strength" : {
+            "value" : 6005.09918060168,
+            "unit" : "NEWTON"
+         },
+         "horizontalOffset" : {
+            "value" : 0,
+            "unit" : "METRE"
+         },
+         "size" : "28kV Universal (U00002) Pole Top",
+         "shape" : "ROUND",
+         "weight" : {
+            "unit" : "NEWTON",
+            "value" : 53.378659383126
+         },
+         "lateralArea" : {
+            "value" : 0.0176515776,
+            "unit" : "SQUARE_METRE"
+         }
+      },
+      {
+         "aliases" : [],
+         "throughHoleDiameter" : {
+            "value" : -0.0015875,
+            "unit" : "METRE"
+         },
+         "verticalOffset" : {
+            "unit" : "METRE",
+            "value" : 0
+         },
+         "poleSideArea" : {
+            "value" : 0.01263481344,
+            "unit" : "SQUARE_METRE"
+         },
+         "type" : "CLAMP",
+         "lateralArea" : {
+            "unit" : "SQUARE_METRE",
+            "value" : 0.01263481344
+         },
+         "shape" : "ROUND",
+         "weight" : {
+            "value" : 20.0169972686723,
+            "unit" : "NEWTON"
+         },
+         "size" : "Neutral Clamp Tangent (01-500 FIG 2) ",
+         "strength" : {
+            "unit" : "NEWTON",
+            "value" : 10008.4986343361
+         },
+         "horizontalOffset" : {
+            "value" : 0,
+            "unit" : "METRE"
+         }
+      },
+      {
+         "aliases" : [],
+         "verticalOffset" : {
+            "unit" : "METRE",
+            "value" : 0
+         },
+         "throughHoleDiameter" : {
+            "unit" : "METRE",
+            "value" : -0.0015875
+         },
+         "poleSideArea" : {
+            "unit" : "SQUARE_METRE",
+            "value" : 0.00037161216
+         },
+         "type" : "DEADEND",
+         "lateralArea" : {
+            "unit" : "SQUARE_METRE",
+            "value" : 0.00919740096
+         },
+         "strength" : {
+            "unit" : "NEWTON",
+            "value" : 33997.757805436
+         },
+         "size" : "Neutral Deadend Clamp (01-500 FIG 7) ",
+         "horizontalOffset" : {
+            "unit" : "METRE",
+            "value" : 0.36195
+         },
+         "weight" : {
+            "unit" : "NEWTON",
+            "value" : 18.6825307840941
+         },
+         "shape" : "ROUND"
+      },
+      {
+         "aliases" : [],
+         "poleSideArea" : {
+            "unit" : "SQUARE_METRE",
+            "value" : 0.01263481344
+         },
+         "type" : "CLAMP",
+         "verticalOffset" : {
+            "unit" : "METRE",
+            "value" : 0
+         },
+         "throughHoleDiameter" : {
+            "value" : -0.0015875,
+            "unit" : "METRE"
+         },
+         "lateralArea" : {
+            "value" : 0.01263481344,
+            "unit" : "SQUARE_METRE"
+         },
+         "size" : "Secondary Neutral Clamp 0-15 deg (10-200 FIG 1) ",
+         "strength" : {
+            "value" : 10008.4986343361,
+            "unit" : "NEWTON"
+         },
+         "horizontalOffset" : {
+            "unit" : "METRE",
+            "value" : 0
+         },
+         "weight" : {
+            "value" : 20.0169972686723,
+            "unit" : "NEWTON"
+         },
+         "shape" : "ROUND"
+      },
+      {
+         "modulus" : {
+            "unit" : "PASCAL",
+            "value" : 199947961501.882
+         },
+         "stressAllow" : {
+            "unit" : "PASCAL",
+            "value" : 448159224.055943
+         },
+         "materialCategory" : "METAL",
+         "density" : {
+            "value" : 7849.04705324047,
+            "unit" : "KILOGRAM_PER_CUBIC_METRE"
+         },
+         "aliases" : [],
+         "height" : {
+            "value" : 0.1016,
+            "unit" : "METRE"
+         },
+         "throughHoleDiameter" : {
+            "value" : -0.0015875,
+            "unit" : "METRE"
+         },
+         "length" : {
+            "unit" : "METRE",
+            "value" : 2.286
+         },
+         "width" : {
+            "value" : 0.1016,
+            "unit" : "METRE"
+         },
+         "doubleCrossArm" : false,
+         "poissonRatio" : 0.3,
+         "size" : "Crossarm Steel 7.5' (U00257) - Slacan",
+         "shape" : "SQUARE",
+         "wallThickness" : {
+            "value" : 0.0047498,
+            "unit" : "METRE"
+         }
+      },
+      {
+         "aliases" : [],
+         "height" : {
+            "value" : 0.092075,
+            "unit" : "METRE"
+         },
+         "modulus" : {
+            "unit" : "PASCAL",
+            "value" : 31715883548.5745
+         },
+         "materialCategory" : "POLYMER",
+         "stressAllow" : {
+            "value" : 466775068.747498,
+            "unit" : "PASCAL"
+         },
+         "density" : {
+            "unit" : "KILOGRAM_PER_CUBIC_METRE",
+            "value" : 1758.82727846082
+         },
+         "length" : {
+            "unit" : "METRE",
+            "value" : 2.54
+         },
+         "throughHoleDiameter" : {
+            "value" : -0.0015875,
+            "unit" : "METRE"
+         },
+         "width" : {
+            "value" : 0.117475,
+            "unit" : "METRE"
+         },
+         "poissonRatio" : 0.25,
+         "doubleCrossArm" : false,
+         "shape" : "SQUARE",
+         "wallThickness" : {
+            "unit" : "METRE",
+            "value" : 0.006096
+         },
+         "size" : "PUPI 402DA2500-100X6-TB2 8'-4\" Deadend (U000253)"
+      },
+      {
+         "assemblyType" : "FRAMING",
+         "distanceFromPoleTop" : {
+            "unit" : "METRE",
+            "value" : 0.14
+         },
+         "maximumLineAngle" : {
+            "value" : 0.0872664625997165,
+            "unit" : "RADIAN"
+         },
+         "minimumLineAngle" : {
+            "unit" : "RADIAN",
+            "value" : 0
+         },
+         "assemblyStructure" : {
+            "assemblies" : [],
+            "spanPoints" : [],
+            "anchors" : [],
+            "pointLoads" : [],
+            "equipments" : [],
+            "wireEndPoints" : [
+               {
+                  "spanPoints" : [],
+                  "inclination" : {
+                     "unit" : "RADIAN",
+                     "value" : 0
+                  },
+                  "externalId" : "5a6244a8693c174cfea079e5",
+                  "direction" : 0,
+                  "distance" : {
+                     "value" : 0.3048,
+                     "unit" : "METRE"
+                  },
+                  "wires" : [
+                     "Wire#1",
+                     "Wire#3",
+                     "Wire#5",
+                     "Wire#7"
+                  ],
+                  "comments" : "",
+                  "spanGuys" : [],
+                  "environment" : "NONE",
+                  "id" : "WEP#1",
+                  "type" : "PREVIOUS_POLE"
+               },
+               {
+                  "spanPoints" : [],
+                  "externalId" : "5a6244a8693c174cfea079e6",
+                  "inclination" : {
+                     "unit" : "RADIAN",
+                     "value" : 0
+                  },
+                  "environment" : "NONE",
+                  "id" : "WEP#2",
+                  "type" : "NEXT_POLE",
+                  "direction" : 180,
+                  "distance" : {
+                     "unit" : "METRE",
+                     "value" : 0.3048
+                  },
+                  "wires" : [
+                     "Wire#2",
+                     "Wire#4",
+                     "Wire#6",
+                     "Wire#8"
+                  ],
+                  "comments" : "",
+                  "spanGuys" : []
+               }
+            ],
+            "pushBraces" : [],
+            "sidewalkBraces" : [],
+            "wirePointLoads" : [],
+            "damages" : [],
+            "foundations" : [],
+            "notePoints" : [],
+            "insulators" : [
+               {
+                  "clientItem" : "28kV Universal (U00002) Pole Top",
+                  "id" : "Insulator#1",
+                  "clientItemVersion" : "b8e76d22585f713c7e4c403d7ef7094a",
+                  "owner" : {
+                     "externalId" : "5a6244a8693c174cfea079e8",
+                     "id" : "none",
+                     "industry" : "UTILITY"
+                  },
+                  "direction" : 90,
+                  "wires" : [
+                     "Wire#1",
+                     "Wire#2"
+                  ],
+                  "offset" : {
+                     "unit" : "METRE",
+                     "value" : 0
+                  },
+                  "externalId" : "5a6244a8693c174cfea079e7",
+                  "doubleInsulator" : false
+               },
+               {
+                  "direction" : 90,
+                  "owner" : {
+                     "externalId" : "5a6244a8693c174cfea079ee",
+                     "id" : "none",
+                     "industry" : "UTILITY"
+                  },
+                  "wires" : [
+                     "Wire#3",
+                     "Wire#4"
+                  ],
+                  "offset" : {
+                     "unit" : "METRE",
+                     "value" : -0.61
+                  },
+                  "id" : "Insulator#2",
+                  "clientItem" : "28kV Universal (U00002) 9\" Bracket",
+                  "clientItemVersion" : "c011bf9623961e324439be03b381cbef",
+                  "externalId" : "5a6244a8693c174cfea079ed",
+                  "doubleInsulator" : false
+               },
+               {
+                  "externalId" : "5a6244a8693c174cfea079f3",
+                  "doubleInsulator" : false,
+                  "clientItem" : "28kV Universal (U00002) 9\" Bracket",
+                  "id" : "Insulator#3",
+                  "clientItemVersion" : "c011bf9623961e324439be03b381cbef",
+                  "wires" : [
+                     "Wire#5",
+                     "Wire#6"
+                  ],
+                  "offset" : {
+                     "unit" : "METRE",
+                     "value" : -0.61
+                  },
+                  "direction" : 270,
+                  "owner" : {
+                     "externalId" : "5a6244a8693c174cfea079f4",
+                     "id" : "none",
+                     "industry" : "UTILITY"
+                  }
+               },
+               {
+                  "clientItemVersion" : "b62bb6255deb2b50b022cbabafed5167",
+                  "id" : "Insulator#4",
+                  "clientItem" : "Neutral Clamp Tangent (01-500 FIG 2) ",
+                  "direction" : 90,
+                  "owner" : {
+                     "externalId" : "5a6244a8693c174cfea079fa",
+                     "industry" : "UTILITY",
+                     "id" : "none"
+                  },
+                  "offset" : {
+                     "unit" : "METRE",
+                     "value" : -3.81
+                  },
+                  "wires" : [
+                     "Wire#7",
+                     "Wire#8"
+                  ],
+                  "doubleInsulator" : false,
+                  "externalId" : "5a6244a8693c174cfea079f9"
+               }
+            ],
+            "wires" : [
+               {
+                  "midspanHeight" : {
+                     "unit" : "METRE",
+                     "value" : 0
+                  },
+                  "tensionGroup" : "dummyTensionGroup",
+                  "tensionAdjustment" : 1,
+                  "usageGroup" : "PRIMARY",
+                  "externalId" : "5a6244a8693c174cfea079e9",
+                  "owner" : {
+                     "externalId" : "5a6244a8693c174cfea079ea",
+                     "id" : "none",
+                     "industry" : "UTILITY"
+                  },
+                  "attachmentHeight" : {
+                     "unit" : "METRE",
+                     "value" : 0.3476625
+                  },
+                  "id" : "Wire#1"
+               },
+               {
+                  "tensionGroup" : "dummyTensionGroup",
+                  "midspanHeight" : {
+                     "value" : 0,
+                     "unit" : "METRE"
+                  },
+                  "externalId" : "5a6244a8693c174cfea079eb",
+                  "tensionAdjustment" : 1,
+                  "usageGroup" : "PRIMARY",
+                  "id" : "Wire#2",
+                  "attachmentHeight" : {
+                     "unit" : "METRE",
+                     "value" : 0.3476625
+                  },
+                  "owner" : {
+                     "industry" : "UTILITY",
+                     "id" : "none",
+                     "externalId" : "5a6244a8693c174cfea079ec"
+                  }
+               },
+               {
+                  "attachmentHeight" : {
+                     "unit" : "METRE",
+                     "value" : -0.7112
+                  },
+                  "id" : "Wire#3",
+                  "owner" : {
+                     "industry" : "UTILITY",
+                     "id" : "none",
+                     "externalId" : "5a6244a8693c174cfea079f0"
+                  },
+                  "tensionGroup" : "dummyTensionGroup",
+                  "midspanHeight" : {
+                     "unit" : "METRE",
+                     "value" : 0
+                  },
+                  "externalId" : "5a6244a8693c174cfea079ef",
+                  "usageGroup" : "PRIMARY",
+                  "tensionAdjustment" : 1
+               },
+               {
+                  "owner" : {
+                     "id" : "none",
+                     "industry" : "UTILITY",
+                     "externalId" : "5a6244a8693c174cfea079f2"
+                  },
+                  "attachmentHeight" : {
+                     "value" : -0.7112,
+                     "unit" : "METRE"
+                  },
+                  "id" : "Wire#4",
+                  "externalId" : "5a6244a8693c174cfea079f1",
+                  "usageGroup" : "PRIMARY",
+                  "tensionAdjustment" : 1,
+                  "tensionGroup" : "dummyTensionGroup",
+                  "midspanHeight" : {
+                     "unit" : "METRE",
+                     "value" : 0
+                  }
+               },
+               {
+                  "owner" : {
+                     "externalId" : "5a6244a8693c174cfea079f6",
+                     "industry" : "UTILITY",
+                     "id" : "none"
+                  },
+                  "attachmentHeight" : {
+                     "value" : -0.7112,
+                     "unit" : "METRE"
+                  },
+                  "id" : "Wire#5",
+                  "tensionGroup" : "dummyTensionGroup",
+                  "midspanHeight" : {
+                     "value" : 0,
+                     "unit" : "METRE"
+                  },
+                  "usageGroup" : "PRIMARY",
+                  "tensionAdjustment" : 1,
+                  "externalId" : "5a6244a8693c174cfea079f5"
+               },
+               {
+                  "owner" : {
+                     "externalId" : "5a6244a8693c174cfea079f8",
+                     "id" : "none",
+                     "industry" : "UTILITY"
+                  },
+                  "id" : "Wire#6",
+                  "attachmentHeight" : {
+                     "unit" : "METRE",
+                     "value" : -0.7112
+                  },
+                  "midspanHeight" : {
+                     "value" : 0,
+                     "unit" : "METRE"
+                  },
+                  "tensionGroup" : "dummyTensionGroup",
+                  "externalId" : "5a6244a8693c174cfea079f7",
+                  "usageGroup" : "PRIMARY",
+                  "tensionAdjustment" : 1
+               },
+               {
+                  "owner" : {
+                     "id" : "none",
+                     "industry" : "UTILITY",
+                     "externalId" : "5a6244a8693c174cfea079fc"
+                  },
+                  "id" : "Wire#7",
+                  "attachmentHeight" : {
+                     "value" : -3.81,
+                     "unit" : "METRE"
+                  },
+                  "tensionAdjustment" : 1,
+                  "usageGroup" : "NEUTRAL",
+                  "externalId" : "5a6244a8693c174cfea079fb",
+                  "tensionGroup" : "dummyTensionGroup",
+                  "midspanHeight" : {
+                     "unit" : "METRE",
+                     "value" : 0
+                  }
+               },
+               {
+                  "owner" : {
+                     "externalId" : "5a6244a8693c174cfea079fe",
+                     "id" : "none",
+                     "industry" : "UTILITY"
+                  },
+                  "id" : "Wire#8",
+                  "attachmentHeight" : {
+                     "unit" : "METRE",
+                     "value" : -3.81
+                  },
+                  "tensionGroup" : "dummyTensionGroup",
+                  "midspanHeight" : {
+                     "unit" : "METRE",
+                     "value" : 0
+                  },
+                  "externalId" : "5a6244a8693c174cfea079fd",
+                  "usageGroup" : "NEUTRAL",
+                  "tensionAdjustment" : 1
+               }
+            ],
+            "spanGuys" : [],
+            "crossArms" : [],
+            "guyAttachPoints" : [],
+            "guys" : []
+         },
+         "code" : "01-300-28kV",
+         "group" : "Converted",
+         "distanceToUnderbuild" : {
+            "unit" : "METRE",
+            "value" : 0.9144
+         }
+      },
+      {
+         "assemblyType" : "FRAMING",
+         "maximumLineAngle" : {
+            "unit" : "RADIAN",
+            "value" : 0
+         },
+         "distanceFromPoleTop" : {
+            "unit" : "METRE",
+            "value" : 0.254
+         },
+         "minimumLineAngle" : {
+            "unit" : "RADIAN",
+            "value" : 0
+         },
+         "assemblyStructure" : {
+            "guys" : [],
+            "guyAttachPoints" : [
+               {
+                  "externalId" : "5a624457693c174cfea0450f",
+                  "attachHeight" : {
+                     "unit" : "METRE",
+                     "value" : -0.4064
+                  },
+                  "id" : "GuyAttachPoint#1",
+                  "supportedWEPs" : [
+                     "WEP#1"
+                  ]
+               },
+               {
+                  "supportedWEPs" : [
+                     "WEP#1"
+                  ],
+                  "id" : "GuyAttachPoint#2",
+                  "externalId" : "5a624457693c174cfea0451e",
+                  "attachHeight" : {
+                     "value" : -3.3528,
+                     "unit" : "METRE"
+                  }
+               }
+            ],
+            "spanGuys" : [],
+            "crossArms" : [
+               {
+                  "owner" : {
+                     "id" : "none",
+                     "industry" : "UTILITY",
+                     "externalId" : "5a624457693c174cfea04511"
+                  },
+                  "direction" : 0,
+                  "offset" : {
+                     "value" : 1.143,
+                     "unit" : "METRE"
+                  },
+                  "attachmentHeight" : {
+                     "unit" : "METRE",
+                     "value" : -0.1524
+                  },
+                  "clientItem" : "Crossarm Steel 7.5' (U00257) - Slacan",
+                  "id" : "CrossArm#1",
+                  "clientItemVersion" : "9ecc749bdf8988a7dfaab0f777864661",
+                  "externalId" : "5a624457693c174cfea04510",
+                  "supportedWEPs" : [],
+                  "insulators" : [
+                     "Insulator#2",
+                     "Insulator#3"
+                  ]
+               }
+            ],
+            "wires" : [
+               {
+                  "owner" : {
+                     "externalId" : "5a624457693c174cfea0450e",
+                     "industry" : "UTILITY",
+                     "id" : "none"
+                  },
+                  "id" : "Wire#1",
+                  "attachmentHeight" : {
+                     "value" : 0,
+                     "unit" : "METRE"
+                  },
+                  "tensionGroup" : "dummyTensionGroup",
+                  "midspanHeight" : {
+                     "unit" : "METRE",
+                     "value" : 0
+                  },
+                  "usageGroup" : "PRIMARY",
+                  "tensionAdjustment" : 1,
+                  "externalId" : "5a624457693c174cfea0450d"
+               },
+               {
+                  "owner" : {
+                     "industry" : "UTILITY",
+                     "id" : "none",
+                     "externalId" : "5a624457693c174cfea04515"
+                  },
+                  "id" : "Wire#2",
+                  "attachmentHeight" : {
+                     "unit" : "METRE",
+                     "value" : -0.1524
+                  },
+                  "externalId" : "5a624457693c174cfea04514",
+                  "usageGroup" : "PRIMARY",
+                  "tensionAdjustment" : 1,
+                  "midspanHeight" : {
+                     "unit" : "METRE",
+                     "value" : 0
+                  },
+                  "tensionGroup" : "dummyTensionGroup"
+               },
+               {
+                  "attachmentHeight" : {
+                     "value" : -0.1524,
+                     "unit" : "METRE"
+                  },
+                  "id" : "Wire#3",
+                  "owner" : {
+                     "externalId" : "5a624457693c174cfea04519",
+                     "id" : "none",
+                     "industry" : "UTILITY"
+                  },
+                  "tensionGroup" : "dummyTensionGroup",
+                  "midspanHeight" : {
+                     "unit" : "METRE",
+                     "value" : 0
+                  },
+                  "usageGroup" : "PRIMARY",
+                  "externalId" : "5a624457693c174cfea04518",
+                  "tensionAdjustment" : 1
+               },
+               {
+                  "tensionAdjustment" : 1,
+                  "usageGroup" : "NEUTRAL",
+                  "externalId" : "5a624457693c174cfea0451c",
+                  "tensionGroup" : "dummyTensionGroup",
+                  "midspanHeight" : {
+                     "value" : 0,
+                     "unit" : "METRE"
+                  },
+                  "attachmentHeight" : {
+                     "unit" : "METRE",
+                     "value" : -3.2004
+                  },
+                  "id" : "Wire#4",
+                  "owner" : {
+                     "id" : "none",
+                     "industry" : "UTILITY",
+                     "externalId" : "5a624457693c174cfea0451d"
+                  }
+               }
+            ],
+            "insulators" : [
+               {
+                  "externalId" : "5a624457693c174cfea0450b",
+                  "doubleInsulator" : false,
+                  "id" : "Insulator#1",
+                  "clientItem" : "15kV Deadend (U00024) ",
+                  "clientItemVersion" : "fb338df89a53f2d912287b05e3819daa",
+                  "wires" : [
+                     "Wire#1"
+                  ],
+                  "offset" : {
+                     "unit" : "METRE",
+                     "value" : 0
+                  },
+                  "owner" : {
+                     "industry" : "UTILITY",
+                     "id" : "none",
+                     "externalId" : "5a624457693c174cfea0450c"
+                  },
+                  "direction" : 0
+               },
+               {
+                  "externalId" : "5a624457693c174cfea04512",
+                  "doubleInsulator" : false,
+                  "clientItem" : "15kV Deadend (U00024) ",
+                  "id" : "Insulator#2",
+                  "clientItemVersion" : "fb338df89a53f2d912287b05e3819daa",
+                  "wires" : [
+                     "Wire#2"
+                  ],
+                  "offset" : {
+                     "value" : 0.0762,
+                     "unit" : "METRE"
+                  },
+                  "owner" : {
+                     "industry" : "UTILITY",
+                     "id" : "none",
+                     "externalId" : "5a624457693c174cfea04513"
+                  },
+                  "direction" : 0
+               },
+               {
+                  "doubleInsulator" : false,
+                  "externalId" : "5a624457693c174cfea04516",
+                  "offset" : {
+                     "value" : 2.2098,
+                     "unit" : "METRE"
+                  },
+                  "wires" : [
+                     "Wire#3"
+                  ],
+                  "direction" : 0,
+                  "owner" : {
+                     "externalId" : "5a624457693c174cfea04517",
+                     "id" : "none",
+                     "industry" : "UTILITY"
+                  },
+                  "clientItemVersion" : "fb338df89a53f2d912287b05e3819daa",
+                  "clientItem" : "15kV Deadend (U00024) ",
+                  "id" : "Insulator#3"
+               },
+               {
+                  "doubleInsulator" : false,
+                  "externalId" : "5a624457693c174cfea0451a",
+                  "clientItemVersion" : "ac396ffb9eb847aec5af65364ba00065",
+                  "clientItem" : "Neutral Deadend Clamp (01-500 FIG 7) ",
+                  "id" : "Insulator#4",
+                  "owner" : {
+                     "id" : "none",
+                     "industry" : "UTILITY",
+                     "externalId" : "5a624457693c174cfea0451b"
+                  },
+                  "direction" : 0,
+                  "offset" : {
+                     "value" : -3.2004,
+                     "unit" : "METRE"
+                  },
+                  "wires" : [
+                     "Wire#4"
+                  ]
+               }
+            ],
+            "notePoints" : [],
+            "foundations" : [],
+            "damages" : [],
+            "wirePointLoads" : [],
+            "sidewalkBraces" : [],
+            "pushBraces" : [],
+            "wireEndPoints" : [
+               {
+                  "spanPoints" : [],
+                  "inclination" : {
+                     "unit" : "RADIAN",
+                     "value" : 0
+                  },
+                  "externalId" : "5a624457693c174cfea0450a",
+                  "distance" : {
+                     "value" : 0.3048,
+                     "unit" : "METRE"
+                  },
+                  "direction" : 0,
+                  "wires" : [
+                     "Wire#1",
+                     "Wire#2",
+                     "Wire#3",
+                     "Wire#4"
+                  ],
+                  "comments" : "",
+                  "spanGuys" : [],
+                  "environment" : "NONE",
+                  "type" : "OTHER_POLE",
+                  "id" : "WEP#1"
+               }
+            ],
+            "equipments" : [],
+            "pointLoads" : [],
+            "spanPoints" : [],
+            "anchors" : [],
+            "assemblies" : []
+         },
+         "group" : "Converted",
+         "code" : "01-306-15kV - 7.5' Steel Arm",
+         "distanceToUnderbuild" : {
+            "value" : 0.9144,
+            "unit" : "METRE"
+         }
+      },
+      {
+         "assemblyType" : "FRAMING",
+         "minimumLineAngle" : {
+            "unit" : "RADIAN",
+            "value" : 0
+         },
+         "maximumLineAngle" : {
+            "value" : 0,
+            "unit" : "RADIAN"
+         },
+         "distanceFromPoleTop" : {
+            "value" : 0.4572,
+            "unit" : "METRE"
+         },
+         "group" : "Converted",
+         "code" : "01-306A-15kV",
+         "assemblyStructure" : {
+            "wireEndPoints" : [
+               {
+                  "externalId" : "5a624457693c174cfea0453f",
+                  "inclination" : {
+                     "value" : 0,
+                     "unit" : "RADIAN"
+                  },
+                  "spanPoints" : [],
+                  "id" : "WEP#1",
+                  "type" : "OTHER_POLE",
+                  "environment" : "NONE",
+                  "spanGuys" : [],
+                  "distance" : {
+                     "unit" : "METRE",
+                     "value" : 0.3048
+                  },
+                  "direction" : 0,
+                  "wires" : [
+                     "Wire#1",
+                     "Wire#2",
+                     "Wire#3",
+                     "Wire#4",
+                     "Wire#5",
+                     "Wire#6",
+                     "Wire#7"
+                  ],
+                  "comments" : ""
+               }
+            ],
+            "pushBraces" : [],
+            "wirePointLoads" : [],
+            "sidewalkBraces" : [],
+            "assemblies" : [],
+            "spanPoints" : [],
+            "anchors" : [],
+            "equipments" : [],
+            "pointLoads" : [],
+            "crossArms" : [
+               {
+                  "clientItemVersion" : "67ac7e888e9efd134a5d403199b71f8a",
+                  "attachmentHeight" : {
+                     "value" : 0,
+                     "unit" : "METRE"
+                  },
+                  "id" : "CrossArm#1",
+                  "clientItem" : "PUPI 402DA2500-100X6-TB2 8'-4\" Deadend (U000253)",
+                  "direction" : 0,
+                  "owner" : {
+                     "industry" : "UTILITY",
+                     "id" : "none",
+                     "externalId" : "5a624457693c174cfea04541"
+                  },
+                  "offset" : {
+                     "value" : 1.27,
+                     "unit" : "METRE"
+                  },
+                  "supportedWEPs" : [],
+                  "insulators" : [
+                     "Insulator#1",
+                     "Insulator#2",
+                     "Insulator#3",
+                     "Insulator#4",
+                     "Insulator#5",
+                     "Insulator#6"
+                  ],
+                  "externalId" : "5a624457693c174cfea04540"
+               }
+            ],
+            "spanGuys" : [],
+            "wires" : [
+               {
+                  "midspanHeight" : {
+                     "value" : 0,
+                     "unit" : "METRE"
+                  },
+                  "tensionGroup" : "dummyTensionGroup",
+                  "externalId" : "5a624457693c174cfea04544",
+                  "tensionAdjustment" : 1,
+                  "usageGroup" : "PRIMARY",
+                  "id" : "Wire#1",
+                  "attachmentHeight" : {
+                     "unit" : "METRE",
+                     "value" : 0
+                  },
+                  "owner" : {
+                     "id" : "none",
+                     "industry" : "UTILITY",
+                     "externalId" : "5a624457693c174cfea04545"
+                  }
+               },
+               {
+                  "usageGroup" : "PRIMARY",
+                  "externalId" : "5a624457693c174cfea04548",
+                  "tensionAdjustment" : 1,
+                  "midspanHeight" : {
+                     "value" : 0,
+                     "unit" : "METRE"
+                  },
+                  "tensionGroup" : "dummyTensionGroup",
+                  "id" : "Wire#2",
+                  "attachmentHeight" : {
+                     "unit" : "METRE",
+                     "value" : 0
+                  },
+                  "owner" : {
+                     "id" : "none",
+                     "industry" : "UTILITY",
+                     "externalId" : "5a624457693c174cfea04549"
+                  }
+               },
+               {
+                  "tensionGroup" : "dummyTensionGroup",
+                  "midspanHeight" : {
+                     "unit" : "METRE",
+                     "value" : 0
+                  },
+                  "externalId" : "5a624457693c174cfea0454c",
+                  "usageGroup" : "PRIMARY",
+                  "tensionAdjustment" : 1,
+                  "owner" : {
+                     "industry" : "UTILITY",
+                     "id" : "none",
+                     "externalId" : "5a624457693c174cfea0454d"
+                  },
+                  "id" : "Wire#3",
+                  "attachmentHeight" : {
+                     "unit" : "METRE",
+                     "value" : 0
+                  }
+               },
+               {
+                  "owner" : {
+                     "id" : "none",
+                     "industry" : "UTILITY",
+                     "externalId" : "5a624457693c174cfea04551"
+                  },
+                  "attachmentHeight" : {
+                     "value" : 0,
+                     "unit" : "METRE"
+                  },
+                  "id" : "Wire#4",
+                  "tensionAdjustment" : 1,
+                  "externalId" : "5a624457693c174cfea04550",
+                  "usageGroup" : "PRIMARY",
+                  "tensionGroup" : "dummyTensionGroup",
+                  "midspanHeight" : {
+                     "value" : 0,
+                     "unit" : "METRE"
+                  }
+               },
+               {
+                  "tensionGroup" : "dummyTensionGroup",
+                  "midspanHeight" : {
+                     "unit" : "METRE",
+                     "value" : 0
+                  },
+                  "externalId" : "5a624457693c174cfea04554",
+                  "usageGroup" : "PRIMARY",
+                  "tensionAdjustment" : 1,
+                  "id" : "Wire#5",
+                  "attachmentHeight" : {
+                     "value" : 0,
+                     "unit" : "METRE"
+                  },
+                  "owner" : {
+                     "id" : "none",
+                     "industry" : "UTILITY",
+                     "externalId" : "5a624457693c174cfea04555"
+                  }
+               },
+               {
+                  "attachmentHeight" : {
+                     "value" : 0,
+                     "unit" : "METRE"
+                  },
+                  "id" : "Wire#6",
+                  "owner" : {
+                     "externalId" : "5a624457693c174cfea04559",
+                     "industry" : "UTILITY",
+                     "id" : "none"
+                  },
+                  "externalId" : "5a624457693c174cfea04558",
+                  "usageGroup" : "PRIMARY",
+                  "tensionAdjustment" : 1,
+                  "midspanHeight" : {
+                     "value" : 0,
+                     "unit" : "METRE"
+                  },
+                  "tensionGroup" : "dummyTensionGroup"
+               },
+               {
+                  "owner" : {
+                     "externalId" : "5a624457693c174cfea0455d",
+                     "id" : "none",
+                     "industry" : "UTILITY"
+                  },
+                  "id" : "Wire#7",
+                  "attachmentHeight" : {
+                     "value" : -3.048,
+                     "unit" : "METRE"
+                  },
+                  "usageGroup" : "NEUTRAL",
+                  "externalId" : "5a624457693c174cfea0455c",
+                  "tensionAdjustment" : 1,
+                  "tensionGroup" : "dummyTensionGroup",
+                  "midspanHeight" : {
+                     "unit" : "METRE",
+                     "value" : 0
+                  }
+               }
+            ],
+            "guys" : [],
+            "guyAttachPoints" : [
+               {
+                  "id" : "GuyAttachPoint#1",
+                  "supportedWEPs" : [
+                     "WEP#1"
+                  ],
+                  "externalId" : "5a624457693c174cfea0455e",
+                  "attachHeight" : {
+                     "value" : -0.1016,
+                     "unit" : "METRE"
+                  }
+               },
+               {
+                  "externalId" : "5a624457693c174cfea0455f",
+                  "attachHeight" : {
+                     "unit" : "METRE",
+                     "value" : -3.2004
+                  },
+                  "id" : "GuyAttachPoint#2",
+                  "supportedWEPs" : [
+                     "WEP#1"
+                  ]
+               }
+            ],
+            "damages" : [],
+            "insulators" : [
+               {
+                  "clientItemVersion" : "fb338df89a53f2d912287b05e3819daa",
+                  "clientItem" : "15kV Deadend (U00024) ",
+                  "id" : "Insulator#1",
+                  "owner" : {
+                     "industry" : "UTILITY",
+                     "id" : "none",
+                     "externalId" : "5a624457693c174cfea04543"
+                  },
+                  "direction" : 0,
+                  "offset" : {
+                     "value" : 0.127,
+                     "unit" : "METRE"
+                  },
+                  "wires" : [
+                     "Wire#1"
+                  ],
+                  "doubleInsulator" : false,
+                  "externalId" : "5a624457693c174cfea04542"
+               },
+               {
+                  "externalId" : "5a624457693c174cfea04546",
+                  "doubleInsulator" : false,
+                  "id" : "Insulator#2",
+                  "clientItem" : "15kV Deadend (U00024) ",
+                  "clientItemVersion" : "fb338df89a53f2d912287b05e3819daa",
+                  "offset" : {
+                     "value" : 0.3048,
+                     "unit" : "METRE"
+                  },
+                  "wires" : [
+                     "Wire#2"
+                  ],
+                  "direction" : 0,
+                  "owner" : {
+                     "externalId" : "5a624457693c174cfea04547",
+                     "industry" : "UTILITY",
+                     "id" : "none"
+                  }
+               },
+               {
+                  "externalId" : "5a624457693c174cfea0454a",
+                  "doubleInsulator" : false,
+                  "clientItem" : "15kV Deadend (U00024) ",
+                  "id" : "Insulator#3",
+                  "clientItemVersion" : "fb338df89a53f2d912287b05e3819daa",
+                  "wires" : [
+                     "Wire#3"
+                  ],
+                  "offset" : {
+                     "unit" : "METRE",
+                     "value" : 0.889
+                  },
+                  "direction" : 0,
+                  "owner" : {
+                     "id" : "none",
+                     "industry" : "UTILITY",
+                     "externalId" : "5a624457693c174cfea0454b"
+                  }
+               },
+               {
+                  "doubleInsulator" : false,
+                  "externalId" : "5a624457693c174cfea0454e",
+                  "clientItemVersion" : "fb338df89a53f2d912287b05e3819daa",
+                  "id" : "Insulator#4",
+                  "clientItem" : "15kV Deadend (U00024) ",
+                  "wires" : [
+                     "Wire#4"
+                  ],
+                  "offset" : {
+                     "unit" : "METRE",
+                     "value" : 2.413
+                  },
+                  "owner" : {
+                     "industry" : "UTILITY",
+                     "id" : "none",
+                     "externalId" : "5a624457693c174cfea0454f"
+                  },
+                  "direction" : 0
+               },
+               {
+                  "wires" : [
+                     "Wire#5"
+                  ],
+                  "offset" : {
+                     "value" : 2.032,
+                     "unit" : "METRE"
+                  },
+                  "owner" : {
+                     "industry" : "UTILITY",
+                     "id" : "none",
+                     "externalId" : "5a624457693c174cfea04553"
+                  },
+                  "direction" : 0,
+                  "clientItemVersion" : "fb338df89a53f2d912287b05e3819daa",
+                  "id" : "Insulator#5",
+                  "clientItem" : "15kV Deadend (U00024) ",
+                  "doubleInsulator" : false,
+                  "externalId" : "5a624457693c174cfea04552"
+               },
+               {
+                  "doubleInsulator" : false,
+                  "externalId" : "5a624457693c174cfea04556",
+                  "clientItemVersion" : "fb338df89a53f2d912287b05e3819daa",
+                  "id" : "Insulator#6",
+                  "clientItem" : "15kV Deadend (U00024) ",
+                  "direction" : 0,
+                  "owner" : {
+                     "externalId" : "5a624457693c174cfea04557",
+                     "industry" : "UTILITY",
+                     "id" : "none"
+                  },
+                  "wires" : [
+                     "Wire#6"
+                  ],
+                  "offset" : {
+                     "unit" : "METRE",
+                     "value" : 1.651
+                  }
+               },
+               {
+                  "externalId" : "5a624457693c174cfea0455a",
+                  "doubleInsulator" : false,
+                  "clientItem" : "Neutral Deadend Clamp (01-500 FIG 7) ",
+                  "id" : "Insulator#7",
+                  "clientItemVersion" : "ac396ffb9eb847aec5af65364ba00065",
+                  "offset" : {
+                     "unit" : "METRE",
+                     "value" : -3.048
+                  },
+                  "wires" : [
+                     "Wire#7"
+                  ],
+                  "owner" : {
+                     "industry" : "UTILITY",
+                     "id" : "none",
+                     "externalId" : "5a624457693c174cfea0455b"
+                  },
+                  "direction" : 0
+               }
+            ],
+            "foundations" : [],
+            "notePoints" : []
+         },
+         "distanceToUnderbuild" : {
+            "value" : 0.9144,
+            "unit" : "METRE"
+         }
+      }
+   ],
+   "hashes" : [
+      "52096f2bebe304d234f302992ff94c3e",
+      "a8ef67a16b6a00a27db0d08d70916362",
+      "48ab7f028d3a9dca84899f1b44032449",
+      "8ed21353d1345d3225c0a342e2cb0f33",
+      "d29120b99dac6ddddfd871bd986c67b3",
+      "487982c7ea59b0f91bdc0e545407833c",
+      "4e13c53343a3f5d9cf7a3e695f439c58",
+      "4e60c0d4192237fcf9f5ae927de9f89a",
+      "c83312bfa2771c52b78ff6a9b9c52a90",
+      "fb338df89a53f2d912287b05e3819daa",
+      "c011bf9623961e324439be03b381cbef",
+      "b8e76d22585f713c7e4c403d7ef7094a",
+      "b62bb6255deb2b50b022cbabafed5167",
+      "ac396ffb9eb847aec5af65364ba00065",
+      "a95989ac038e5d06bb24561d9110983e",
+      "9ecc749bdf8988a7dfaab0f777864661",
+      "67ac7e888e9efd134a5d403199b71f8a",
+      "065a39b492d6f3c5e86bcb0a0c8d1459",
+      "dc878557f2769d8246e1f48707c7d906",
+      "711ba3de489e2f391f8b5ba911c44cb9"
+   ]
+}

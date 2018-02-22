@@ -1,0 +1,125 @@
+{
+    "analyzeWithAverageSpan" : true,
+    "valuesApplied" : {
+    "areaMultipliers" : {
+        "SQUARE_LATTICE" : 2.4375,
+        "ROUND" : 1,
+        "SQUARE" : 1.625,
+        "ROUND_LATTICE" : 1.5
+    },
+    "ice" : {
+        "value" : 0,
+        "unit" : "METRE"
+    },
+    "linearConstant" : {
+        "value" : 0,
+        "unit" : "NEWTON_PER_METRE"
+    },
+    "insulatorStrengthFactor" : 0.333333333333333,
+    "poleStrengthFactors" : {
+        "POLYMER" : 0.666666666666667,
+        "METAL" : 0.666666666666667,
+        "WOOD" : 0.25,
+        "PRESTRESSED_CONCRETE" : 0.555555555555556,
+        "REINFORCED_CONCRETE" : 0.25
+    },
+    "guyTensionMultiplier" : 1,
+    "poleWindMultipliers" : {
+        "REINFORCED_CONCRETE" : 1,
+        "PRESTRESSED_CONCRETE" : 1,
+        "POLYMER" : 1,
+        "WOOD" : 1,
+        "METAL" : 1
+    },
+    "anchorWindMultiplier" : 1,
+    "foundationVerticalLoadMultiplier" : 1,
+    "poleVerticalLoadMultipliers" : {
+        "REINFORCED_CONCRETE" : 1,
+        "PRESTRESSED_CONCRETE" : 1,
+        "POLYMER" : 1,
+        "METAL" : 1,
+        "WOOD" : 1
+    },
+    "anchorVerticalLoadMultiplier" : 1,
+    "insulatorVerticalLoadMultiplier" : 1,
+    "guyVerticalLoadMultiplier" : 1,
+    "anchorStrengthFactor" : 0.5,
+    "crossArmTensionMultipliers" : {
+        "POLYMER" : 1,
+        "METAL" : 1,
+        "WOOD" : 1,
+        "REINFORCED_CONCRETE" : 1,
+        "PRESTRESSED_CONCRETE" : 1
+    },
+    "crossArmVerticalLoadMultipliers" : {
+        "WOOD" : 1,
+        "METAL" : 1,
+        "POLYMER" : 1,
+        "REINFORCED_CONCRETE" : 1,
+        "PRESTRESSED_CONCRETE" : 1
+    },
+    "anchorTensionMultiplier" : 1,
+    "foundationStrengthFactor" : 0.44444444,
+    "foundationWindMultiplier" : 1,
+    "temperature" : {
+        "value" : -3.88888888888889,
+        "unit" : "CELSIUS"
+    },
+    "poleTensionMultipliers" : {
+        "REINFORCED_CONCRETE" : 1,
+        "PRESTRESSED_CONCRETE" : 1,
+        "POLYMER" : 1,
+        "METAL" : 1,
+        "WOOD" : 1
+    },
+    "guyStrengthFactor" : 0.5,
+    "foundationTensionMultiplier" : 1,
+    "guyWindMultiplier" : 1,
+    "crossArmWindMultipliers" : {
+        "REINFORCED_CONCRETE" : 1,
+        "PRESTRESSED_CONCRETE" : 1,
+        "METAL" : 1,
+        "WOOD" : 1,
+        "POLYMER" : 1
+    },
+    "insulatorTensionMultiplier" : 1,
+    "insulatorWindMultiplier" : 1,
+    "crossArmStrengthFactors" : {
+        "POLYMER" : 0.666666666666667,
+        "WOOD" : 0.5,
+        "METAL" : 0.666666666666667,
+        "REINFORCED_CONCRETE" : 0.667,
+        "PRESTRESSED_CONCRETE" : 0.555555555555556
+    },
+    "windPressure" : {
+        "value" : 383.042071842687,
+        "unit" : "PASCAL"
+    },
+    "commOnlyTensionMultiplier" : 0
+    },
+    "displacementBasedLoadChangesLevel" : "NONE",
+    "sweepIncrement" : "DEGREE_10",
+    "windStartAngle" : {
+    "unit" : "RADIAN",
+    "value" : 0
+    },
+    "loadZone" : "LIGHT",
+    "windEndAngle" : {
+    "unit" : "RADIAN",
+    "value" : 0.0174532925199433
+    },
+    "type" : "GO95 02-2014",
+    "constructionGrade" : "A",
+    "name" : "GO95 Light",
+    "overrides" : {},
+    "constructionType" : "NEW",
+    "components" : [],
+    "analysisMethod" : "DIRECT_STIFFNESS",
+    "connectionType" : "CONTINUATION",
+    "windType" : "SWEEP",
+    "addByDefault" : true,
+    "useStrengthResults" : true,
+    "maximumLoadingRatio" : 1,
+    "analyzeGroundLineOnly" : false,
+    "rural" : false
+}

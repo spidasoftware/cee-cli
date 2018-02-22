@@ -15,7 +15,7 @@ module.exports = {
         .usage(`Usage: cee-cli ${command}\n\n${desc}`)
         .describe('config','config file')
         .alias('f','config')
-        .default('config','$HOME/.config/cee.json'),
+        .default('config',api.defaultConfigPath),
     handler: argv =>
         api.loadConfig(argv.config).then(config =>
             request({

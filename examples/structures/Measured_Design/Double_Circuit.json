@@ -1,0 +1,870 @@
+{
+  "pole": {
+    "glc": {
+      "unit": "METRE",
+      "value": 1.1241849456048163
+    },
+    "agl": {
+      "unit": "METRE",
+      "value": 15.849599999999999
+    },
+    "environment": "NONE",
+    "temperature": {
+      "unit": "CELSIUS",
+      "value": 15.555555555555555
+    },
+    "stressRatio": 1,
+    "leanAngle": 0,
+    "leanDirection": 0,
+    "clientItem": {
+      "species": "Southern Pine",
+      "classOfPole": "2",
+      "height": {
+        "unit": "METRE",
+        "value": 18.288
+      }
+    },
+    "externalId": "5a8ec4174cc65edaa325a73f",
+    "owner": {
+      "id": "Acme Power",
+      "industry": "UTILITY",
+      "externalId": "43e130a1-3c21-41c9-b420-0e5b966eb2f2"
+    }
+  },
+  "wireEndPoints": [
+    {
+      "id": "WEP#1",
+      "externalId": "5a8ec42b4cc65edaa325a744",
+      "distance": {
+        "unit": "METRE",
+        "value": 60.35040000000001
+      },
+      "direction": 215,
+      "inclination": {
+        "unit": "RADIAN",
+        "value": 0
+      },
+      "type": "PREVIOUS_POLE",
+      "comments": "",
+      "environment": "NONE",
+      "wires": [
+        "Wire#1",
+        "Wire#11",
+        "Wire#13",
+        "Wire#15",
+        "Wire#17",
+        "Wire#19",
+        "Wire#3",
+        "Wire#5",
+        "Wire#7",
+        "Wire#9"
+      ],
+      "spanGuys": [],
+      "spanPoints": []
+    },
+    {
+      "id": "WEP#2",
+      "externalId": "5a8ec42b4cc65edaa325a745",
+      "distance": {
+        "unit": "METRE",
+        "value": 60.35040000000001
+      },
+      "direction": 35,
+      "inclination": {
+        "unit": "RADIAN",
+        "value": 0
+      },
+      "type": "NEXT_POLE",
+      "comments": "",
+      "environment": "NONE",
+      "wires": [
+        "Wire#10",
+        "Wire#12",
+        "Wire#14",
+        "Wire#16",
+        "Wire#18",
+        "Wire#2",
+        "Wire#20",
+        "Wire#4",
+        "Wire#6",
+        "Wire#8"
+      ],
+      "spanGuys": [],
+      "spanPoints": []
+    }
+  ],
+  "spanPoints": [],
+  "anchors": [],
+  "notePoints": [],
+  "pointLoads": [],
+  "wirePointLoads": [],
+  "damages": [],
+  "wires": [
+    {
+      "id": "Wire#1",
+      "externalId": "5a8ec44b4cc65edaa325a8d2",
+      "owner": {
+        "id": "Acme Power",
+        "industry": "UTILITY",
+        "externalId": "43e130a1-3c21-41c9-b420-0e5b966eb2f2"
+      },
+      "clientItem": {
+        "size": "4/0 ACSR",
+        "coreStrands": 1,
+        "conductorStrands": 6
+      },
+      "attachmentHeight": {
+        "unit": "METRE",
+        "value": 15.697200000000002
+      },
+      "usageGroup": "PRIMARY",
+      "tensionGroup": "Full",
+      "midspanHeight": {
+        "unit": "METRE",
+        "value": 0
+      },
+      "tensionAdjustment": 1,
+      "connectedWire": "Wire#2"
+    },
+    {
+      "id": "Wire#10",
+      "externalId": "5a8ec45c4cc65edaa325a9df",
+      "owner": {
+        "id": "Acme Power",
+        "industry": "UTILITY",
+        "externalId": "43e130a1-3c21-41c9-b420-0e5b966eb2f2"
+      },
+      "clientItem": {
+        "size": "4/0 ACSR",
+        "coreStrands": 1,
+        "conductorStrands": 6
+      },
+      "attachmentHeight": {
+        "unit": "METRE",
+        "value": 14.478000000000002
+      },
+      "usageGroup": "PRIMARY",
+      "tensionGroup": "Full",
+      "midspanHeight": {
+        "unit": "METRE",
+        "value": 0
+      },
+      "tensionAdjustment": 1,
+      "connectedWire": "Wire#9"
+    },
+    {
+      "id": "Wire#11",
+      "externalId": "5a8ec45c4cc65edaa325a9e0",
+      "owner": {
+        "id": "Acme Power",
+        "industry": "UTILITY",
+        "externalId": "43e130a1-3c21-41c9-b420-0e5b966eb2f2"
+      },
+      "clientItem": {
+        "size": "4/0 ACSR",
+        "coreStrands": 1,
+        "conductorStrands": 6
+      },
+      "attachmentHeight": {
+        "unit": "METRE",
+        "value": 13.258800000000003
+      },
+      "usageGroup": "PRIMARY",
+      "tensionGroup": "Full",
+      "midspanHeight": {
+        "unit": "METRE",
+        "value": 0
+      },
+      "tensionAdjustment": 1,
+      "connectedWire": "Wire#12"
+    },
+    {
+      "id": "Wire#12",
+      "externalId": "5a8ec45c4cc65edaa325a9e1",
+      "owner": {
+        "id": "Acme Power",
+        "industry": "UTILITY",
+        "externalId": "43e130a1-3c21-41c9-b420-0e5b966eb2f2"
+      },
+      "clientItem": {
+        "size": "4/0 ACSR",
+        "coreStrands": 1,
+        "conductorStrands": 6
+      },
+      "attachmentHeight": {
+        "unit": "METRE",
+        "value": 13.258800000000003
+      },
+      "usageGroup": "PRIMARY",
+      "tensionGroup": "Full",
+      "midspanHeight": {
+        "unit": "METRE",
+        "value": 0
+      },
+      "tensionAdjustment": 1,
+      "connectedWire": "Wire#11"
+    },
+    {
+      "id": "Wire#13",
+      "externalId": "58cc0aae0348e5b489ce4b32",
+      "owner": {
+        "id": "Acme Power",
+        "industry": "UTILITY",
+        "externalId": "43e130a1-3c21-41c9-b420-0e5b966eb2f2"
+      },
+      "clientItem": {
+        "size": "2 ACSR",
+        "coreStrands": 1,
+        "conductorStrands": 6
+      },
+      "attachmentHeight": {
+        "unit": "METRE",
+        "value": 9.296400000000002
+      },
+      "usageGroup": "PRIMARY",
+      "tensionGroup": "Full",
+      "midspanHeight": {
+        "unit": "METRE",
+        "value": 0
+      },
+      "tensionAdjustment": 1
+    },
+    {
+      "id": "Wire#14",
+      "externalId": "58cc0aae0348e5b489ce4b34",
+      "owner": {
+        "id": "Acme Power",
+        "industry": "UTILITY",
+        "externalId": "43e130a1-3c21-41c9-b420-0e5b966eb2f2"
+      },
+      "clientItem": {
+        "size": "2 ACSR",
+        "coreStrands": 1,
+        "conductorStrands": 6
+      },
+      "attachmentHeight": {
+        "unit": "METRE",
+        "value": 9.296400000000002
+      },
+      "usageGroup": "PRIMARY",
+      "tensionGroup": "Full",
+      "midspanHeight": {
+        "unit": "METRE",
+        "value": 0
+      },
+      "tensionAdjustment": 1
+    },
+    {
+      "id": "Wire#15",
+      "externalId": "58cc0aae0348e5b489ce4b39",
+      "owner": {
+        "id": "Acme Power",
+        "industry": "UTILITY",
+        "externalId": "43e130a1-3c21-41c9-b420-0e5b966eb2f2"
+      },
+      "clientItem": {
+        "size": "2 ACSR",
+        "coreStrands": 1,
+        "conductorStrands": 6
+      },
+      "attachmentHeight": {
+        "unit": "METRE",
+        "value": 9.296400000000002
+      },
+      "usageGroup": "PRIMARY",
+      "tensionGroup": "Full",
+      "midspanHeight": {
+        "unit": "METRE",
+        "value": 0
+      },
+      "tensionAdjustment": 1
+    },
+    {
+      "id": "Wire#16",
+      "externalId": "58cc0aae0348e5b489ce4b3b",
+      "owner": {
+        "id": "Acme Power",
+        "industry": "UTILITY",
+        "externalId": "43e130a1-3c21-41c9-b420-0e5b966eb2f2"
+      },
+      "clientItem": {
+        "size": "2 ACSR",
+        "coreStrands": 1,
+        "conductorStrands": 6
+      },
+      "attachmentHeight": {
+        "unit": "METRE",
+        "value": 9.296400000000002
+      },
+      "usageGroup": "PRIMARY",
+      "tensionGroup": "Full",
+      "midspanHeight": {
+        "unit": "METRE",
+        "value": 0
+      },
+      "tensionAdjustment": 1
+    },
+    {
+      "id": "Wire#17",
+      "externalId": "58cc0aae0348e5b489ce4b3e",
+      "owner": {
+        "id": "Acme Power",
+        "industry": "UTILITY",
+        "externalId": "43e130a1-3c21-41c9-b420-0e5b966eb2f2"
+      },
+      "clientItem": {
+        "size": "2 ACSR",
+        "coreStrands": 1,
+        "conductorStrands": 6
+      },
+      "attachmentHeight": {
+        "unit": "METRE",
+        "value": 8.077200000000001
+      },
+      "usageGroup": "NEUTRAL",
+      "tensionGroup": "Full",
+      "midspanHeight": {
+        "unit": "METRE",
+        "value": 0
+      },
+      "tensionAdjustment": 1,
+      "connectedWire": "Wire#18"
+    },
+    {
+      "id": "Wire#18",
+      "externalId": "58cc0aae0348e5b489ce4b40",
+      "owner": {
+        "id": "Acme Power",
+        "industry": "UTILITY",
+        "externalId": "43e130a1-3c21-41c9-b420-0e5b966eb2f2"
+      },
+      "clientItem": {
+        "size": "2 ACSR",
+        "coreStrands": 1,
+        "conductorStrands": 6
+      },
+      "attachmentHeight": {
+        "unit": "METRE",
+        "value": 8.077200000000001
+      },
+      "usageGroup": "NEUTRAL",
+      "tensionGroup": "Full",
+      "midspanHeight": {
+        "unit": "METRE",
+        "value": 0
+      },
+      "tensionAdjustment": 1,
+      "connectedWire": "Wire#17"
+    },
+    {
+      "id": "Wire#19",
+      "externalId": "5a8ec4c44cc65edaa325c121",
+      "owner": {
+        "id": "Bob's Cable",
+        "industry": "COMMUNICATION",
+        "externalId": "8b576607-0529-40df-a376-09385ae3d637"
+      },
+      "clientItem": {
+        "size": "C6.6M1000",
+        "coreStrands": 0,
+        "conductorStrands": 7
+      },
+      "attachmentHeight": {
+        "unit": "METRE",
+        "value": 6.156960000000001
+      },
+      "usageGroup": "COMMUNICATION",
+      "tensionGroup": "Full",
+      "midspanHeight": {
+        "unit": "METRE",
+        "value": 0
+      },
+      "tensionAdjustment": 1,
+      "connectedWire": "Wire#20"
+    },
+    {
+      "id": "Wire#2",
+      "externalId": "5a8ec44b4cc65edaa325a8d3",
+      "owner": {
+        "id": "Acme Power",
+        "industry": "UTILITY",
+        "externalId": "43e130a1-3c21-41c9-b420-0e5b966eb2f2"
+      },
+      "clientItem": {
+        "size": "4/0 ACSR",
+        "coreStrands": 1,
+        "conductorStrands": 6
+      },
+      "attachmentHeight": {
+        "unit": "METRE",
+        "value": 15.697200000000002
+      },
+      "usageGroup": "PRIMARY",
+      "tensionGroup": "Full",
+      "midspanHeight": {
+        "unit": "METRE",
+        "value": 0
+      },
+      "tensionAdjustment": 1,
+      "connectedWire": "Wire#1"
+    },
+    {
+      "id": "Wire#20",
+      "externalId": "5a8ec4c44cc65edaa325c122",
+      "owner": {
+        "id": "Bob's Cable",
+        "industry": "COMMUNICATION",
+        "externalId": "8b576607-0529-40df-a376-09385ae3d637"
+      },
+      "clientItem": {
+        "size": "C6.6M1000",
+        "coreStrands": 0,
+        "conductorStrands": 7
+      },
+      "attachmentHeight": {
+        "unit": "METRE",
+        "value": 6.156960000000001
+      },
+      "usageGroup": "COMMUNICATION",
+      "tensionGroup": "Full",
+      "midspanHeight": {
+        "unit": "METRE",
+        "value": 0
+      },
+      "tensionAdjustment": 1,
+      "connectedWire": "Wire#19"
+    },
+    {
+      "id": "Wire#3",
+      "externalId": "5a8ec44b4cc65edaa325a8d4",
+      "owner": {
+        "id": "Acme Power",
+        "industry": "UTILITY",
+        "externalId": "43e130a1-3c21-41c9-b420-0e5b966eb2f2"
+      },
+      "clientItem": {
+        "size": "4/0 ACSR",
+        "coreStrands": 1,
+        "conductorStrands": 6
+      },
+      "attachmentHeight": {
+        "unit": "METRE",
+        "value": 14.478000000000002
+      },
+      "usageGroup": "PRIMARY",
+      "tensionGroup": "Full",
+      "midspanHeight": {
+        "unit": "METRE",
+        "value": 0
+      },
+      "tensionAdjustment": 1,
+      "connectedWire": "Wire#4"
+    },
+    {
+      "id": "Wire#4",
+      "externalId": "5a8ec44b4cc65edaa325a8d5",
+      "owner": {
+        "id": "Acme Power",
+        "industry": "UTILITY",
+        "externalId": "43e130a1-3c21-41c9-b420-0e5b966eb2f2"
+      },
+      "clientItem": {
+        "size": "4/0 ACSR",
+        "coreStrands": 1,
+        "conductorStrands": 6
+      },
+      "attachmentHeight": {
+        "unit": "METRE",
+        "value": 14.478000000000002
+      },
+      "usageGroup": "PRIMARY",
+      "tensionGroup": "Full",
+      "midspanHeight": {
+        "unit": "METRE",
+        "value": 0
+      },
+      "tensionAdjustment": 1,
+      "connectedWire": "Wire#3"
+    },
+    {
+      "id": "Wire#5",
+      "externalId": "5a8ec44b4cc65edaa325a8d6",
+      "owner": {
+        "id": "Acme Power",
+        "industry": "UTILITY",
+        "externalId": "43e130a1-3c21-41c9-b420-0e5b966eb2f2"
+      },
+      "clientItem": {
+        "size": "4/0 ACSR",
+        "coreStrands": 1,
+        "conductorStrands": 6
+      },
+      "attachmentHeight": {
+        "unit": "METRE",
+        "value": 13.258800000000003
+      },
+      "usageGroup": "PRIMARY",
+      "tensionGroup": "Full",
+      "midspanHeight": {
+        "unit": "METRE",
+        "value": 0
+      },
+      "tensionAdjustment": 1,
+      "connectedWire": "Wire#6"
+    },
+    {
+      "id": "Wire#6",
+      "externalId": "5a8ec44b4cc65edaa325a8d7",
+      "owner": {
+        "id": "Acme Power",
+        "industry": "UTILITY",
+        "externalId": "43e130a1-3c21-41c9-b420-0e5b966eb2f2"
+      },
+      "clientItem": {
+        "size": "4/0 ACSR",
+        "coreStrands": 1,
+        "conductorStrands": 6
+      },
+      "attachmentHeight": {
+        "unit": "METRE",
+        "value": 13.258800000000003
+      },
+      "usageGroup": "PRIMARY",
+      "tensionGroup": "Full",
+      "midspanHeight": {
+        "unit": "METRE",
+        "value": 0
+      },
+      "tensionAdjustment": 1,
+      "connectedWire": "Wire#5"
+    },
+    {
+      "id": "Wire#7",
+      "externalId": "5a8ec45c4cc65edaa325a9dc",
+      "owner": {
+        "id": "Acme Power",
+        "industry": "UTILITY",
+        "externalId": "43e130a1-3c21-41c9-b420-0e5b966eb2f2"
+      },
+      "clientItem": {
+        "size": "4/0 ACSR",
+        "coreStrands": 1,
+        "conductorStrands": 6
+      },
+      "attachmentHeight": {
+        "unit": "METRE",
+        "value": 15.697200000000002
+      },
+      "usageGroup": "PRIMARY",
+      "tensionGroup": "Full",
+      "midspanHeight": {
+        "unit": "METRE",
+        "value": 0
+      },
+      "tensionAdjustment": 1,
+      "connectedWire": "Wire#8"
+    },
+    {
+      "id": "Wire#8",
+      "externalId": "5a8ec45c4cc65edaa325a9dd",
+      "owner": {
+        "id": "Acme Power",
+        "industry": "UTILITY",
+        "externalId": "43e130a1-3c21-41c9-b420-0e5b966eb2f2"
+      },
+      "clientItem": {
+        "size": "4/0 ACSR",
+        "coreStrands": 1,
+        "conductorStrands": 6
+      },
+      "attachmentHeight": {
+        "unit": "METRE",
+        "value": 15.697200000000002
+      },
+      "usageGroup": "PRIMARY",
+      "tensionGroup": "Full",
+      "midspanHeight": {
+        "unit": "METRE",
+        "value": 0
+      },
+      "tensionAdjustment": 1,
+      "connectedWire": "Wire#7"
+    },
+    {
+      "id": "Wire#9",
+      "externalId": "5a8ec45c4cc65edaa325a9de",
+      "owner": {
+        "id": "Acme Power",
+        "industry": "UTILITY",
+        "externalId": "43e130a1-3c21-41c9-b420-0e5b966eb2f2"
+      },
+      "clientItem": {
+        "size": "4/0 ACSR",
+        "coreStrands": 1,
+        "conductorStrands": 6
+      },
+      "attachmentHeight": {
+        "unit": "METRE",
+        "value": 14.478000000000002
+      },
+      "usageGroup": "PRIMARY",
+      "tensionGroup": "Full",
+      "midspanHeight": {
+        "unit": "METRE",
+        "value": 0
+      },
+      "tensionAdjustment": 1,
+      "connectedWire": "Wire#10"
+    }
+  ],
+  "spanGuys": [],
+  "guys": [],
+  "equipments": [],
+  "guyAttachPoints": [
+    {
+      "id": "GuyAttachPoint#1",
+      "externalId": "58cc0aae0348e5b489ce4b3d",
+      "attachHeight": {
+        "unit": "METRE",
+        "value": 9.067800000000002
+      },
+      "supportedWEPs": [
+        "WEP#1",
+        "WEP#2"
+      ]
+    }
+  ],
+  "crossArms": [
+    {
+      "id": "CrossArm#1",
+      "externalId": "58cc0aae0348e5b489ce4b2d",
+      "owner": {
+        "id": "Acme Power",
+        "industry": "UTILITY",
+        "externalId": "43e130a1-3c21-41c9-b420-0e5b966eb2f2"
+      },
+      "clientItem": "8 Foot Double Cross Arm",
+      "attachmentHeight": {
+        "unit": "METRE",
+        "value": 9.296400000000002
+      },
+      "offset": {
+        "unit": "METRE",
+        "value": 1.2192
+      },
+      "direction": 305,
+      "supportedWEPs": [
+        "WEP#1",
+        "WEP#2"
+      ],
+      "insulators": [
+        "Insulator#10",
+        "Insulator#7",
+        "Insulator#8",
+        "Insulator#9"
+      ]
+    }
+  ],
+  "insulators": [
+    {
+      "id": "Insulator#1",
+      "externalId": "5a8ec44b4cc65edaa325a8cd",
+      "owner": {
+        "id": "Acme Power",
+        "industry": "UTILITY",
+        "externalId": "43e130a1-3c21-41c9-b420-0e5b966eb2f2"
+      },
+      "clientItem": "13.2 kV Pin Type Insulator (16\" Bracket)",
+      "offset": {
+        "unit": "METRE",
+        "value": 15.595600000000003
+      },
+      "direction": 305,
+      "doubleInsulator": false,
+      "wires": [
+        "Wire#1",
+        "Wire#2"
+      ]
+    },
+    {
+      "id": "Insulator#10",
+      "externalId": "58cc0aae0348e5b489ce4b36",
+      "owner": {
+        "id": "Acme Power",
+        "industry": "UTILITY",
+        "externalId": "43e130a1-3c21-41c9-b420-0e5b966eb2f2"
+      },
+      "clientItem": "15 kV Dead End Insulator",
+      "offset": {
+        "unit": "METRE",
+        "value": 2.286
+      },
+      "direction": 35,
+      "doubleInsulator": false,
+      "wires": [
+        "Wire#16"
+      ]
+    },
+    {
+      "id": "Insulator#2",
+      "externalId": "5a8ec44b4cc65edaa325a8ce",
+      "owner": {
+        "id": "Acme Power",
+        "industry": "UTILITY",
+        "externalId": "43e130a1-3c21-41c9-b420-0e5b966eb2f2"
+      },
+      "clientItem": "13.2 kV Pin Type Insulator (16\" Bracket)",
+      "offset": {
+        "unit": "METRE",
+        "value": 14.376400000000002
+      },
+      "direction": 305,
+      "doubleInsulator": false,
+      "wires": [
+        "Wire#3",
+        "Wire#4"
+      ]
+    },
+    {
+      "id": "Insulator#3",
+      "externalId": "5a8ec44b4cc65edaa325a8cf",
+      "owner": {
+        "id": "Acme Power",
+        "industry": "UTILITY",
+        "externalId": "43e130a1-3c21-41c9-b420-0e5b966eb2f2"
+      },
+      "clientItem": "13.2 kV Pin Type Insulator (16\" Bracket)",
+      "offset": {
+        "unit": "METRE",
+        "value": 13.157200000000001
+      },
+      "direction": 305,
+      "doubleInsulator": false,
+      "wires": [
+        "Wire#5",
+        "Wire#6"
+      ]
+    },
+    {
+      "id": "Insulator#4",
+      "externalId": "5a8ec45c4cc65edaa325a9d7",
+      "owner": {
+        "id": "Acme Power",
+        "industry": "UTILITY",
+        "externalId": "43e130a1-3c21-41c9-b420-0e5b966eb2f2"
+      },
+      "clientItem": "13.2 kV Pin Type Insulator (16\" Bracket)",
+      "offset": {
+        "unit": "METRE",
+        "value": 15.595600000000003
+      },
+      "direction": 125,
+      "doubleInsulator": false,
+      "wires": [
+        "Wire#7",
+        "Wire#8"
+      ]
+    },
+    {
+      "id": "Insulator#5",
+      "externalId": "5a8ec45c4cc65edaa325a9d8",
+      "owner": {
+        "id": "Acme Power",
+        "industry": "UTILITY",
+        "externalId": "43e130a1-3c21-41c9-b420-0e5b966eb2f2"
+      },
+      "clientItem": "13.2 kV Pin Type Insulator (16\" Bracket)",
+      "offset": {
+        "unit": "METRE",
+        "value": 14.376400000000002
+      },
+      "direction": 125,
+      "doubleInsulator": false,
+      "wires": [
+        "Wire#10",
+        "Wire#9"
+      ]
+    },
+    {
+      "id": "Insulator#6",
+      "externalId": "5a8ec45c4cc65edaa325a9d9",
+      "owner": {
+        "id": "Acme Power",
+        "industry": "UTILITY",
+        "externalId": "43e130a1-3c21-41c9-b420-0e5b966eb2f2"
+      },
+      "clientItem": "13.2 kV Pin Type Insulator (16\" Bracket)",
+      "offset": {
+        "unit": "METRE",
+        "value": 13.157200000000001
+      },
+      "direction": 125,
+      "doubleInsulator": false,
+      "wires": [
+        "Wire#11",
+        "Wire#12"
+      ]
+    },
+    {
+      "id": "Insulator#7",
+      "externalId": "58cc0aae0348e5b489ce4b2f",
+      "owner": {
+        "id": "Acme Power",
+        "industry": "UTILITY",
+        "externalId": "43e130a1-3c21-41c9-b420-0e5b966eb2f2"
+      },
+      "clientItem": "15 kV Dead End Insulator",
+      "offset": {
+        "unit": "METRE",
+        "value": 0.1524
+      },
+      "direction": 215,
+      "doubleInsulator": false,
+      "wires": [
+        "Wire#13"
+      ]
+    },
+    {
+      "id": "Insulator#8",
+      "externalId": "58cc0aae0348e5b489ce4b2f",
+      "owner": {
+        "id": "Acme Power",
+        "industry": "UTILITY",
+        "externalId": "43e130a1-3c21-41c9-b420-0e5b966eb2f2"
+      },
+      "clientItem": "15 kV Dead End Insulator",
+      "offset": {
+        "unit": "METRE",
+        "value": 0.1524
+      },
+      "direction": 35,
+      "doubleInsulator": false,
+      "wires": [
+        "Wire#14"
+      ]
+    },
+    {
+      "id": "Insulator#9",
+      "externalId": "58cc0aae0348e5b489ce4b36",
+      "owner": {
+        "id": "Acme Power",
+        "industry": "UTILITY",
+        "externalId": "43e130a1-3c21-41c9-b420-0e5b966eb2f2"
+      },
+      "clientItem": "15 kV Dead End Insulator",
+      "offset": {
+        "unit": "METRE",
+        "value": 2.286
+      },
+      "direction": 215,
+      "doubleInsulator": false,
+      "wires": [
+        "Wire#15"
+      ]
+    }
+  ],
+  "pushBraces": [],
+  "sidewalkBraces": [],
+  "foundations": [],
+  "assemblies": []
+}
