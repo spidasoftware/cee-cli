@@ -9,8 +9,8 @@ const _ = require('lodash');
 
 const api = require('../lib/api');
 
-const command = 'get [jobId..]';
-const desc = 'Get jobs, unless stdout is specified.  Jobs will be written to files in the directory specified by the output parameter.';
+const command = 'get [jobIds..]';
+const desc = 'Get jobs, unless stdout is specified.  Jobs will be written to files in the directory specified by the output parameter.  Jobs can be specified by id or using --offset and --limit to get the last x (--limit) jobs starting at job y (--offset).';
 
 module.exports = {
     command,
@@ -31,7 +31,7 @@ module.exports = {
             .alias('c','stdout')
             .alias('o','output')
             .alias('s','strip')
-            .default('config','$HOME/.config/cee.json')
+            .default('config',api.defaultConfigPath)
             .default('limit',50)
             .default('output','results'),
     handler: argv =>
@@ -76,13 +76,14 @@ module.exports = {
                 if (argv.stdout) {
                     console.log(JSON.stringify(jobs));
                 } else {
-                    return mkdirp(argv.output).then(() => 
+                    const output = api.resolveOutputPath(argv.output);
+                    return mkdirp(output).then(() => 
                         Promise.all(jobs.map(job => {
                             const name = ((!argv.id && job.externalId) || job.id) + '.json';
 
-                            return fs.writeFileAsync(path.join(argv.output,name),JSON.stringify(argv.strip ? job.payload : job));
+                            return fs.writeFileAsync(path.join(output,name),JSON.stringify(argv.strip ? job.payload : job));
                         }))
-                    ).then(() => console.log(`Done. Output written to ${argv.output}.`));
+                    ).then(() => console.log(`Done. Output written to ${output}.`));
                 }
             })
         })

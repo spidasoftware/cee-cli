@@ -1,6 +1,11 @@
 #!/usr/bin/env node
 'use strict';
 
+process.on('unhandledRejection', (reason, p) => {
+    console.error(reason);
+    process.exit(-1);
+});
+
 const yargs = require('yargs')
     .help('h')
     .alias('h','help')
@@ -11,7 +16,7 @@ const yargs = require('yargs')
     .command(require('./cmds/setup'))
     .command(require('./cmds/status'))
     .command(require('./cmds/get'))
-    .epilog('Copyright SPIDASoftware 2016')
+    .epilog('Copyright SPIDASoftware 2018')
     .help();
 
 const argv = yargs.argv;

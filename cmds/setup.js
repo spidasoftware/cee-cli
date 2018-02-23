@@ -4,6 +4,8 @@ const Promise = require('bluebird');
 const fs = Promise.promisifyAll(require('fs'));
 const prompt = Promise.promisifyAll(require('prompt'));
 
+const { defaultConfigPath } = require('../lib/api');
+
 const configProps = ['server','clientID','clientSecret'];
 const promptSchema = {
     properties: {
@@ -37,12 +39,9 @@ module.exports = {
         .alias('n','new')
         .alias('f','config')
         .alias('k','keep')
-        .default('config','$HOME/.config/cee.json'),
+        .default('config',defaultConfigPath),
     handler: argv => {
-        let path = argv.config;
-        if (path.includes('$HOME')) {
-            path = path.replace('$HOME',process.env.HOME);
-        }
+        const path = argv.config;
 
         prompt.start();
         prompt.message = 'Please enter';
