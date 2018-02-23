@@ -65,6 +65,7 @@ module.exports = {
                                 'Content-Type': 'application/json',
                                 'Content-Encoding': 'gzip'
                             },
+                            proxy: config.proxy,
                             body: jobData
                         })
                     ).then(response => {
@@ -159,6 +160,7 @@ function showProgress(jobIds,argv,config) {
                         ids: JSON.stringify(jobIds)
                     },
                     gzip: true,
+                    proxy: config.proxy,
                     headers: {
                         'User-Agent': 'cee-cli',
                         'Accept': 'application/json',

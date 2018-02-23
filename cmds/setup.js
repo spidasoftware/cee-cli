@@ -20,6 +20,11 @@ const promptSchema = {
             required: true,
             description: 'SPIDAMin API Token for authentication',
             message: 'Please enter your SPIDAMin API Token (Can be found on the Usersmaster profile page)'
+        },
+        proxy: {
+            type: 'string',
+            required: false,
+            description: 'Proxy URL (<proto>://<user>:<password>@<host>:<port>)'
         }
     }
 };

@@ -50,6 +50,7 @@ module.exports = {
                         limit: argv.limit,
                         offset: argv.offset
                     },
+                    proxy: config.proxy,
                     gzip: true
                 }).then(resp => JSON.parse(resp.body).data.map(j => j.id));
             } else {
@@ -68,6 +69,7 @@ module.exports = {
                             apiToken: config.apiToken,
                             ids: JSON.stringify(jobIds)
                         },
+                        proxy: config.proxy,
                         gzip: true
                     })
                 ))
