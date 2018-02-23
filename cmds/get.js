@@ -9,7 +9,7 @@ const _ = require('lodash');
 
 const api = require('../lib/api');
 
-const command = 'get [jobId..]';
+const command = 'get [jobIds..]';
 const desc = 'Get jobs, unless stdout is specified.  Jobs will be written to files in the directory specified by the output parameter.  Jobs can be specified by id or using --offset and --limit to get the last x (--limit) jobs starting at job y (--offset).';
 
 module.exports = {
