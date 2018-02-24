@@ -5,7 +5,7 @@
 1. Confirm list of valid Calc versions in ../cee/master/calc-versions.txt
 1. `npm install`
 
-##Packaging
+## Packaging
 1. `npm install -g pkg`
 1. ./package.sh
 1. Executables will be created in ./target
