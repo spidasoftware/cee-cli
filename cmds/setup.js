@@ -6,7 +6,7 @@ const prompt = Promise.promisifyAll(require('prompt'));
 
 const { defaultConfigPath } = require('../lib/api');
 
-const configProps = ['server','clientID','clientSecret'];
+const configProps = ['server', 'apiToken', 'proxy'];
 const promptSchema = {
     properties: {
         server: {
@@ -81,9 +81,16 @@ module.exports = {
         }
 
         loadOldFile
-          .then(() => prompt.getAsync(promptSchema))
-          .then(config => fs.writeFileAsync(path, JSON.stringify(config)))
-          .then(() => console.log(`Config written to ${path}`));
+            .then(() => prompt.getAsync(promptSchema))
+            .then(config => {
+                for (let key in Object.keys(config)) {
+                    if (config[key] && typeof config[key] === 'string') {
+                        config[key]=config[key].trim();
+                    }
+                }
+                return fs.writeFileAsync(path, JSON.stringify(config))
+            })
+            .then(() => console.log(`Config written to ${path}`));
 
     }
 };

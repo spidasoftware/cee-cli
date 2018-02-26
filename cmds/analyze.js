@@ -57,6 +57,7 @@ module.exports = {
                     .then(jobData => 
                         request({
                             url: config.server + '/job?apiToken=' + config.apiToken,
+                            proxy: config.proxy,
                             gzip: true,
                             method: 'POST',
                             headers: {
@@ -65,7 +66,6 @@ module.exports = {
                                 'Content-Type': 'application/json',
                                 'Content-Encoding': 'gzip'
                             },
-                            proxy: config.proxy,
                             body: jobData
                         })
                     ).then(response => {
@@ -111,6 +111,7 @@ function pollFor(jobIds, status, config, onUpdate) {
         while(jobIds.length > 0) {
             const response = yield request({
                 url: config.server + '/job/poll',
+                proxy: config.proxy,
                 qs: { apiToken: config.apiToken, status, ids: JSON.stringify(jobIds.slice(0,BATCH_SIZE)) },
                 gzip: true,
                 headers: {
