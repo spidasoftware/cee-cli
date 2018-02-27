@@ -20,6 +20,7 @@ module.exports = {
         api.loadConfig(argv.config).then(config =>
             request({
                 url: config.server + '/job/status',
+                proxy: config.proxy,
                 headers: {
                     'User-Agent': 'cee-cli',
                     'Accept': 'application/json'

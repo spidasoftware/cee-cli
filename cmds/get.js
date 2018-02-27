@@ -41,6 +41,7 @@ module.exports = {
             if (typeof argv.offset !== 'undefined') {
                 jobIdsP = request({
                     url: config.server + '/api/jobs',
+                    proxy: config.proxy,
                     headers: {
                         'User-Agent': 'cee-cli',
                         'Accept': 'application/json'
@@ -60,6 +61,7 @@ module.exports = {
                 Promise.all(_.chunk(allJobIds, 100).map(jobIds =>
                     request({
                         url: config.server + '/job',
+                        proxy: config.proxy,
                         headers: {
                             'User-Agent': 'cee-cli',
                             'Accept': 'application/json'
