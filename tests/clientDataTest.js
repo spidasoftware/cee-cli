@@ -2,7 +2,7 @@
 
 const Promise = require('bluebird');
 const fs = Promise.promisifyAll(require('fs'));
-const { createClientItems } = require('../lib/clientData.js');
+const { createClientData } = require('../lib/clientData.js');
 const path = require('path');
 
 const testJobPath = './tests/testJobs';
@@ -14,7 +14,7 @@ fs.readdirAsync(testJobPath).then(files =>
     for (let job of jobs) {
         const structure = job.payload.structure;
         const originalClientData = job.payload.clientData;
-        const clientData = createClientItems(originalClientData);
+        const clientData = createClientData(originalClientData);
 
         const clientItems = clientData.clientItemsForStructure(structure);
 

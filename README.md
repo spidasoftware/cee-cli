@@ -43,16 +43,18 @@ Validate jobs or analysis.  Validates each file against JSON schema.  If job opt
 Send analysis or job in each file to CEE, then optionally poll CEE until analysis is complete  and retrieve results.  If polling is enabled analysis results will be written to a directory specified by the output parameter.
 
 #### Options
-   * `-h, --help`           Show help  [boolean]
-   * `-f, --config`         Config file  [default: "$HOME/.config/cee.json" (unix), "%APPDATA%/cee.json" (windows)]
-   * `-p, --poll`           Poll CEE and write analysis results when complete  [boolean]
-   * `-b, --callback`       Callback URL with results  [default: "http://localhost:8080"]
-   * `-a, --array`          Expect input files to contain an array of jobs or analyses instead of a single job or analysis  [boolean]
-   * `-o, --output`         Analysis Result output  [default: "results"]
-   * `-j, --job`            Expect json files to be jobs instead of analysis (Passed callback and calcVersion will be ignored)  [boolean]
-   * `-v, --engineVersion`  Version of calc to analyze against  [default: "7.0.1"]
-   * `-d, --clientData`     File containing client data (expect json args to be a structure only; requires analysisCase)
-   * `-c, --analysisCase`   File containing analysis case (expect json args to be a structure only; requires clientData)
+   * `-h, --help`             Show help  [boolean]
+   * `-f, --config`           Config file  [default: "$HOME/.config/cee.json" (unix), "%APPDATA%/cee.json" (windows)]
+   * `-p, --poll`             Poll CEE and write analysis results when complete  [boolean]
+   * `-b, --callback`         Callback URL with results  [default: "http://localhost:8080"]
+   * `-a, --array`            Expect input files to contain an array of jobs or analyses instead of a single job or analysis  [boolean]
+   * `-o, --output`           Analysis Result output  [default: "results"]
+   * `-j, --job`              Expect json files to be jobs instead of analysis (Passed callback and calcVersion will be ignored)  [boolean]
+   * `-v, --engineVersion`    Version of calc to analyze against  [default: "7.0.1"]
+   * `-d, --clientData`       File containing client data (expect json args to be a structure only; requires one of analysisCase, loadCaseName, or strengthCaseName)
+   * `-c, --analysisCase`     File containing analysis case (requires clientData; conflicts with loadCaseName and strengthCaseName)
+   * `-l, --loadCaseName`     Used named load case from clientData. (requires clientData; conflicts with analysisCase and strengthCaseName)
+   * `-s, --strengthCaseName` Used named load case from clientData. (requires clientData; conflicts with analysisCase and loadCaseName)
 
 #### Examples
   `cee-cli analyze -p pole1.json pole2.json`
