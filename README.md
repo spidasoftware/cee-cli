@@ -97,10 +97,16 @@ Get jobs, unless stdout is specified.  Jobs will be written to files in the dire
   The examples directory in the repo contains example client data, analysis cases, and structures.  Setup CEE config using `cee-cli setup`. 
 
   Send analysis to CEE and long-poll for results, writing analysis results to "completed" directory when done. Analyze against Calc version 7.0.0.
-  `cee-cli analyze -p -v 7.0.0 -d examples/demoClientData.json -c examples/go95Light.json -o completed examples/structures/Revised/Busy_Pole.json examples/structures/Revised/Basic_Tangent_Assembly.json examples/structures/Revised/Basic_Tangent_Assembly_w_Comms.json`
+ ```
+ cee-cli analyze -p -v 7.0.0 -d examples/demoClientData.json -c examples/go95Light.json -o completed examples/structures/Revised/Busy_Pole.json examples/structures/Revised/Basic_Tangent_Assembly.json examples/structures/Revised/Basic_Tangent_Assembly_w_Comms.json
+ ```
 
   Send analysis to CEE, don't wait for analysis to complete (jobIds will be given on stdout as json)
-  `./cee-cli analyze -d examples/oneOfEverythingClientData.json -c examples/go95Light.json examples/structures/oneOfEverything1.json examples/structures/oneOfEverything2.json`
+ ```
+ ./cee-cli analyze -d examples/oneOfEverythingClientData.json -c examples/go95Light.json examples/structures/oneOfEverything1.json examples/structures/oneOfEverything2.json
+ ```
 
   Get my last 20 jobs save to "archive" directory
-  `cee-cli get --limit 20 --offset 0 -o archive`
+  ```
+  cee-cli get --limit 20 --offset 0 -o archive
+  ```
