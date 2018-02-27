@@ -103,9 +103,19 @@ Get jobs, unless stdout is specified.  Jobs will be written to files in the dire
  cee-cli analyze -p -v 7.0.0 -d examples/demoClientData.json -c examples/go95Light.json -o completed examples/structures/Revised/Busy_Pole.json examples/structures/Revised/Basic_Tangent_Assembly.json examples/structures/Revised/Basic_Tangent_Assembly_w_Comms.json
  ```
 
+  Same as above but use load case CSA Medium B included in demoClientData.json
+ ```
+ cee-cli analyze -p -v 7.0.0 -d examples/demoClientData.json -l 'CSA Medium B' -o completed examples/structures/Revised/Busy_Pole.json examples/structures/Revised/Basic_Tangent_Assembly.json examples/structures/Revised/Basic_Tangent_Assembly_w_Comms.json
+ ```
+
+  Same as above but use strength case CSA included in demoClientData.json.  Note: Do not send send jobs to CEE with a strength case but no damages.
+ ```
+ cee-cli analyze -p -v 7.0.0 -d examples/demoClientData.json -s CSA -o completed examples/structures/Revised/Busy_Pole.json 
+ ```
+
   Send analysis to CEE, don't wait for analysis to complete (jobIds will be given on stdout as json)
  ```
- ./cee-cli analyze -d examples/oneOfEverythingClientData.json -c examples/go95Light.json examples/structures/oneOfEverything1.json examples/structures/oneOfEverything2.json
+ cee-cli analyze -d examples/oneOfEverythingClientData.json -l NESC examples/structures/oneOfEverything1.json examples/structures/oneOfEverything2.json
  ```
 
   Get my last 20 jobs save to "archive" directory

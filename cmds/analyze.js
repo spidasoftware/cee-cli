@@ -220,18 +220,20 @@ const argValidation = {
 //Returns an error or undefined in no error
 function validateClientDataArgs(argv) {
     for (let arg of Object.keys(argValidation)) {
-        const spec = argValidation[arg];
+        if (argv[argv]) {
+            const spec = argValidation[arg];
 
-        if (spec.requiresOne && !spec.requiresOne.some(r => argv[r])) {
-            return `${arg} requires one of ${spec.requiresOne.join(', ')}`;
-        }
+            if (spec.requiresOne && !spec.requiresOne.some(r => argv[r])) {
+                return `${arg} requires one of ${spec.requiresOne.join(', ')}`;
+            }
 
-        if (spec.requires && !spec.requires.every(r => argv[r])) {
-            return `${arg} requires ${spec.requires.join(', ')}`;
-        }
+            if (spec.requires && !spec.requires.every(r => argv[r])) {
+                return `${arg} requires ${spec.requires.join(', ')}`;
+            }
 
-        if (spec.conflicts && spec.conflicts.some(r => argv[v])) {
-            return `${arg} can not be combined with ${spec.conflicts.join(', ')}`;
+            if (spec.conflicts && spec.conflicts.some(r => argv[r])) {
+                return `${arg} can not be combined with ${spec.conflicts.join(', ')}`;
+            }
         }
     }
 }
