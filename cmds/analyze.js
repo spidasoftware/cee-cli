@@ -220,7 +220,7 @@ const argValidation = {
 //Returns an error or undefined in no error
 function validateClientDataArgs(argv) {
     for (let arg of Object.keys(argValidation)) {
-        if (argv[argv]) {
+        if (argv[arg]) {
             const spec = argValidation[arg];
 
             if (spec.requiresOne && !spec.requiresOne.some(r => argv[r])) {
