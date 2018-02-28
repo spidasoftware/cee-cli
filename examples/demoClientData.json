@@ -4065,7 +4065,7 @@
         "wireEndPoints": [
           {
             "id": "WEP#1",
-            "externalId": "5a8da2150348aa7e8455eecd",
+            "externalId": "5a95b357034854721f29e4df",
             "distance": {
               "unit": "METRE",
               "value": 0.3048
@@ -4087,7 +4087,7 @@
           },
           {
             "id": "WEP#2",
-            "externalId": "5a8da2150348aa7e8455eece",
+            "externalId": "5a95b357034854721f29e4e0",
             "distance": {
               "unit": "METRE",
               "value": 0.3048
@@ -4117,11 +4117,11 @@
         "wires": [
           {
             "id": "Wire#1",
-            "externalId": "5a8da2150348aa7e8455eed1",
+            "externalId": "5a95b357034854721f29e4e3",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2150348aa7e8455eed2"
+              "externalId": "5a95b357034854721f29e4e4"
             },
             "attachmentHeight": {
               "unit": "METRE",
@@ -4137,11 +4137,11 @@
           },
           {
             "id": "Wire#2",
-            "externalId": "5a8da2150348aa7e8455eed3",
+            "externalId": "5a95b357034854721f29e4e5",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2150348aa7e8455eed4"
+              "externalId": "5a95b357034854721f29e4e6"
             },
             "attachmentHeight": {
               "unit": "METRE",
@@ -4157,11 +4157,11 @@
           },
           {
             "id": "Wire#3",
-            "externalId": "5a8da2150348aa7e8455eed7",
+            "externalId": "5a95b357034854721f29e4e9",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2150348aa7e8455eed8"
+              "externalId": "5a95b357034854721f29e4ea"
             },
             "attachmentHeight": {
               "unit": "METRE",
@@ -4177,11 +4177,11 @@
           },
           {
             "id": "Wire#4",
-            "externalId": "5a8da2150348aa7e8455eed9",
+            "externalId": "5a95b357034854721f29e4eb",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2150348aa7e8455eeda"
+              "externalId": "5a95b357034854721f29e4ec"
             },
             "attachmentHeight": {
               "unit": "METRE",
@@ -4202,7 +4202,7 @@
         "guyAttachPoints": [
           {
             "id": "GuyAttachPoint#1",
-            "externalId": "5a8da2150348aa7e8455eedb",
+            "externalId": "5a95b357034854721f29e4ed",
             "attachHeight": {
               "unit": "METRE",
               "value": -0.5842
@@ -4217,11 +4217,11 @@
         "insulators": [
           {
             "id": "Insulator#1",
-            "externalId": "5a8da2150348aa7e8455eecf",
+            "externalId": "5a95b357034854721f29e4e1",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2150348aa7e8455eed0"
+              "externalId": "5a95b357034854721f29e4e2"
             },
             "clientItemVersion": "2f980f428304a0617cd6dad137e4719f",
             "clientItem": "13.2 kV Pin Type Insulator (Pole Top)",
@@ -4238,11 +4238,11 @@
           },
           {
             "id": "Insulator#2",
-            "externalId": "5a8da2150348aa7e8455eed5",
+            "externalId": "5a95b357034854721f29e4e7",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2150348aa7e8455eed6"
+              "externalId": "5a95b357034854721f29e4e8"
             },
             "clientItemVersion": "4c7a74f776a323523e79021b1f097fc0",
             "clientItem": "3\" Clevis Insulator",
@@ -4288,7 +4288,7 @@
         "wireEndPoints": [
           {
             "id": "WEP#1",
-            "externalId": "5a8da2150348aa7e8455eee0",
+            "externalId": "5a95b357034854721f29e4f2",
             "distance": {
               "unit": "METRE",
               "value": 0.3048
@@ -4310,7 +4310,7 @@
           },
           {
             "id": "WEP#2",
-            "externalId": "5a8da2150348aa7e8455eee1",
+            "externalId": "5a95b357034854721f29e4f3",
             "distance": {
               "unit": "METRE",
               "value": 0.3048
@@ -4340,11 +4340,11 @@
         "wires": [
           {
             "id": "Wire#1",
-            "externalId": "5a8da2150348aa7e8455eee4",
+            "externalId": "5a95b357034854721f29e4f6",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2150348aa7e8455eee5"
+              "externalId": "5a95b357034854721f29e4f7"
             },
             "attachmentHeight": {
               "unit": "METRE",
@@ -4360,11 +4360,11 @@
           },
           {
             "id": "Wire#2",
-            "externalId": "5a8da2150348aa7e8455eee6",
+            "externalId": "5a95b357034854721f29e4f8",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2150348aa7e8455eee7"
+              "externalId": "5a95b357034854721f29e4f9"
             },
             "attachmentHeight": {
               "unit": "METRE",
@@ -4380,11 +4380,11 @@
           },
           {
             "id": "Wire#3",
-            "externalId": "5a8da2150348aa7e8455eee9",
+            "externalId": "5a95b357034854721f29e4fb",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2150348aa7e8455eeea"
+              "externalId": "5a95b357034854721f29e4fc"
             },
             "attachmentHeight": {
               "unit": "METRE",
@@ -4400,11 +4400,11 @@
           },
           {
             "id": "Wire#4",
-            "externalId": "5a8da2150348aa7e8455eeeb",
+            "externalId": "5a95b357034854721f29e4fd",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2150348aa7e8455eeec"
+              "externalId": "5a95b357034854721f29e4fe"
             },
             "attachmentHeight": {
               "unit": "METRE",
@@ -4425,7 +4425,7 @@
         "guyAttachPoints": [
           {
             "id": "GuyAttachPoint#1",
-            "externalId": "5a8da2150348aa7e8455eee8",
+            "externalId": "5a95b357034854721f29e4fa",
             "attachHeight": {
               "unit": "METRE",
               "value": -0.45720000000000005
@@ -4440,11 +4440,11 @@
         "insulators": [
           {
             "id": "Insulator#1",
-            "externalId": "5a8da2150348aa7e8455eee2",
+            "externalId": "5a95b357034854721f29e4f4",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2150348aa7e8455eee3"
+              "externalId": "5a95b357034854721f29e4f5"
             },
             "clientItemVersion": "a2b695280fd77693f8a8b393afcf7f02",
             "clientItem": "15 kV Running Angle Insulator",
@@ -4490,7 +4490,7 @@
         "wireEndPoints": [
           {
             "id": "WEP#1",
-            "externalId": "5a8da2150348aa7e8455eef1",
+            "externalId": "5a95b357034854721f29e503",
             "distance": {
               "unit": "METRE",
               "value": 0.3048
@@ -4520,11 +4520,11 @@
         "wires": [
           {
             "id": "Wire#1",
-            "externalId": "5a8da2150348aa7e8455eef4",
+            "externalId": "5a95b357034854721f29e506",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2150348aa7e8455eef5"
+              "externalId": "5a95b357034854721f29e507"
             },
             "attachmentHeight": {
               "unit": "METRE",
@@ -4540,11 +4540,11 @@
           },
           {
             "id": "Wire#2",
-            "externalId": "5a8da2150348aa7e8455eef7",
+            "externalId": "5a95b357034854721f29e509",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2150348aa7e8455eef8"
+              "externalId": "5a95b357034854721f29e50a"
             },
             "attachmentHeight": {
               "unit": "METRE",
@@ -4565,7 +4565,7 @@
         "guyAttachPoints": [
           {
             "id": "GuyAttachPoint#1",
-            "externalId": "5a8da2150348aa7e8455eef6",
+            "externalId": "5a95b357034854721f29e508",
             "attachHeight": {
               "unit": "METRE",
               "value": -0.45720000000000005
@@ -4579,11 +4579,11 @@
         "insulators": [
           {
             "id": "Insulator#1",
-            "externalId": "5a8da2150348aa7e8455eef2",
+            "externalId": "5a95b357034854721f29e504",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2150348aa7e8455eef3"
+              "externalId": "5a95b357034854721f29e505"
             },
             "clientItemVersion": "ad9f5d1cd8e704b790edc29f630b5e2c",
             "clientItem": "15 kV Dead End Insulator",
@@ -4628,7 +4628,7 @@
         "wireEndPoints": [
           {
             "id": "WEP#1",
-            "externalId": "5a8da2150348aa7e8455eefd",
+            "externalId": "5a95b357034854721f29e50f",
             "distance": {
               "unit": "METRE",
               "value": 0.3048
@@ -4651,7 +4651,7 @@
           },
           {
             "id": "WEP#2",
-            "externalId": "5a8da2150348aa7e8455eefe",
+            "externalId": "5a95b357034854721f29e510",
             "distance": {
               "unit": "METRE",
               "value": 0.3048
@@ -4682,11 +4682,11 @@
         "wires": [
           {
             "id": "Wire#1",
-            "externalId": "5a8da2150348aa7e8455ef03",
+            "externalId": "5a95b357034854721f29e515",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2150348aa7e8455ef04"
+              "externalId": "5a95b357034854721f29e516"
             },
             "attachmentHeight": {
               "unit": "METRE",
@@ -4702,11 +4702,11 @@
           },
           {
             "id": "Wire#2",
-            "externalId": "5a8da2150348aa7e8455ef05",
+            "externalId": "5a95b357034854721f29e517",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2150348aa7e8455ef06"
+              "externalId": "5a95b357034854721f29e518"
             },
             "attachmentHeight": {
               "unit": "METRE",
@@ -4722,11 +4722,11 @@
           },
           {
             "id": "Wire#3",
-            "externalId": "5a8da2150348aa7e8455ef09",
+            "externalId": "5a95b357034854721f29e51b",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2150348aa7e8455ef0a"
+              "externalId": "5a95b357034854721f29e51c"
             },
             "attachmentHeight": {
               "unit": "METRE",
@@ -4742,11 +4742,11 @@
           },
           {
             "id": "Wire#4",
-            "externalId": "5a8da2150348aa7e8455ef0b",
+            "externalId": "5a95b357034854721f29e51d",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2150348aa7e8455ef0c"
+              "externalId": "5a95b357034854721f29e51e"
             },
             "attachmentHeight": {
               "unit": "METRE",
@@ -4762,11 +4762,11 @@
           },
           {
             "id": "Wire#5",
-            "externalId": "5a8da2150348aa7e8455ef10",
+            "externalId": "5a95b357034854721f29e522",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2150348aa7e8455ef11"
+              "externalId": "5a95b357034854721f29e523"
             },
             "attachmentHeight": {
               "unit": "METRE",
@@ -4782,11 +4782,11 @@
           },
           {
             "id": "Wire#6",
-            "externalId": "5a8da2150348aa7e8455ef12",
+            "externalId": "5a95b357034854721f29e524",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2150348aa7e8455ef13"
+              "externalId": "5a95b357034854721f29e525"
             },
             "attachmentHeight": {
               "unit": "METRE",
@@ -4807,7 +4807,7 @@
         "guyAttachPoints": [
           {
             "id": "GuyAttachPoint#1",
-            "externalId": "5a8da2150348aa7e8455ef0d",
+            "externalId": "5a95b357034854721f29e51f",
             "attachHeight": {
               "unit": "METRE",
               "value": -0.22860000000000003
@@ -4821,11 +4821,11 @@
         "crossArms": [
           {
             "id": "CrossArm#1",
-            "externalId": "5a8da2150348aa7e8455eeff",
+            "externalId": "5a95b357034854721f29e511",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2150348aa7e8455ef00"
+              "externalId": "5a95b357034854721f29e512"
             },
             "clientItemVersion": "f2458ee72bd57b39a93921808fe044a7",
             "clientItem": "8 Foot Cross Arm",
@@ -4848,11 +4848,11 @@
         "insulators": [
           {
             "id": "Insulator#1",
-            "externalId": "5a8da2150348aa7e8455ef01",
+            "externalId": "5a95b357034854721f29e513",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2150348aa7e8455ef02"
+              "externalId": "5a95b357034854721f29e514"
             },
             "clientItemVersion": "133e269fd9201996d6467f1f757d9cda",
             "clientItem": "13.2 kV Pin Type Insulator (Crossarm)",
@@ -4869,11 +4869,11 @@
           },
           {
             "id": "Insulator#2",
-            "externalId": "5a8da2150348aa7e8455ef07",
+            "externalId": "5a95b357034854721f29e519",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2150348aa7e8455ef08"
+              "externalId": "5a95b357034854721f29e51a"
             },
             "clientItemVersion": "133e269fd9201996d6467f1f757d9cda",
             "clientItem": "13.2 kV Pin Type Insulator (Crossarm)",
@@ -4890,11 +4890,11 @@
           },
           {
             "id": "Insulator#3",
-            "externalId": "5a8da2150348aa7e8455ef0e",
+            "externalId": "5a95b357034854721f29e520",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2150348aa7e8455ef0f"
+              "externalId": "5a95b357034854721f29e521"
             },
             "clientItemVersion": "4c7a74f776a323523e79021b1f097fc0",
             "clientItem": "3\" Clevis Insulator",
@@ -4940,7 +4940,7 @@
         "wireEndPoints": [
           {
             "id": "WEP#1",
-            "externalId": "5a8da2160348aa7e8455ef18",
+            "externalId": "5a95b357034854721f29e52a",
             "distance": {
               "unit": "METRE",
               "value": 0.3048
@@ -4963,7 +4963,7 @@
           },
           {
             "id": "WEP#2",
-            "externalId": "5a8da2160348aa7e8455ef19",
+            "externalId": "5a95b357034854721f29e52b",
             "distance": {
               "unit": "METRE",
               "value": 0.3048
@@ -4994,11 +4994,11 @@
         "wires": [
           {
             "id": "Wire#1",
-            "externalId": "5a8da2160348aa7e8455ef1f",
+            "externalId": "5a95b357034854721f29e531",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2160348aa7e8455ef20"
+              "externalId": "5a95b357034854721f29e532"
             },
             "attachmentHeight": {
               "unit": "METRE",
@@ -5014,11 +5014,11 @@
           },
           {
             "id": "Wire#2",
-            "externalId": "5a8da2160348aa7e8455ef21",
+            "externalId": "5a95b357034854721f29e533",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2160348aa7e8455ef22"
+              "externalId": "5a95b357034854721f29e534"
             },
             "attachmentHeight": {
               "unit": "METRE",
@@ -5034,11 +5034,11 @@
           },
           {
             "id": "Wire#3",
-            "externalId": "5a8da2160348aa7e8455ef26",
+            "externalId": "5a95b357034854721f29e538",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2160348aa7e8455ef27"
+              "externalId": "5a95b357034854721f29e539"
             },
             "attachmentHeight": {
               "unit": "METRE",
@@ -5054,11 +5054,11 @@
           },
           {
             "id": "Wire#4",
-            "externalId": "5a8da2160348aa7e8455ef28",
+            "externalId": "5a95b357034854721f29e53a",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2160348aa7e8455ef29"
+              "externalId": "5a95b357034854721f29e53b"
             },
             "attachmentHeight": {
               "unit": "METRE",
@@ -5074,11 +5074,11 @@
           },
           {
             "id": "Wire#5",
-            "externalId": "5a8da2160348aa7e8455ef2b",
+            "externalId": "5a95b357034854721f29e53d",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2160348aa7e8455ef2c"
+              "externalId": "5a95b357034854721f29e53e"
             },
             "attachmentHeight": {
               "unit": "METRE",
@@ -5094,11 +5094,11 @@
           },
           {
             "id": "Wire#6",
-            "externalId": "5a8da2160348aa7e8455ef2d",
+            "externalId": "5a95b357034854721f29e53f",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2160348aa7e8455ef2e"
+              "externalId": "5a95b357034854721f29e540"
             },
             "attachmentHeight": {
               "unit": "METRE",
@@ -5119,7 +5119,7 @@
         "guyAttachPoints": [
           {
             "id": "GuyAttachPoint#1",
-            "externalId": "5a8da2160348aa7e8455ef2a",
+            "externalId": "5a95b357034854721f29e53c",
             "attachHeight": {
               "unit": "METRE",
               "value": -0.22860000000000003
@@ -5133,11 +5133,11 @@
         "crossArms": [
           {
             "id": "CrossArm#1",
-            "externalId": "5a8da2160348aa7e8455ef1a",
+            "externalId": "5a95b357034854721f29e52c",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2160348aa7e8455ef1b"
+              "externalId": "5a95b357034854721f29e52d"
             },
             "clientItemVersion": "d8f3d2c37e4a8c64399c49cc3e86c2e2",
             "clientItem": "8 Foot Double Cross Arm",
@@ -5162,11 +5162,11 @@
         "insulators": [
           {
             "id": "Insulator#1",
-            "externalId": "5a8da2160348aa7e8455ef1c",
+            "externalId": "5a95b357034854721f29e52e",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2160348aa7e8455ef1d"
+              "externalId": "5a95b357034854721f29e52f"
             },
             "clientItemVersion": "ad9f5d1cd8e704b790edc29f630b5e2c",
             "clientItem": "15 kV Dead End Insulator",
@@ -5182,11 +5182,11 @@
           },
           {
             "id": "Insulator#2",
-            "externalId": "5a8da2160348aa7e8455ef1c",
+            "externalId": "5a95b357034854721f29e52e",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2160348aa7e8455ef1d"
+              "externalId": "5a95b357034854721f29e52f"
             },
             "clientItemVersion": "ad9f5d1cd8e704b790edc29f630b5e2c",
             "clientItem": "15 kV Dead End Insulator",
@@ -5202,11 +5202,11 @@
           },
           {
             "id": "Insulator#3",
-            "externalId": "5a8da2160348aa7e8455ef23",
+            "externalId": "5a95b357034854721f29e535",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2160348aa7e8455ef24"
+              "externalId": "5a95b357034854721f29e536"
             },
             "clientItemVersion": "ad9f5d1cd8e704b790edc29f630b5e2c",
             "clientItem": "15 kV Dead End Insulator",
@@ -5222,11 +5222,11 @@
           },
           {
             "id": "Insulator#4",
-            "externalId": "5a8da2160348aa7e8455ef23",
+            "externalId": "5a95b357034854721f29e535",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2160348aa7e8455ef24"
+              "externalId": "5a95b357034854721f29e536"
             },
             "clientItemVersion": "ad9f5d1cd8e704b790edc29f630b5e2c",
             "clientItem": "15 kV Dead End Insulator",
@@ -5271,7 +5271,7 @@
         "wireEndPoints": [
           {
             "id": "WEP#1",
-            "externalId": "5a8da2160348aa7e8455ef34",
+            "externalId": "5a95b357034854721f29e546",
             "distance": {
               "unit": "METRE",
               "value": 0.3048
@@ -5295,7 +5295,7 @@
           },
           {
             "id": "WEP#2",
-            "externalId": "5a8da2160348aa7e8455ef35",
+            "externalId": "5a95b357034854721f29e547",
             "distance": {
               "unit": "METRE",
               "value": 0.3048
@@ -5327,11 +5327,11 @@
         "wires": [
           {
             "id": "Wire#1",
-            "externalId": "5a8da2160348aa7e8455ef3a",
+            "externalId": "5a95b357034854721f29e54c",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2160348aa7e8455ef3b"
+              "externalId": "5a95b357034854721f29e54d"
             },
             "attachmentHeight": {
               "unit": "METRE",
@@ -5347,11 +5347,11 @@
           },
           {
             "id": "Wire#2",
-            "externalId": "5a8da2160348aa7e8455ef3c",
+            "externalId": "5a95b357034854721f29e54e",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2160348aa7e8455ef3d"
+              "externalId": "5a95b357034854721f29e54f"
             },
             "attachmentHeight": {
               "unit": "METRE",
@@ -5367,11 +5367,11 @@
           },
           {
             "id": "Wire#3",
-            "externalId": "5a8da2160348aa7e8455ef40",
+            "externalId": "5a95b357034854721f29e552",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2160348aa7e8455ef41"
+              "externalId": "5a95b357034854721f29e553"
             },
             "attachmentHeight": {
               "unit": "METRE",
@@ -5387,11 +5387,11 @@
           },
           {
             "id": "Wire#4",
-            "externalId": "5a8da2160348aa7e8455ef42",
+            "externalId": "5a95b357034854721f29e554",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2160348aa7e8455ef43"
+              "externalId": "5a95b357034854721f29e555"
             },
             "attachmentHeight": {
               "unit": "METRE",
@@ -5407,11 +5407,11 @@
           },
           {
             "id": "Wire#5",
-            "externalId": "5a8da2160348aa7e8455ef46",
+            "externalId": "5a95b357034854721f29e558",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2160348aa7e8455ef47"
+              "externalId": "5a95b357034854721f29e559"
             },
             "attachmentHeight": {
               "unit": "METRE",
@@ -5427,11 +5427,11 @@
           },
           {
             "id": "Wire#6",
-            "externalId": "5a8da2160348aa7e8455ef48",
+            "externalId": "5a95b357034854721f29e55a",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2160348aa7e8455ef49"
+              "externalId": "5a95b357034854721f29e55b"
             },
             "attachmentHeight": {
               "unit": "METRE",
@@ -5447,11 +5447,11 @@
           },
           {
             "id": "Wire#7",
-            "externalId": "5a8da2160348aa7e8455ef4d",
+            "externalId": "5a95b357034854721f29e55f",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2160348aa7e8455ef4e"
+              "externalId": "5a95b357034854721f29e560"
             },
             "attachmentHeight": {
               "unit": "METRE",
@@ -5467,11 +5467,11 @@
           },
           {
             "id": "Wire#8",
-            "externalId": "5a8da2160348aa7e8455ef4f",
+            "externalId": "5a95b357034854721f29e561",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2160348aa7e8455ef50"
+              "externalId": "5a95b357034854721f29e562"
             },
             "attachmentHeight": {
               "unit": "METRE",
@@ -5492,7 +5492,7 @@
         "guyAttachPoints": [
           {
             "id": "GuyAttachPoint#1",
-            "externalId": "5a8da2160348aa7e8455ef4a",
+            "externalId": "5a95b357034854721f29e55c",
             "attachHeight": {
               "unit": "METRE",
               "value": -0.5842
@@ -5506,11 +5506,11 @@
         "crossArms": [
           {
             "id": "CrossArm#1",
-            "externalId": "5a8da2160348aa7e8455ef36",
+            "externalId": "5a95b357034854721f29e548",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2160348aa7e8455ef37"
+              "externalId": "5a95b357034854721f29e549"
             },
             "clientItemVersion": "f2458ee72bd57b39a93921808fe044a7",
             "clientItem": "8 Foot Cross Arm",
@@ -5533,11 +5533,11 @@
         "insulators": [
           {
             "id": "Insulator#1",
-            "externalId": "5a8da2160348aa7e8455ef38",
+            "externalId": "5a95b357034854721f29e54a",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2160348aa7e8455ef39"
+              "externalId": "5a95b357034854721f29e54b"
             },
             "clientItemVersion": "133e269fd9201996d6467f1f757d9cda",
             "clientItem": "13.2 kV Pin Type Insulator (Crossarm)",
@@ -5554,11 +5554,11 @@
           },
           {
             "id": "Insulator#2",
-            "externalId": "5a8da2160348aa7e8455ef3e",
+            "externalId": "5a95b357034854721f29e550",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2160348aa7e8455ef3f"
+              "externalId": "5a95b357034854721f29e551"
             },
             "clientItemVersion": "133e269fd9201996d6467f1f757d9cda",
             "clientItem": "13.2 kV Pin Type Insulator (Crossarm)",
@@ -5575,11 +5575,11 @@
           },
           {
             "id": "Insulator#3",
-            "externalId": "5a8da2160348aa7e8455ef44",
+            "externalId": "5a95b357034854721f29e556",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2160348aa7e8455ef45"
+              "externalId": "5a95b357034854721f29e557"
             },
             "clientItemVersion": "2f980f428304a0617cd6dad137e4719f",
             "clientItem": "13.2 kV Pin Type Insulator (Pole Top)",
@@ -5596,11 +5596,11 @@
           },
           {
             "id": "Insulator#4",
-            "externalId": "5a8da2160348aa7e8455ef4b",
+            "externalId": "5a95b357034854721f29e55d",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2160348aa7e8455ef4c"
+              "externalId": "5a95b357034854721f29e55e"
             },
             "clientItemVersion": "4c7a74f776a323523e79021b1f097fc0",
             "clientItem": "3\" Clevis Insulator",
@@ -5646,7 +5646,7 @@
         "wireEndPoints": [
           {
             "id": "WEP#1",
-            "externalId": "5a8da2160348aa7e8455ef58",
+            "externalId": "5a95b357034854721f29e56a",
             "distance": {
               "unit": "METRE",
               "value": 0.3048
@@ -5678,11 +5678,11 @@
         "wires": [
           {
             "id": "Wire#1",
-            "externalId": "5a8da2160348aa7e8455ef5b",
+            "externalId": "5a95b357034854721f29e56d",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2160348aa7e8455ef5c"
+              "externalId": "5a95b357034854721f29e56e"
             },
             "attachmentHeight": {
               "unit": "METRE",
@@ -5698,11 +5698,11 @@
           },
           {
             "id": "Wire#2",
-            "externalId": "5a8da2160348aa7e8455ef5f",
+            "externalId": "5a95b357034854721f29e571",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2160348aa7e8455ef60"
+              "externalId": "5a95b357034854721f29e572"
             },
             "attachmentHeight": {
               "unit": "METRE",
@@ -5718,11 +5718,11 @@
           },
           {
             "id": "Wire#3",
-            "externalId": "5a8da2160348aa7e8455ef63",
+            "externalId": "5a95b357034854721f29e575",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2160348aa7e8455ef64"
+              "externalId": "5a95b357034854721f29e576"
             },
             "attachmentHeight": {
               "unit": "METRE",
@@ -5738,11 +5738,11 @@
           },
           {
             "id": "Wire#4",
-            "externalId": "5a8da2160348aa7e8455ef65",
+            "externalId": "5a95b357034854721f29e577",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2160348aa7e8455ef66"
+              "externalId": "5a95b357034854721f29e578"
             },
             "attachmentHeight": {
               "unit": "METRE",
@@ -5763,7 +5763,7 @@
         "guyAttachPoints": [
           {
             "id": "GuyAttachPoint#1",
-            "externalId": "5a8da2160348aa7e8455ef67",
+            "externalId": "5a95b357034854721f29e579",
             "attachHeight": {
               "unit": "METRE",
               "value": -0.45720000000000005
@@ -5774,7 +5774,7 @@
           },
           {
             "id": "GuyAttachPoint#2",
-            "externalId": "5a8da2160348aa7e8455ef68",
+            "externalId": "5a95b357034854721f29e57a",
             "attachHeight": {
               "unit": "METRE",
               "value": -2.8956000000000004
@@ -5788,11 +5788,11 @@
         "insulators": [
           {
             "id": "Insulator#1",
-            "externalId": "5a8da2160348aa7e8455ef59",
+            "externalId": "5a95b357034854721f29e56b",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2160348aa7e8455ef5a"
+              "externalId": "5a95b357034854721f29e56c"
             },
             "clientItemVersion": "ad9f5d1cd8e704b790edc29f630b5e2c",
             "clientItem": "15 kV Dead End Insulator",
@@ -5808,11 +5808,11 @@
           },
           {
             "id": "Insulator#2",
-            "externalId": "5a8da2160348aa7e8455ef5d",
+            "externalId": "5a95b357034854721f29e56f",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2160348aa7e8455ef5e"
+              "externalId": "5a95b357034854721f29e570"
             },
             "clientItemVersion": "ad9f5d1cd8e704b790edc29f630b5e2c",
             "clientItem": "15 kV Dead End Insulator",
@@ -5828,11 +5828,11 @@
           },
           {
             "id": "Insulator#3",
-            "externalId": "5a8da2160348aa7e8455ef61",
+            "externalId": "5a95b357034854721f29e573",
             "owner": {
               "id": "none",
               "industry": "UTILITY",
-              "externalId": "5a8da2160348aa7e8455ef62"
+              "externalId": "5a95b357034854721f29e574"
             },
             "clientItemVersion": "ad9f5d1cd8e704b790edc29f630b5e2c",
             "clientItem": "15 kV Dead End Insulator",
@@ -5869,6 +5869,1500 @@
         "value": 1.5707963267948966
       },
       "assemblyType": "FRAMING"
+    }
+  ],
+  "analysisCases": [
+    {
+      "name": "CSA",
+      "addByDefault": false,
+      "includeThroughBolts": false,
+      "minimumAllowableRatio": 0.6,
+      "heightToIncludeAtGroundline": {
+        "unit": "METRE",
+        "value": 0
+      }
+    },
+    {
+      "name": "GO95",
+      "addByDefault": false,
+      "includeThroughBolts": false,
+      "minimumAllowableRatio": 0.6666666666666666,
+      "heightToIncludeAtGroundline": {
+        "unit": "METRE",
+        "value": 0
+      }
+    },
+    {
+      "name": "NESC",
+      "addByDefault": false,
+      "includeThroughBolts": false,
+      "minimumAllowableRatio": 0.6666666666666666,
+      "heightToIncludeAtGroundline": {
+        "unit": "METRE",
+        "value": 0
+      }
+    },
+    {
+      "name": "GO95 Heavy",
+      "type": "GO95 01-2012",
+      "analysisMethod": "DIRECT_STIFFNESS",
+      "connectionType": "CONTINUATION",
+      "displacementBasedLoadChangesLevel": "NONE",
+      "windType": "SWEEP",
+      "sweepIncrement": "DEGREE_1",
+      "windStartAngle": {
+        "unit": "RADIAN",
+        "value": 0
+      },
+      "windEndAngle": {
+        "unit": "RADIAN",
+        "value": 6.283185307179586
+      },
+      "useStrengthResults": false,
+      "analyzeWithAverageSpan": true,
+      "maximumLoadingRatio": 1,
+      "addByDefault": false,
+      "constructionType": "NEW",
+      "analyzeGroundLineOnly": false,
+      "components": [],
+      "rural": false,
+      "constructionGrade": "B",
+      "loadZone": "HEAVY",
+      "overrides": {},
+      "valuesApplied": {
+        "linearConstant": {
+          "unit": "NEWTON_PER_METRE",
+          "value": 0
+        },
+        "foundationTensionMultiplier": 1,
+        "foundationStrengthFactor": 0.44444444,
+        "foundationVerticalLoadMultiplier": 1,
+        "ice": {
+          "unit": "METRE",
+          "value": 0.012700000000000001
+        },
+        "commOnlyTensionMultiplier": 0,
+        "crossArmTensionMultipliers": {
+          "WOOD": 1,
+          "METAL": 1,
+          "REINFORCED_CONCRETE": 1,
+          "POLYMER": 1,
+          "PRESTRESSED_CONCRETE": 1
+        },
+        "guyTensionMultiplier": 1,
+        "anchorTensionMultiplier": 1,
+        "guyVerticalLoadMultiplier": 1,
+        "crossArmVerticalLoadMultipliers": {
+          "WOOD": 1,
+          "METAL": 1,
+          "REINFORCED_CONCRETE": 1,
+          "POLYMER": 1,
+          "PRESTRESSED_CONCRETE": 1
+        },
+        "crossArmWindMultipliers": {
+          "WOOD": 1,
+          "METAL": 1,
+          "REINFORCED_CONCRETE": 1,
+          "POLYMER": 1,
+          "PRESTRESSED_CONCRETE": 1
+        },
+        "anchorWindMultiplier": 1,
+        "poleVerticalLoadMultipliers": {
+          "WOOD": 1,
+          "METAL": 1,
+          "REINFORCED_CONCRETE": 1,
+          "POLYMER": 1,
+          "PRESTRESSED_CONCRETE": 1
+        },
+        "anchorVerticalLoadMultiplier": 1,
+        "temperature": {
+          "unit": "CELSIUS",
+          "value": -17.77777777777778
+        },
+        "insulatorTensionMultiplier": 1,
+        "windPressure": {
+          "unit": "PASCAL",
+          "value": 287.2815538820151
+        },
+        "areaMultipliers": {
+          "ROUND": 1,
+          "SQUARE": 1.667,
+          "ROUND_LATTICE": 1.5,
+          "SQUARE_LATTICE": 2.5
+        },
+        "anchorStrengthFactor": 0.5,
+        "insulatorStrengthFactor": 0.5,
+        "guyWindMultiplier": 1,
+        "guyStrengthFactor": 0.5,
+        "poleStrengthFactors": {
+          "WOOD": 0.3333333333333333,
+          "METAL": 0.8,
+          "REINFORCED_CONCRETE": 0.3333333333333333,
+          "POLYMER": 0.8,
+          "PRESTRESSED_CONCRETE": 0.6666666666666666
+        },
+        "insulatorVerticalLoadMultiplier": 1,
+        "foundationWindMultiplier": 1,
+        "insulatorWindMultiplier": 1,
+        "poleTensionMultipliers": {
+          "WOOD": 1,
+          "METAL": 1,
+          "REINFORCED_CONCRETE": 1,
+          "POLYMER": 1,
+          "PRESTRESSED_CONCRETE": 1
+        },
+        "poleWindMultipliers": {
+          "WOOD": 1,
+          "METAL": 1,
+          "REINFORCED_CONCRETE": 1,
+          "POLYMER": 1,
+          "PRESTRESSED_CONCRETE": 1
+        },
+        "crossArmStrengthFactors": {
+          "WOOD": 0.5,
+          "METAL": 0.8,
+          "REINFORCED_CONCRETE": 0.6666666666666666,
+          "POLYMER": 0.8,
+          "PRESTRESSED_CONCRETE": 0.6666666666666666
+        }
+      },
+      "bucklingCase": {
+        "sectionHeightMode": "LOAD",
+        "diameterMethod": "TAPERED_DIAMETER",
+        "analysisMethod": "TRADITIONAL_EULER",
+        "unguyedConstant": 2,
+        "bucklingCoefficient": 0.384,
+        "loadingHeightPercent": 1,
+        "diameterHeightPercent": 0.33,
+        "guyedConstants": [
+          {
+            "angle": {
+              "unit": "RADIAN",
+              "value": 6.283185307179586
+            },
+            "constant": 0.707
+          }
+        ]
+      },
+      "deflectionCase": {
+        "type": "PERCENT_OF_HEIGHT_DEFLECTION",
+        "percent": 0.15
+      }
+    },
+    {
+      "name": "GO95 Light",
+      "type": "GO95 01-2012",
+      "analysisMethod": "DIRECT_STIFFNESS",
+      "connectionType": "CONTINUATION",
+      "displacementBasedLoadChangesLevel": "NONE",
+      "windType": "SWEEP",
+      "sweepIncrement": "DEGREE_1",
+      "windStartAngle": {
+        "unit": "RADIAN",
+        "value": 0
+      },
+      "windEndAngle": {
+        "unit": "RADIAN",
+        "value": 6.283185307179586
+      },
+      "useStrengthResults": false,
+      "analyzeWithAverageSpan": true,
+      "maximumLoadingRatio": 1,
+      "addByDefault": false,
+      "constructionType": "NEW",
+      "analyzeGroundLineOnly": false,
+      "components": [],
+      "rural": false,
+      "constructionGrade": "B",
+      "loadZone": "LIGHT",
+      "overrides": {},
+      "valuesApplied": {
+        "linearConstant": {
+          "unit": "NEWTON_PER_METRE",
+          "value": 0
+        },
+        "foundationTensionMultiplier": 1,
+        "foundationStrengthFactor": 0.44444444,
+        "foundationVerticalLoadMultiplier": 1,
+        "ice": {
+          "unit": "METRE",
+          "value": 0
+        },
+        "commOnlyTensionMultiplier": 0,
+        "crossArmTensionMultipliers": {
+          "WOOD": 1,
+          "METAL": 1,
+          "REINFORCED_CONCRETE": 1,
+          "POLYMER": 1,
+          "PRESTRESSED_CONCRETE": 1
+        },
+        "guyTensionMultiplier": 1,
+        "anchorTensionMultiplier": 1,
+        "guyVerticalLoadMultiplier": 1,
+        "crossArmVerticalLoadMultipliers": {
+          "WOOD": 1,
+          "METAL": 1,
+          "REINFORCED_CONCRETE": 1,
+          "POLYMER": 1,
+          "PRESTRESSED_CONCRETE": 1
+        },
+        "crossArmWindMultipliers": {
+          "WOOD": 1,
+          "METAL": 1,
+          "REINFORCED_CONCRETE": 1,
+          "POLYMER": 1,
+          "PRESTRESSED_CONCRETE": 1
+        },
+        "anchorWindMultiplier": 1,
+        "poleVerticalLoadMultipliers": {
+          "WOOD": 1,
+          "METAL": 1,
+          "REINFORCED_CONCRETE": 1,
+          "POLYMER": 1,
+          "PRESTRESSED_CONCRETE": 1
+        },
+        "anchorVerticalLoadMultiplier": 1,
+        "temperature": {
+          "unit": "CELSIUS",
+          "value": -3.888888888888889
+        },
+        "insulatorTensionMultiplier": 1,
+        "windPressure": {
+          "unit": "PASCAL",
+          "value": 383.04207184268677
+        },
+        "areaMultipliers": {
+          "ROUND": 1,
+          "SQUARE": 1.625,
+          "ROUND_LATTICE": 1.5,
+          "SQUARE_LATTICE": 2.4375
+        },
+        "anchorStrengthFactor": 0.8,
+        "insulatorStrengthFactor": 0.5,
+        "guyWindMultiplier": 1,
+        "guyStrengthFactor": 0.8,
+        "poleStrengthFactors": {
+          "WOOD": 0.3333333333333333,
+          "METAL": 0.8,
+          "REINFORCED_CONCRETE": 0.3333333333333333,
+          "POLYMER": 0.8,
+          "PRESTRESSED_CONCRETE": 0.6666666666666666
+        },
+        "insulatorVerticalLoadMultiplier": 1,
+        "foundationWindMultiplier": 1,
+        "insulatorWindMultiplier": 1,
+        "poleTensionMultipliers": {
+          "WOOD": 1,
+          "METAL": 1,
+          "REINFORCED_CONCRETE": 1,
+          "POLYMER": 1,
+          "PRESTRESSED_CONCRETE": 1
+        },
+        "poleWindMultipliers": {
+          "WOOD": 1,
+          "METAL": 1,
+          "REINFORCED_CONCRETE": 1,
+          "POLYMER": 1,
+          "PRESTRESSED_CONCRETE": 1
+        },
+        "crossArmStrengthFactors": {
+          "WOOD": 0.5,
+          "METAL": 0.8,
+          "REINFORCED_CONCRETE": 0.666666666666667,
+          "POLYMER": 0.8,
+          "PRESTRESSED_CONCRETE": 0.6666666666666666
+        }
+      },
+      "bucklingCase": {
+        "sectionHeightMode": "LOAD",
+        "diameterMethod": "TAPERED_DIAMETER",
+        "analysisMethod": "TRADITIONAL_EULER",
+        "unguyedConstant": 2,
+        "bucklingCoefficient": 0.384,
+        "loadingHeightPercent": 1,
+        "diameterHeightPercent": 0.33,
+        "guyedConstants": [
+          {
+            "angle": {
+              "unit": "RADIAN",
+              "value": 6.283185307179586
+            },
+            "constant": 0.707
+          }
+        ]
+      },
+      "deflectionCase": {
+        "type": "PERCENT_OF_HEIGHT_DEFLECTION",
+        "percent": 0.15
+      }
+    },
+    {
+      "name": "CSA Medium A",
+      "type": "CSA 2010",
+      "analysisMethod": "DIRECT_STIFFNESS",
+      "connectionType": "CONTINUATION",
+      "displacementBasedLoadChangesLevel": "PARTIAL",
+      "windType": "SWEEP",
+      "sweepIncrement": "DEGREE_1",
+      "windStartAngle": {
+        "unit": "RADIAN",
+        "value": 0
+      },
+      "windEndAngle": {
+        "unit": "RADIAN",
+        "value": 6.283185307179586
+      },
+      "useStrengthResults": false,
+      "analyzeWithAverageSpan": true,
+      "maximumLoadingRatio": 1,
+      "addByDefault": false,
+      "constructionType": "NEW",
+      "analyzeGroundLineOnly": false,
+      "components": [],
+      "constructionGrade": "TWO",
+      "loadZone": "MEDIUM_A",
+      "overrides": {},
+      "valuesApplied": {
+        "linearConstant": {
+          "unit": "NEWTON_PER_METRE",
+          "value": 0
+        },
+        "foundationTensionMultiplier": 1.3,
+        "foundationStrengthFactor": 1,
+        "foundationVerticalLoadMultiplier": 1.5,
+        "ice": {
+          "unit": "METRE",
+          "value": 0.006500000000000001
+        },
+        "commOnlyTensionMultiplier": 0,
+        "crossArmTensionMultipliers": {
+          "WOOD": 1.6,
+          "METAL": 1.6,
+          "REINFORCED_CONCRETE": 1.6,
+          "POLYMER": 1.6,
+          "PRESTRESSED_CONCRETE": 1.6
+        },
+        "guyTensionMultiplier": 1.25,
+        "anchorTensionMultiplier": 1.25,
+        "guyVerticalLoadMultiplier": 1,
+        "crossArmVerticalLoadMultipliers": {
+          "WOOD": 2,
+          "METAL": 2,
+          "REINFORCED_CONCRETE": 2,
+          "POLYMER": 2,
+          "PRESTRESSED_CONCRETE": 2
+        },
+        "crossArmWindMultipliers": {
+          "WOOD": 1,
+          "METAL": 1,
+          "REINFORCED_CONCRETE": 1,
+          "POLYMER": 1,
+          "PRESTRESSED_CONCRETE": 1
+        },
+        "anchorWindMultiplier": 1.25,
+        "poleVerticalLoadMultipliers": {
+          "WOOD": 1.5,
+          "METAL": 1.15,
+          "REINFORCED_CONCRETE": 1.3,
+          "POLYMER": 1.15,
+          "PRESTRESSED_CONCRETE": 1.3
+        },
+        "anchorVerticalLoadMultiplier": 1,
+        "temperature": {
+          "unit": "CELSIUS",
+          "value": -20
+        },
+        "insulatorTensionMultiplier": 1.6,
+        "windPressure": {
+          "unit": "PASCAL",
+          "value": 399.8001624858043
+        },
+        "areaMultipliers": {
+          "ROUND": 1,
+          "SQUARE": 2,
+          "ROUND_LATTICE": 1,
+          "SQUARE_LATTICE": 3
+        },
+        "anchorStrengthFactor": 1,
+        "insulatorStrengthFactor": 1,
+        "guyWindMultiplier": 1.25,
+        "guyStrengthFactor": 1,
+        "poleStrengthFactors": {
+          "WOOD": 1,
+          "METAL": 1,
+          "REINFORCED_CONCRETE": 1,
+          "POLYMER": 1,
+          "PRESTRESSED_CONCRETE": 1
+        },
+        "insulatorVerticalLoadMultiplier": 1,
+        "foundationWindMultiplier": 1.3,
+        "insulatorWindMultiplier": 1,
+        "poleTensionMultipliers": {
+          "WOOD": 1.3,
+          "METAL": 1.1,
+          "REINFORCED_CONCRETE": 1.2,
+          "POLYMER": 1.1,
+          "PRESTRESSED_CONCRETE": 1.2
+        },
+        "poleWindMultipliers": {
+          "WOOD": 1.3,
+          "METAL": 1.1,
+          "REINFORCED_CONCRETE": 1.2,
+          "POLYMER": 1.1,
+          "PRESTRESSED_CONCRETE": 1.2
+        },
+        "crossArmStrengthFactors": {
+          "WOOD": 1,
+          "METAL": 1,
+          "REINFORCED_CONCRETE": 1,
+          "POLYMER": 1,
+          "PRESTRESSED_CONCRETE": 1
+        }
+      },
+      "bucklingCase": {
+        "sectionHeightMode": "LOAD",
+        "diameterMethod": "TAPERED_DIAMETER",
+        "analysisMethod": "TRADITIONAL_EULER",
+        "unguyedConstant": 2,
+        "bucklingCoefficient": 0.384,
+        "loadingHeightPercent": 1,
+        "diameterHeightPercent": 0.33,
+        "guyedConstants": [
+          {
+            "angle": {
+              "unit": "RADIAN",
+              "value": 6.283185307179586
+            },
+            "constant": 0.707
+          }
+        ]
+      },
+      "deflectionCase": {
+        "type": "PERCENT_OF_HEIGHT_DEFLECTION",
+        "percent": 0.15
+      }
+    },
+    {
+      "name": "CSA Medium B",
+      "type": "CSA 2010",
+      "analysisMethod": "DIRECT_STIFFNESS",
+      "connectionType": "CONTINUATION",
+      "displacementBasedLoadChangesLevel": "PARTIAL",
+      "windType": "SWEEP",
+      "sweepIncrement": "DEGREE_1",
+      "windStartAngle": {
+        "unit": "RADIAN",
+        "value": 0
+      },
+      "windEndAngle": {
+        "unit": "RADIAN",
+        "value": 6.283185307179586
+      },
+      "useStrengthResults": false,
+      "analyzeWithAverageSpan": true,
+      "maximumLoadingRatio": 1,
+      "addByDefault": false,
+      "constructionType": "NEW",
+      "analyzeGroundLineOnly": false,
+      "components": [],
+      "constructionGrade": "TWO",
+      "loadZone": "MEDIUM_B",
+      "overrides": {},
+      "valuesApplied": {
+        "linearConstant": {
+          "unit": "NEWTON_PER_METRE",
+          "value": 0
+        },
+        "foundationTensionMultiplier": 1.3,
+        "foundationStrengthFactor": 1,
+        "foundationVerticalLoadMultiplier": 1.5,
+        "ice": {
+          "unit": "METRE",
+          "value": 0.012500000000000002
+        },
+        "commOnlyTensionMultiplier": 0,
+        "crossArmTensionMultipliers": {
+          "WOOD": 1.6,
+          "METAL": 1.6,
+          "REINFORCED_CONCRETE": 1.6,
+          "POLYMER": 1.6,
+          "PRESTRESSED_CONCRETE": 1.6
+        },
+        "guyTensionMultiplier": 1.25,
+        "anchorTensionMultiplier": 1.25,
+        "guyVerticalLoadMultiplier": 1,
+        "crossArmVerticalLoadMultipliers": {
+          "WOOD": 2,
+          "METAL": 2,
+          "REINFORCED_CONCRETE": 2,
+          "POLYMER": 2,
+          "PRESTRESSED_CONCRETE": 2
+        },
+        "crossArmWindMultipliers": {
+          "WOOD": 1,
+          "METAL": 1,
+          "REINFORCED_CONCRETE": 1,
+          "POLYMER": 1,
+          "PRESTRESSED_CONCRETE": 1
+        },
+        "anchorWindMultiplier": 1.25,
+        "poleVerticalLoadMultipliers": {
+          "WOOD": 1.5,
+          "METAL": 1.15,
+          "REINFORCED_CONCRETE": 1.3,
+          "POLYMER": 1.15,
+          "PRESTRESSED_CONCRETE": 1.3
+        },
+        "anchorVerticalLoadMultiplier": 1,
+        "temperature": {
+          "unit": "CELSIUS",
+          "value": -20
+        },
+        "insulatorTensionMultiplier": 1.6,
+        "windPressure": {
+          "unit": "PASCAL",
+          "value": 300.2092238067057
+        },
+        "areaMultipliers": {
+          "ROUND": 1,
+          "SQUARE": 2,
+          "ROUND_LATTICE": 1,
+          "SQUARE_LATTICE": 3
+        },
+        "anchorStrengthFactor": 1,
+        "insulatorStrengthFactor": 1,
+        "guyWindMultiplier": 1.25,
+        "guyStrengthFactor": 1,
+        "poleStrengthFactors": {
+          "WOOD": 1,
+          "METAL": 1,
+          "REINFORCED_CONCRETE": 1,
+          "POLYMER": 1,
+          "PRESTRESSED_CONCRETE": 1
+        },
+        "insulatorVerticalLoadMultiplier": 1,
+        "foundationWindMultiplier": 1.3,
+        "insulatorWindMultiplier": 1,
+        "poleTensionMultipliers": {
+          "WOOD": 1.3,
+          "METAL": 1.1,
+          "REINFORCED_CONCRETE": 1.2,
+          "POLYMER": 1.1,
+          "PRESTRESSED_CONCRETE": 1.2
+        },
+        "poleWindMultipliers": {
+          "WOOD": 1.3,
+          "METAL": 1.1,
+          "REINFORCED_CONCRETE": 1.2,
+          "POLYMER": 1.1,
+          "PRESTRESSED_CONCRETE": 1.2
+        },
+        "crossArmStrengthFactors": {
+          "WOOD": 1,
+          "METAL": 1,
+          "REINFORCED_CONCRETE": 1,
+          "POLYMER": 1,
+          "PRESTRESSED_CONCRETE": 1
+        }
+      },
+      "bucklingCase": {
+        "sectionHeightMode": "LOAD",
+        "diameterMethod": "TAPERED_DIAMETER",
+        "analysisMethod": "TRADITIONAL_EULER",
+        "unguyedConstant": 2,
+        "bucklingCoefficient": 0.384,
+        "loadingHeightPercent": 1,
+        "diameterHeightPercent": 0.33,
+        "guyedConstants": [
+          {
+            "angle": {
+              "unit": "RADIAN",
+              "value": 6.283185307179586
+            },
+            "constant": 0.707
+          }
+        ]
+      },
+      "deflectionCase": {
+        "type": "PERCENT_OF_HEIGHT_DEFLECTION",
+        "percent": 0.15
+      }
+    },
+    {
+      "name": "CSA Heavy",
+      "type": "CSA 2010",
+      "analysisMethod": "DIRECT_STIFFNESS",
+      "connectionType": "CONTINUATION",
+      "displacementBasedLoadChangesLevel": "PARTIAL",
+      "windType": "SWEEP",
+      "sweepIncrement": "DEGREE_1",
+      "windStartAngle": {
+        "unit": "RADIAN",
+        "value": 0
+      },
+      "windEndAngle": {
+        "unit": "RADIAN",
+        "value": 6.283185307179586
+      },
+      "useStrengthResults": false,
+      "analyzeWithAverageSpan": true,
+      "maximumLoadingRatio": 1,
+      "addByDefault": false,
+      "constructionType": "NEW",
+      "analyzeGroundLineOnly": false,
+      "components": [],
+      "constructionGrade": "TWO",
+      "loadZone": "HEAVY",
+      "overrides": {},
+      "valuesApplied": {
+        "linearConstant": {
+          "unit": "NEWTON_PER_METRE",
+          "value": 0
+        },
+        "foundationTensionMultiplier": 1.3,
+        "foundationStrengthFactor": 1,
+        "foundationVerticalLoadMultiplier": 1.5,
+        "ice": {
+          "unit": "METRE",
+          "value": 0.012500000000000002
+        },
+        "commOnlyTensionMultiplier": 0,
+        "crossArmTensionMultipliers": {
+          "WOOD": 1.6,
+          "METAL": 1.6,
+          "REINFORCED_CONCRETE": 1.6,
+          "POLYMER": 1.6,
+          "PRESTRESSED_CONCRETE": 1.6
+        },
+        "guyTensionMultiplier": 1.25,
+        "anchorTensionMultiplier": 1.25,
+        "guyVerticalLoadMultiplier": 1,
+        "crossArmVerticalLoadMultipliers": {
+          "WOOD": 2,
+          "METAL": 2,
+          "REINFORCED_CONCRETE": 2,
+          "POLYMER": 2,
+          "PRESTRESSED_CONCRETE": 2
+        },
+        "crossArmWindMultipliers": {
+          "WOOD": 1,
+          "METAL": 1,
+          "REINFORCED_CONCRETE": 1,
+          "POLYMER": 1,
+          "PRESTRESSED_CONCRETE": 1
+        },
+        "anchorWindMultiplier": 1.25,
+        "poleVerticalLoadMultipliers": {
+          "WOOD": 1.5,
+          "METAL": 1.15,
+          "REINFORCED_CONCRETE": 1.3,
+          "POLYMER": 1.15,
+          "PRESTRESSED_CONCRETE": 1.3
+        },
+        "anchorVerticalLoadMultiplier": 1,
+        "temperature": {
+          "unit": "CELSIUS",
+          "value": -20
+        },
+        "insulatorTensionMultiplier": 1.6,
+        "windPressure": {
+          "unit": "PASCAL",
+          "value": 399.8001624858043
+        },
+        "areaMultipliers": {
+          "ROUND": 1,
+          "SQUARE": 2,
+          "ROUND_LATTICE": 1,
+          "SQUARE_LATTICE": 3
+        },
+        "anchorStrengthFactor": 1,
+        "insulatorStrengthFactor": 1,
+        "guyWindMultiplier": 1.25,
+        "guyStrengthFactor": 1,
+        "poleStrengthFactors": {
+          "WOOD": 1,
+          "METAL": 1,
+          "REINFORCED_CONCRETE": 1,
+          "POLYMER": 1,
+          "PRESTRESSED_CONCRETE": 1
+        },
+        "insulatorVerticalLoadMultiplier": 1,
+        "foundationWindMultiplier": 1.3,
+        "insulatorWindMultiplier": 1,
+        "poleTensionMultipliers": {
+          "WOOD": 1.3,
+          "METAL": 1.1,
+          "REINFORCED_CONCRETE": 1.2,
+          "POLYMER": 1.1,
+          "PRESTRESSED_CONCRETE": 1.2
+        },
+        "poleWindMultipliers": {
+          "WOOD": 1.3,
+          "METAL": 1.1,
+          "REINFORCED_CONCRETE": 1.2,
+          "POLYMER": 1.1,
+          "PRESTRESSED_CONCRETE": 1.2
+        },
+        "crossArmStrengthFactors": {
+          "WOOD": 1,
+          "METAL": 1,
+          "REINFORCED_CONCRETE": 1,
+          "POLYMER": 1,
+          "PRESTRESSED_CONCRETE": 1
+        }
+      },
+      "bucklingCase": {
+        "sectionHeightMode": "LOAD",
+        "diameterMethod": "TAPERED_DIAMETER",
+        "analysisMethod": "TRADITIONAL_EULER",
+        "unguyedConstant": 2,
+        "bucklingCoefficient": 0.384,
+        "loadingHeightPercent": 1,
+        "diameterHeightPercent": 0.33,
+        "guyedConstants": [
+          {
+            "angle": {
+              "unit": "RADIAN",
+              "value": 6.283185307179586
+            },
+            "constant": 0.707
+          }
+        ]
+      },
+      "deflectionCase": {
+        "type": "PERCENT_OF_HEIGHT_DEFLECTION",
+        "percent": 0.15
+      }
+    },
+    {
+      "name": "Severe",
+      "type": "CSA 2010",
+      "analysisMethod": "DIRECT_STIFFNESS",
+      "connectionType": "CONTINUATION",
+      "displacementBasedLoadChangesLevel": "PARTIAL",
+      "windType": "SWEEP",
+      "sweepIncrement": "DEGREE_1",
+      "windStartAngle": {
+        "unit": "RADIAN",
+        "value": 0
+      },
+      "windEndAngle": {
+        "unit": "RADIAN",
+        "value": 6.283185307179586
+      },
+      "useStrengthResults": false,
+      "analyzeWithAverageSpan": true,
+      "maximumLoadingRatio": 1,
+      "addByDefault": false,
+      "constructionType": "NEW",
+      "analyzeGroundLineOnly": false,
+      "components": [],
+      "constructionGrade": "TWO",
+      "loadZone": "SEVERE",
+      "overrides": {},
+      "valuesApplied": {
+        "linearConstant": {
+          "unit": "NEWTON_PER_METRE",
+          "value": 0
+        },
+        "foundationTensionMultiplier": 1.3,
+        "foundationStrengthFactor": 1,
+        "foundationVerticalLoadMultiplier": 1.5,
+        "ice": {
+          "unit": "METRE",
+          "value": 0.019000000000000003
+        },
+        "commOnlyTensionMultiplier": 0,
+        "crossArmTensionMultipliers": {
+          "WOOD": 1.6,
+          "METAL": 1.6,
+          "REINFORCED_CONCRETE": 1.6,
+          "POLYMER": 1.6,
+          "PRESTRESSED_CONCRETE": 1.6
+        },
+        "guyTensionMultiplier": 1.25,
+        "anchorTensionMultiplier": 1.25,
+        "guyVerticalLoadMultiplier": 1,
+        "crossArmVerticalLoadMultipliers": {
+          "WOOD": 2,
+          "METAL": 2,
+          "REINFORCED_CONCRETE": 2,
+          "POLYMER": 2,
+          "PRESTRESSED_CONCRETE": 2
+        },
+        "crossArmWindMultipliers": {
+          "WOOD": 1,
+          "METAL": 1,
+          "REINFORCED_CONCRETE": 1,
+          "POLYMER": 1,
+          "PRESTRESSED_CONCRETE": 1
+        },
+        "anchorWindMultiplier": 1.25,
+        "poleVerticalLoadMultipliers": {
+          "WOOD": 1.5,
+          "METAL": 1.15,
+          "REINFORCED_CONCRETE": 1.3,
+          "POLYMER": 1.15,
+          "PRESTRESSED_CONCRETE": 1.3
+        },
+        "anchorVerticalLoadMultiplier": 1,
+        "temperature": {
+          "unit": "CELSIUS",
+          "value": -20
+        },
+        "insulatorTensionMultiplier": 1.6,
+        "windPressure": {
+          "unit": "PASCAL",
+          "value": 399.8001624858043
+        },
+        "areaMultipliers": {
+          "ROUND": 1,
+          "SQUARE": 2,
+          "ROUND_LATTICE": 1,
+          "SQUARE_LATTICE": 3
+        },
+        "anchorStrengthFactor": 1,
+        "insulatorStrengthFactor": 1,
+        "guyWindMultiplier": 1.25,
+        "guyStrengthFactor": 1,
+        "poleStrengthFactors": {
+          "WOOD": 1,
+          "METAL": 1,
+          "REINFORCED_CONCRETE": 1,
+          "POLYMER": 1,
+          "PRESTRESSED_CONCRETE": 1
+        },
+        "insulatorVerticalLoadMultiplier": 1,
+        "foundationWindMultiplier": 1.3,
+        "insulatorWindMultiplier": 1,
+        "poleTensionMultipliers": {
+          "WOOD": 1.3,
+          "METAL": 1.1,
+          "REINFORCED_CONCRETE": 1.2,
+          "POLYMER": 1.1,
+          "PRESTRESSED_CONCRETE": 1.2
+        },
+        "poleWindMultipliers": {
+          "WOOD": 1.3,
+          "METAL": 1.1,
+          "REINFORCED_CONCRETE": 1.2,
+          "POLYMER": 1.1,
+          "PRESTRESSED_CONCRETE": 1.2
+        },
+        "crossArmStrengthFactors": {
+          "WOOD": 1,
+          "METAL": 1,
+          "REINFORCED_CONCRETE": 1,
+          "POLYMER": 1,
+          "PRESTRESSED_CONCRETE": 1
+        }
+      },
+      "bucklingCase": {
+        "sectionHeightMode": "LOAD",
+        "diameterMethod": "TAPERED_DIAMETER",
+        "analysisMethod": "TRADITIONAL_EULER",
+        "unguyedConstant": 2,
+        "bucklingCoefficient": 0.384,
+        "loadingHeightPercent": 1,
+        "diameterHeightPercent": 0.33,
+        "guyedConstants": [
+          {
+            "angle": {
+              "unit": "RADIAN",
+              "value": 6.283185307179586
+            },
+            "constant": 0.707
+          }
+        ]
+      },
+      "deflectionCase": {
+        "type": "PERCENT_OF_HEIGHT_DEFLECTION",
+        "percent": 0.15
+      }
+    },
+    {
+      "name": "Light",
+      "type": "NESC 2012",
+      "analysisMethod": "DIRECT_STIFFNESS",
+      "connectionType": "CONTINUATION",
+      "displacementBasedLoadChangesLevel": "NONE",
+      "windType": "SWEEP",
+      "sweepIncrement": "DEGREE_1",
+      "windStartAngle": {
+        "unit": "RADIAN",
+        "value": 0
+      },
+      "windEndAngle": {
+        "unit": "RADIAN",
+        "value": 6.283185307179586
+      },
+      "useStrengthResults": false,
+      "analyzeWithAverageSpan": true,
+      "maximumLoadingRatio": 1,
+      "addByDefault": false,
+      "constructionType": "NEW",
+      "analyzeGroundLineOnly": false,
+      "components": [],
+      "constructionGrade": "C",
+      "loadZone": "LIGHT",
+      "overrides": {},
+      "valuesApplied": {
+        "linearConstant": {
+          "unit": "NEWTON_PER_METRE",
+          "value": 0.7296951468603182
+        },
+        "foundationTensionMultiplier": 1.3,
+        "foundationStrengthFactor": 1,
+        "foundationVerticalLoadMultiplier": 1.9,
+        "ice": {
+          "unit": "METRE",
+          "value": 0
+        },
+        "commOnlyTensionMultiplier": 0,
+        "crossArmTensionMultipliers": {
+          "WOOD": 1.3,
+          "METAL": 1.1,
+          "REINFORCED_CONCRETE": 1.3,
+          "POLYMER": 1.3,
+          "PRESTRESSED_CONCRETE": 1.1
+        },
+        "guyTensionMultiplier": 1.1,
+        "anchorTensionMultiplier": 1.1,
+        "guyVerticalLoadMultiplier": 1.5,
+        "crossArmVerticalLoadMultipliers": {
+          "WOOD": 1.9,
+          "METAL": 1.5,
+          "REINFORCED_CONCRETE": 1.9,
+          "POLYMER": 1.5,
+          "PRESTRESSED_CONCRETE": 1.5
+        },
+        "crossArmWindMultipliers": {
+          "WOOD": 1.75,
+          "METAL": 1.75,
+          "REINFORCED_CONCRETE": 1.75,
+          "POLYMER": 1.75,
+          "PRESTRESSED_CONCRETE": 1.75
+        },
+        "anchorWindMultiplier": 1.75,
+        "poleVerticalLoadMultipliers": {
+          "WOOD": 1.9,
+          "METAL": 1.5,
+          "REINFORCED_CONCRETE": 1.9,
+          "POLYMER": 1.5,
+          "PRESTRESSED_CONCRETE": 1.5
+        },
+        "anchorVerticalLoadMultiplier": 1.5,
+        "temperature": {
+          "unit": "CELSIUS",
+          "value": -1.1111111111111112
+        },
+        "insulatorTensionMultiplier": 1.3,
+        "windPressure": {
+          "unit": "PASCAL",
+          "value": 430.9223308230226
+        },
+        "areaMultipliers": {
+          "ROUND": 1,
+          "SQUARE": 1.6,
+          "ROUND_LATTICE": 2,
+          "SQUARE_LATTICE": 3.2
+        },
+        "anchorStrengthFactor": 1,
+        "insulatorStrengthFactor": 1,
+        "guyWindMultiplier": 1.75,
+        "guyStrengthFactor": 0.9,
+        "poleStrengthFactors": {
+          "WOOD": 0.85,
+          "METAL": 1,
+          "REINFORCED_CONCRETE": 0.85,
+          "POLYMER": 1,
+          "PRESTRESSED_CONCRETE": 1
+        },
+        "insulatorVerticalLoadMultiplier": 1.9,
+        "foundationWindMultiplier": 1.75,
+        "insulatorWindMultiplier": 1.75,
+        "poleTensionMultipliers": {
+          "WOOD": 1.3,
+          "METAL": 1.1,
+          "REINFORCED_CONCRETE": 1.3,
+          "POLYMER": 1.3,
+          "PRESTRESSED_CONCRETE": 1.1
+        },
+        "poleWindMultipliers": {
+          "WOOD": 1.75,
+          "METAL": 1.75,
+          "REINFORCED_CONCRETE": 1.75,
+          "POLYMER": 1.75,
+          "PRESTRESSED_CONCRETE": 1.75
+        },
+        "crossArmStrengthFactors": {
+          "WOOD": 0.85,
+          "METAL": 1,
+          "REINFORCED_CONCRETE": 0.85,
+          "POLYMER": 1,
+          "PRESTRESSED_CONCRETE": 1
+        }
+      },
+      "bucklingCase": {
+        "sectionHeightMode": "LOAD",
+        "diameterMethod": "TAPERED_DIAMETER",
+        "analysisMethod": "TRADITIONAL_EULER",
+        "unguyedConstant": 2,
+        "bucklingCoefficient": 0.384,
+        "loadingHeightPercent": 1,
+        "diameterHeightPercent": 0.33,
+        "guyedConstants": [
+          {
+            "angle": {
+              "unit": "RADIAN",
+              "value": 6.283185307179586
+            },
+            "constant": 0.707
+          }
+        ]
+      },
+      "deflectionCase": {
+        "type": "PERCENT_OF_HEIGHT_DEFLECTION",
+        "percent": 0.15
+      }
+    },
+    {
+      "name": "Medium",
+      "type": "NESC 2012",
+      "analysisMethod": "DIRECT_STIFFNESS",
+      "connectionType": "CONTINUATION",
+      "displacementBasedLoadChangesLevel": "NONE",
+      "windType": "SWEEP",
+      "sweepIncrement": "DEGREE_1",
+      "windStartAngle": {
+        "unit": "RADIAN",
+        "value": 0
+      },
+      "windEndAngle": {
+        "unit": "RADIAN",
+        "value": 6.283185307179586
+      },
+      "useStrengthResults": false,
+      "analyzeWithAverageSpan": true,
+      "maximumLoadingRatio": 1,
+      "addByDefault": false,
+      "constructionType": "NEW",
+      "analyzeGroundLineOnly": false,
+      "components": [],
+      "constructionGrade": "C",
+      "loadZone": "MEDIUM",
+      "overrides": {},
+      "valuesApplied": {
+        "linearConstant": {
+          "unit": "NEWTON_PER_METRE",
+          "value": 2.918780587441273
+        },
+        "foundationTensionMultiplier": 1.3,
+        "foundationStrengthFactor": 1,
+        "foundationVerticalLoadMultiplier": 1.9,
+        "ice": {
+          "unit": "METRE",
+          "value": 0.006350000000000001
+        },
+        "commOnlyTensionMultiplier": 0,
+        "crossArmTensionMultipliers": {
+          "WOOD": 1.3,
+          "METAL": 1.1,
+          "REINFORCED_CONCRETE": 1.3,
+          "POLYMER": 1.3,
+          "PRESTRESSED_CONCRETE": 1.1
+        },
+        "guyTensionMultiplier": 1.1,
+        "anchorTensionMultiplier": 1.1,
+        "guyVerticalLoadMultiplier": 1.5,
+        "crossArmVerticalLoadMultipliers": {
+          "WOOD": 1.9,
+          "METAL": 1.5,
+          "REINFORCED_CONCRETE": 1.9,
+          "POLYMER": 1.5,
+          "PRESTRESSED_CONCRETE": 1.5
+        },
+        "crossArmWindMultipliers": {
+          "WOOD": 1.75,
+          "METAL": 1.75,
+          "REINFORCED_CONCRETE": 1.75,
+          "POLYMER": 1.75,
+          "PRESTRESSED_CONCRETE": 1.75
+        },
+        "anchorWindMultiplier": 1.75,
+        "poleVerticalLoadMultipliers": {
+          "WOOD": 1.9,
+          "METAL": 1.5,
+          "REINFORCED_CONCRETE": 1.9,
+          "POLYMER": 1.5,
+          "PRESTRESSED_CONCRETE": 1.5
+        },
+        "anchorVerticalLoadMultiplier": 1.5,
+        "temperature": {
+          "unit": "CELSIUS",
+          "value": -9.444444444444445
+        },
+        "insulatorTensionMultiplier": 1.3,
+        "windPressure": {
+          "unit": "PASCAL",
+          "value": 191.52103592134338
+        },
+        "areaMultipliers": {
+          "ROUND": 1,
+          "SQUARE": 1.6,
+          "ROUND_LATTICE": 2,
+          "SQUARE_LATTICE": 3.2
+        },
+        "anchorStrengthFactor": 1,
+        "insulatorStrengthFactor": 1,
+        "guyWindMultiplier": 1.75,
+        "guyStrengthFactor": 0.9,
+        "poleStrengthFactors": {
+          "WOOD": 0.85,
+          "METAL": 1,
+          "REINFORCED_CONCRETE": 0.85,
+          "POLYMER": 1,
+          "PRESTRESSED_CONCRETE": 1
+        },
+        "insulatorVerticalLoadMultiplier": 1.9,
+        "foundationWindMultiplier": 1.75,
+        "insulatorWindMultiplier": 1.75,
+        "poleTensionMultipliers": {
+          "WOOD": 1.3,
+          "METAL": 1.1,
+          "REINFORCED_CONCRETE": 1.3,
+          "POLYMER": 1.3,
+          "PRESTRESSED_CONCRETE": 1.1
+        },
+        "poleWindMultipliers": {
+          "WOOD": 1.75,
+          "METAL": 1.75,
+          "REINFORCED_CONCRETE": 1.75,
+          "POLYMER": 1.75,
+          "PRESTRESSED_CONCRETE": 1.75
+        },
+        "crossArmStrengthFactors": {
+          "WOOD": 0.85,
+          "METAL": 1,
+          "REINFORCED_CONCRETE": 0.85,
+          "POLYMER": 1,
+          "PRESTRESSED_CONCRETE": 1
+        }
+      },
+      "bucklingCase": {
+        "sectionHeightMode": "LOAD",
+        "diameterMethod": "TAPERED_DIAMETER",
+        "analysisMethod": "TRADITIONAL_EULER",
+        "unguyedConstant": 2,
+        "bucklingCoefficient": 0.384,
+        "loadingHeightPercent": 1,
+        "diameterHeightPercent": 0.33,
+        "guyedConstants": [
+          {
+            "angle": {
+              "unit": "RADIAN",
+              "value": 6.283185307179586
+            },
+            "constant": 0.707
+          }
+        ]
+      },
+      "deflectionCase": {
+        "type": "PERCENT_OF_HEIGHT_DEFLECTION",
+        "percent": 0.15
+      }
+    },
+    {
+      "name": "Heavy",
+      "type": "NESC 2012",
+      "analysisMethod": "DIRECT_STIFFNESS",
+      "connectionType": "CONTINUATION",
+      "displacementBasedLoadChangesLevel": "NONE",
+      "windType": "SWEEP",
+      "sweepIncrement": "DEGREE_1",
+      "windStartAngle": {
+        "unit": "RADIAN",
+        "value": 0
+      },
+      "windEndAngle": {
+        "unit": "RADIAN",
+        "value": 6.283185307179586
+      },
+      "useStrengthResults": false,
+      "analyzeWithAverageSpan": true,
+      "maximumLoadingRatio": 1,
+      "addByDefault": false,
+      "constructionType": "NEW",
+      "analyzeGroundLineOnly": false,
+      "components": [],
+      "constructionGrade": "C",
+      "loadZone": "HEAVY",
+      "overrides": {},
+      "valuesApplied": {
+        "linearConstant": {
+          "unit": "NEWTON_PER_METRE",
+          "value": 4.378170881161909
+        },
+        "foundationTensionMultiplier": 1.3,
+        "foundationStrengthFactor": 1,
+        "foundationVerticalLoadMultiplier": 1.9,
+        "ice": {
+          "unit": "METRE",
+          "value": 0.012700000000000001
+        },
+        "commOnlyTensionMultiplier": 0,
+        "crossArmTensionMultipliers": {
+          "WOOD": 1.3,
+          "METAL": 1.1,
+          "REINFORCED_CONCRETE": 1.3,
+          "POLYMER": 1.3,
+          "PRESTRESSED_CONCRETE": 1.1
+        },
+        "guyTensionMultiplier": 1.1,
+        "anchorTensionMultiplier": 1.1,
+        "guyVerticalLoadMultiplier": 1.5,
+        "crossArmVerticalLoadMultipliers": {
+          "WOOD": 1.9,
+          "METAL": 1.5,
+          "REINFORCED_CONCRETE": 1.9,
+          "POLYMER": 1.5,
+          "PRESTRESSED_CONCRETE": 1.5
+        },
+        "crossArmWindMultipliers": {
+          "WOOD": 1.75,
+          "METAL": 1.75,
+          "REINFORCED_CONCRETE": 1.75,
+          "POLYMER": 1.75,
+          "PRESTRESSED_CONCRETE": 1.75
+        },
+        "anchorWindMultiplier": 1.75,
+        "poleVerticalLoadMultipliers": {
+          "WOOD": 1.9,
+          "METAL": 1.5,
+          "REINFORCED_CONCRETE": 1.9,
+          "POLYMER": 1.5,
+          "PRESTRESSED_CONCRETE": 1.5
+        },
+        "anchorVerticalLoadMultiplier": 1.5,
+        "temperature": {
+          "unit": "CELSIUS",
+          "value": -17.77777777777778
+        },
+        "insulatorTensionMultiplier": 1.3,
+        "windPressure": {
+          "unit": "PASCAL",
+          "value": 191.52103592134338
+        },
+        "areaMultipliers": {
+          "ROUND": 1,
+          "SQUARE": 1.6,
+          "ROUND_LATTICE": 2,
+          "SQUARE_LATTICE": 3.2
+        },
+        "anchorStrengthFactor": 1,
+        "insulatorStrengthFactor": 1,
+        "guyWindMultiplier": 1.75,
+        "guyStrengthFactor": 0.9,
+        "poleStrengthFactors": {
+          "WOOD": 0.85,
+          "METAL": 1,
+          "REINFORCED_CONCRETE": 0.85,
+          "POLYMER": 1,
+          "PRESTRESSED_CONCRETE": 1
+        },
+        "insulatorVerticalLoadMultiplier": 1.9,
+        "foundationWindMultiplier": 1.75,
+        "insulatorWindMultiplier": 1.75,
+        "poleTensionMultipliers": {
+          "WOOD": 1.3,
+          "METAL": 1.1,
+          "REINFORCED_CONCRETE": 1.3,
+          "POLYMER": 1.3,
+          "PRESTRESSED_CONCRETE": 1.1
+        },
+        "poleWindMultipliers": {
+          "WOOD": 1.75,
+          "METAL": 1.75,
+          "REINFORCED_CONCRETE": 1.75,
+          "POLYMER": 1.75,
+          "PRESTRESSED_CONCRETE": 1.75
+        },
+        "crossArmStrengthFactors": {
+          "WOOD": 0.85,
+          "METAL": 1,
+          "REINFORCED_CONCRETE": 0.85,
+          "POLYMER": 1,
+          "PRESTRESSED_CONCRETE": 1
+        }
+      },
+      "bucklingCase": {
+        "sectionHeightMode": "LOAD",
+        "diameterMethod": "TAPERED_DIAMETER",
+        "analysisMethod": "TRADITIONAL_EULER",
+        "unguyedConstant": 2,
+        "bucklingCoefficient": 0.384,
+        "loadingHeightPercent": 1,
+        "diameterHeightPercent": 0.33,
+        "guyedConstants": [
+          {
+            "angle": {
+              "unit": "RADIAN",
+              "value": 6.283185307179586
+            },
+            "constant": 0.707
+          }
+        ]
+      },
+      "deflectionCase": {
+        "type": "PERCENT_OF_HEIGHT_DEFLECTION",
+        "percent": 0.15
+      }
+    },
+    {
+      "name": "Warm Island",
+      "type": "NESC 2012",
+      "analysisMethod": "DIRECT_STIFFNESS",
+      "connectionType": "CONTINUATION",
+      "displacementBasedLoadChangesLevel": "NONE",
+      "windType": "SWEEP",
+      "sweepIncrement": "DEGREE_1",
+      "windStartAngle": {
+        "unit": "RADIAN",
+        "value": 0
+      },
+      "windEndAngle": {
+        "unit": "RADIAN",
+        "value": 6.283185307179586
+      },
+      "useStrengthResults": false,
+      "analyzeWithAverageSpan": true,
+      "maximumLoadingRatio": 1,
+      "addByDefault": false,
+      "constructionType": "NEW",
+      "analyzeGroundLineOnly": false,
+      "components": [],
+      "constructionGrade": "C",
+      "loadZone": "WARM_ISLAND_UNDER_9000_FT",
+      "overrides": {},
+      "valuesApplied": {
+        "linearConstant": {
+          "unit": "NEWTON_PER_METRE",
+          "value": 0.7296951468603182
+        },
+        "foundationTensionMultiplier": 1.3,
+        "foundationStrengthFactor": 1,
+        "foundationVerticalLoadMultiplier": 1.9,
+        "ice": {
+          "unit": "METRE",
+          "value": 0
+        },
+        "commOnlyTensionMultiplier": 0,
+        "crossArmTensionMultipliers": {
+          "WOOD": 1.3,
+          "METAL": 1.1,
+          "REINFORCED_CONCRETE": 1.3,
+          "POLYMER": 1.3,
+          "PRESTRESSED_CONCRETE": 1.1
+        },
+        "guyTensionMultiplier": 1.1,
+        "anchorTensionMultiplier": 1.1,
+        "guyVerticalLoadMultiplier": 1.5,
+        "crossArmVerticalLoadMultipliers": {
+          "WOOD": 1.9,
+          "METAL": 1.5,
+          "REINFORCED_CONCRETE": 1.9,
+          "POLYMER": 1.5,
+          "PRESTRESSED_CONCRETE": 1.5
+        },
+        "crossArmWindMultipliers": {
+          "WOOD": 1.75,
+          "METAL": 1.75,
+          "REINFORCED_CONCRETE": 1.75,
+          "POLYMER": 1.75,
+          "PRESTRESSED_CONCRETE": 1.75
+        },
+        "anchorWindMultiplier": 1.75,
+        "poleVerticalLoadMultipliers": {
+          "WOOD": 1.9,
+          "METAL": 1.5,
+          "REINFORCED_CONCRETE": 1.9,
+          "POLYMER": 1.5,
+          "PRESTRESSED_CONCRETE": 1.5
+        },
+        "anchorVerticalLoadMultiplier": 1.5,
+        "temperature": {
+          "unit": "CELSIUS",
+          "value": 10
+        },
+        "insulatorTensionMultiplier": 1.3,
+        "windPressure": {
+          "unit": "PASCAL",
+          "value": 430.9223308230226
+        },
+        "areaMultipliers": {
+          "ROUND": 1,
+          "SQUARE": 1.6,
+          "ROUND_LATTICE": 2,
+          "SQUARE_LATTICE": 3.2
+        },
+        "anchorStrengthFactor": 1,
+        "insulatorStrengthFactor": 1,
+        "guyWindMultiplier": 1.75,
+        "guyStrengthFactor": 0.9,
+        "poleStrengthFactors": {
+          "WOOD": 0.85,
+          "METAL": 1,
+          "REINFORCED_CONCRETE": 0.85,
+          "POLYMER": 1,
+          "PRESTRESSED_CONCRETE": 1
+        },
+        "insulatorVerticalLoadMultiplier": 1.9,
+        "foundationWindMultiplier": 1.75,
+        "insulatorWindMultiplier": 1.75,
+        "poleTensionMultipliers": {
+          "WOOD": 1.3,
+          "METAL": 1.1,
+          "REINFORCED_CONCRETE": 1.3,
+          "POLYMER": 1.3,
+          "PRESTRESSED_CONCRETE": 1.1
+        },
+        "poleWindMultipliers": {
+          "WOOD": 1.75,
+          "METAL": 1.75,
+          "REINFORCED_CONCRETE": 1.75,
+          "POLYMER": 1.75,
+          "PRESTRESSED_CONCRETE": 1.75
+        },
+        "crossArmStrengthFactors": {
+          "WOOD": 0.85,
+          "METAL": 1,
+          "REINFORCED_CONCRETE": 0.85,
+          "POLYMER": 1,
+          "PRESTRESSED_CONCRETE": 1
+        }
+      },
+      "bucklingCase": {
+        "sectionHeightMode": "LOAD",
+        "diameterMethod": "TAPERED_DIAMETER",
+        "analysisMethod": "TRADITIONAL_EULER",
+        "unguyedConstant": 2,
+        "bucklingCoefficient": 0.384,
+        "loadingHeightPercent": 1,
+        "diameterHeightPercent": 0.33,
+        "guyedConstants": [
+          {
+            "angle": {
+              "unit": "RADIAN",
+              "value": 6.283185307179586
+            },
+            "constant": 0.707
+          }
+        ]
+      },
+      "deflectionCase": {
+        "type": "PERCENT_OF_HEIGHT_DEFLECTION",
+        "percent": 0.15
+      }
     }
   ]
 }

@@ -14,7 +14,7 @@ const co = require('co');
 const util = require('util');
 
 const api = require('../lib/api');
-const { loadClientItems } = require('../lib/clientData');
+const { loadClientData } = require('../lib/clientData');
 
 const command = 'analyze [json..]';
 const desc =  'Send analysis or job in each file to CEE, then optionally poll CEE until analysis is complete  and retrieve results.  If polling is enabled analysis results will be written to a directory specified by the output parameter.';
@@ -36,8 +36,10 @@ module.exports = {
         .describe('array','Expect input files to contain an array of jobs or analyses instead of a single job or analysis')
         .describe('engineVersion', 'Version of calc to analyze against')
         .describe('job', 'Expect json files to be jobs instead of analysis (Passed callback and calcVersion will be ignored)')
-        .describe('clientData', 'File containing client data (expect json args to be a structure only; requires analysisCase)')
-        .describe('analysisCase','File containing analysis case (expect json args to be a structure only; requires clientData)')
+        .describe('clientData', 'File containing client data (expect json args to be a structure only; requires one of analysisCase, loadCaseName, or strengthCaseName)')
+        .describe('loadCaseName', 'Used named load case from clientData. (requires clientData; conflicts with analysisCase and strengthCaseName)')
+        .describe('strengthCaseName', 'Used named load case from clientData. (requires clientData; conflicts with analysisCase and loadCaseName)')
+        .describe('analysisCase','File containing analysis case (requires clientData; conflicts with analysisCase and loadCaseName)')
         .alias('f','config')
         .alias('p','poll')
         .alias('b','callback')
@@ -47,6 +49,8 @@ module.exports = {
         .alias('v','engineVersion')
         .alias('d','clientData')
         .alias('c','analysisCase')
+        .alias('l','loadCaseName')
+        .alias('s','strengthCaseName')
         .default('config',api.defaultConfigPath)
         .default('output','results')
         .default('engineVersion', '7.0.1'),
@@ -185,31 +189,102 @@ function showProgress(jobIds,argv,config) {
 
 function resolvePayload(partialPayloadP, structure) {
     return partialPayloadP.then(partialPayload => {
-        const { analysisCase, clientItems } = partialPayload;
+        const { analysisCase, clientData } = partialPayload;
 
         return {
             analysisCase,
             structure,
-            clientData: clientItems.clientItemsForStructure(structure)
+            clientData: clientData.clientItemsForStructure(structure)
         };
     });
 }
 
+const argValidation = {
+    clientData: {
+        requiresOne: ['analysisCase','loadCaseName','strengthCaseName']
+    },
+    analysisCase: {
+        requires: ['clientData'],
+        conflicts: ['loadCaseName','strengthCaseName']
+    },
+    loadCaseName: {
+        requires: ['clientData'],
+        conflicts: ['analysisCase','strengthCaseName']
+    },
+    strengthCaseName: {
+        requires: ['clientData'],
+        conflicts: ['analysisCase','loadCaseName']
+    }
+}
+
+//Returns an error or undefined in no error
+function validateClientDataArgs(argv) {
+    for (let arg of Object.keys(argValidation)) {
+        if (argv[argv]) {
+            const spec = argValidation[arg];
+
+            if (spec.requiresOne && !spec.requiresOne.some(r => argv[r])) {
+                return `${arg} requires one of ${spec.requiresOne.join(', ')}`;
+            }
+
+            if (spec.requires && !spec.requires.every(r => argv[r])) {
+                return `${arg} requires ${spec.requires.join(', ')}`;
+            }
+
+            if (spec.conflicts && spec.conflicts.some(r => argv[r])) {
+                return `${arg} can not be combined with ${spec.conflicts.join(', ')}`;
+            }
+        }
+    }
+}
+
+
+function createPartialPayload(argv) {
+    if (argv.clientData) {
+        const clientDataP = loadClientData(argv.clientData);
+
+        if (argv.analysisCase) {
+            return Promise.props({
+                clientData: clientDataP,
+                analysisCase: fs.readFileAsync(argv.analysisCase).then(JSON.parse)
+            });
+        } else {
+            return clientDataP.then(clientData => {
+                let name;
+                let type;
+
+                if (argv.loadCaseName) {
+                    type = 'load';
+                    name = argv.loadCaseName;
+                } else {
+                    type = 'strength';
+                    name = argv.strengthCaseName;
+                }
+
+                const analysisCase = clientData.lookupAnalysisCase(type, name);
+
+                if (analysisCase) {
+                    return { clientData, analysisCase };
+                } else {
+                    return Promise.reject(`Unable to find ${type} case "${name}" in client data`);
+                }
+            });
+        }
+    }
+
+    //This really shouldn't happen if validateClientDataArgs passes
+    return Promise.reject('Invalid parameters');
+}
 
 function batchJobs(argv) {
     const batch = _.partialRight(_.chunk,BATCH_SIZE);
 
-    let partialPayload;
-    if (argv.clientData || argv.analysisCase) {
-        if (argv.clientData && argv.analysisCase) {
-            partialPayload = Promise.props({
-                analysisCase: fs.readFileAsync(argv.analysisCase).then(JSON.parse),
-                clientItems: loadClientItems(argv.clientData)
-            });
-        } else {
-            throw 'Both or neither of --clientData and --analysisCase must be specified'
-        }
+    const error = validateClientDataArgs(argv);
+    if (error) {
+        return Promise.reject(error);
     }
+
+    let partialPayload = createPartialPayload(argv);
 
     return Promise.all(argv.json.map(file => 
         fs.readFileAsync(file)

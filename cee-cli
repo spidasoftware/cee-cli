@@ -5,4 +5,4 @@ MY_PATH=${BASH_SOURCE%/*}
 [[ -x $MY_PATH/calc-versions.txt ]] || cp $MY_PATH/../cee/master/calc-versions.txt .
 [[ -d $MY_PATH/schema ]] || cp -R $MY_PATH/../schema/resources/schema .
 
-node $MY_PATH/cli.js $@
+node $MY_PATH/cli.js "$@"
