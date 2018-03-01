@@ -115,7 +115,7 @@ Get jobs, unless stdout is specified.  Jobs will be written to files in the dire
 
   Send analysis to CEE, don't wait for analysis to complete (jobIds will be given on stdout as json)
  ```
- cee-cli analyze -d examples/oneOfEverythingClientData.json -l Heavy examples/structures/oneOfEverything1.json examples/structures/oneOfEverything2.json
+ cee-cli analyze -d examples/oneOfEverythingClientData.json -l NESC examples/structures/oneOfEverything1.json examples/structures/oneOfEverything2.json
  ```
 
   Get my last 20 jobs save to "archive" directory
