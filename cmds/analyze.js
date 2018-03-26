@@ -270,10 +270,12 @@ function createPartialPayload(argv) {
                 }
             });
         }
+        //
+        //This really shouldn't happen if validateClientDataArgs passes
+        return Promise.reject('Invalid parameters');
     }
 
-    //This really shouldn't happen if validateClientDataArgs passes
-    return Promise.reject('Invalid parameters');
+    return false;
 }
 
 function batchJobs(argv) {
