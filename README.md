@@ -122,3 +122,19 @@ Get jobs, unless stdout is specified.  Jobs will be written to files in the dire
   ```
   cee-cli get --limit 20 --offset 0 -o archive
   ```
+  
+  ## Generate License Report
+  Install the project
+  ```
+  cd cee-cli
+  npm install
+  ```
+  Install the license-checker tool:
+  ```
+  npm install -g license-checker
+  ```
+  Generate the license report:
+  ```
+  license-checker --csv --out cee-cli_js_license_report.csv
+  cat cee-cli_js_license_report.csv
+  ```
