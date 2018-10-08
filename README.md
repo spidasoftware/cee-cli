@@ -1,5 +1,7 @@
 # CEE CLI
 
+## [Getting Started](https://github.com/spidasoftware/cee-cli/tree/master/GETTING_STARTED.md)
+
 ## Installation
 1. Confirm current calc schema in ../schema
 1. Confirm list of valid Calc versions in ../cee/master/calc-versions.txt
