@@ -190,7 +190,6 @@ function showProgress(jobIds,argv,config) {
 function resolvePayload(partialPayloadP, structure) {
     return partialPayloadP.then(partialPayload => {
         const { analysisCase, clientData } = partialPayload;
-
         return {
             analysisCase,
             structure,
@@ -305,6 +304,7 @@ function batchJobs(argv) {
                         label: `CLI Job ${i} from ${file}`,
                         payload: partialPayload ? resolvePayload(partialPayload, payload) : payload
                     })));
+                    console.log(analysisP.payload);
                 } else {
                     analysisP = Promise.props({
                         engineVersion: argv.engineVersion,
@@ -313,6 +313,7 @@ function batchJobs(argv) {
                         label: `CLI Job from ${file}`,
                         payload: partialPayload ? resolvePayload(partialPayload, analysis) : analysis
                     });
+
                 }
 
                 return analysisP.catch(e =>
