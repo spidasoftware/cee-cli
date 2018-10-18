@@ -190,7 +190,6 @@ function showProgress(jobIds,argv,config) {
 function resolvePayload(partialPayloadP, structure) {
     return partialPayloadP.then(partialPayload => {
         const { analysisCase, clientData } = partialPayload;
-
         return {
             analysisCase,
             structure,

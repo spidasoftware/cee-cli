@@ -10,7 +10,7 @@ const testJobPath = './tests/testJobs';
 fs.readdirAsync(testJobPath).then(files =>
     Promise.all(files.map(file => fs.readFileAsync(path.join(testJobPath,file)).then(JSON.parse)))
 ).then(jobs => {
-    const success = true;
+    let success = true;
     for (let job of jobs) {
         const structure = job.payload.structure;
         const originalClientData = job.payload.clientData;
