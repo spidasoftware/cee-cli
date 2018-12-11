@@ -245,13 +245,13 @@ function createPartialPayload(argv) {
         if (argv.analysisCase) {
             return Promise.props({
                 clientData: clientDataP,
-                analysisCase: fs.readFileAsync(argv.analysisCase).then(JSON.parse)
+                analysisCase: maybeAddStrengthCase(fs.readFileAsync(argv.analysisCase).then(JSON.parse), clientDataP)
             });
         } else {
             return clientDataP.then(clientData => {
                 let name;
                 let type;
-
+                //TODO allow users to pass -l and -s. Handle fail for useStrengthCaseResults false
                 if (argv.loadCaseName) {
                     type = 'load';
                     name = argv.loadCaseName;
@@ -275,6 +275,38 @@ function createPartialPayload(argv) {
     }
 
     return false;
+}
+
+// We assume only a single strength case in client data
+function maybeAddStrengthCase(analysisCaseP, clientDataP){
+    analysisCaseP.then(analysisCase => {
+        clientDataP.then(clientData => {
+            // console.log(`clientData`);
+            // console.log(clientData);
+            console.log(`analysisCase.useStrengthResults ${analysisCase.useStrengthResults}`);
+            if(analysisCase.useStrengthResults){
+                console.log("use strength results");
+                // console.log(clientData.analysisCases);
+                // console.log(clientData.analysisCases.strength);
+                const strengthCases = clientData.analysisCases.strength;
+                for(let key in strengthCases){
+
+                    // if(key == object){
+                        console.log("appending");
+                        console.log(strengthCases[key]);
+
+                        analysisCase = [analysisCase, strengthCases[key]];
+
+
+                    // }
+
+                }
+            }
+        });
+        console.log("analysis Case");
+        console.log(analysisCase);
+    });
+    return analysisCaseP;
 }
 
 function batchJobs(argv) {
@@ -324,6 +356,7 @@ function batchJobs(argv) {
     //Workaround for #155413204
     .then(jobs =>
         jobs.map(job => {
+            console.log(job.payload);
             if (!job.payload.structure.wireEndPoints) {
                 job.payload.structure.wireEndPoints=[];
             }
