@@ -193,7 +193,7 @@ function resolvePayload(partialPayloadP, structure) {
         return {
             analysisCase,
             structure,
-            clientData: clientData.clientItemsForStructure(structure)
+            clientData: maybeAddStrengthCase(analysisCase, clientData, clientData.clientItemsForStructure(structure))
         };
     });
 }
@@ -245,7 +245,7 @@ function createPartialPayload(argv) {
         if (argv.analysisCase) {
             return Promise.props({
                 clientData: clientDataP,
-                analysisCase: maybeAddStrengthCase(fs.readFileAsync(argv.analysisCase).then(JSON.parse), clientDataP)
+                analysisCase: fs.readFileAsync(argv.analysisCase).then(JSON.parse)
             });
         } else {
             return clientDataP.then(clientData => {
@@ -278,35 +278,22 @@ function createPartialPayload(argv) {
 }
 
 // We assume only a single strength case in client data
-function maybeAddStrengthCase(analysisCaseP, clientDataP){
-    analysisCaseP.then(analysisCase => {
-        clientDataP.then(clientData => {
-            // console.log(`clientData`);
-            // console.log(clientData);
-            console.log(`analysisCase.useStrengthResults ${analysisCase.useStrengthResults}`);
-            if(analysisCase.useStrengthResults){
-                console.log("use strength results");
-                // console.log(clientData.analysisCases);
-                // console.log(clientData.analysisCases.strength);
-                const strengthCases = clientData.analysisCases.strength;
-                for(let key in strengthCases){
-
-                    // if(key == object){
-                        console.log("appending");
-                        console.log(strengthCases[key]);
-
-                        analysisCase = [analysisCase, strengthCases[key]];
-
-
-                    // }
-
-                }
+function maybeAddStrengthCase(analysisCase, clientData, structureComponents){
+    if(analysisCase.useStrengthResults === true){
+        if(Object.keys(clientData.analysisCases.strength).length < 1){
+            Promise.reject("\nLoad case has useStrengthResults: TRUE, but no strength case exists in client data");
+        } else if (Object.keys(clientData.analysisCases.strength).length > 1) {
+            Promise.reject("\nClient data contains more than one strength case. Only one strength case was expected");
+        }
+        let useCaseKey;
+        for(let key in clientData.analysisCases.strength){
+            if(key !== undefined) {
+                useCaseKey = key;
             }
-        });
-        console.log("analysis Case");
-        console.log(analysisCase);
-    });
-    return analysisCaseP;
+        }
+        structureComponents.analysisCases = [clientData.analysisCases.strength[useCaseKey]];
+    }
+    return structureComponents;
 }
 
 function batchJobs(argv) {
@@ -356,7 +343,6 @@ function batchJobs(argv) {
     //Workaround for #155413204
     .then(jobs =>
         jobs.map(job => {
-            console.log(job.payload);
             if (!job.payload.structure.wireEndPoints) {
                 job.payload.structure.wireEndPoints=[];
             }
