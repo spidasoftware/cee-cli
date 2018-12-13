@@ -193,7 +193,7 @@ function resolvePayload(partialPayloadP, structure) {
         return {
             analysisCase,
             structure,
-            clientData: clientData.clientItemsForStructure(structure)
+            clientData: maybeAddStrengthCase(analysisCase, clientData, clientData.clientItemsForStructure(structure))
         };
     });
 }
@@ -251,7 +251,6 @@ function createPartialPayload(argv) {
             return clientDataP.then(clientData => {
                 let name;
                 let type;
-
                 if (argv.loadCaseName) {
                     type = 'load';
                     name = argv.loadCaseName;
@@ -275,6 +274,25 @@ function createPartialPayload(argv) {
     }
 
     return false;
+}
+
+// We assume only a single strength case in client data
+function maybeAddStrengthCase(analysisCase, clientData, structureComponents){
+    if(analysisCase.useStrengthResults === true){
+        if(Object.keys(clientData.analysisCases.strength).length < 1){
+            throw("\nLoad case has useStrengthResults: TRUE, but no strength case exists in client data");
+        } else if (Object.keys(clientData.analysisCases.strength).length > 1) {
+            throw("\nClient data contains more than one strength case. Only one strength case was expected");
+        }
+        let useCaseKey;
+        for(let key in clientData.analysisCases.strength){
+            if(key !== undefined) {
+                useCaseKey = key;
+            }
+        }
+        structureComponents.analysisCases = [clientData.analysisCases.strength[useCaseKey]];
+    }
+    return structureComponents;
 }
 
 function batchJobs(argv) {

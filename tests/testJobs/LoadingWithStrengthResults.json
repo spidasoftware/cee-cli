@@ -1,0 +1,3637 @@
+{
+  "_id": "5c1165cdb97bf4794cc2a36f",
+  "engineVersion": "7.1.0-201812101913",
+  "externalId": "calcstructure.json",
+  "label": "CLI Job from calcstructure.json",
+  "payload": {
+    "analysisCase": {
+      "name": "Medium C with strength",
+      "type": "NESC 2012",
+      "analysisMethod": "DIRECT_STIFFNESS",
+      "connectionType": "CONTINUATION",
+      "displacementBasedLoadChangesLevel": "NONE",
+      "windType": "FIXED",
+      "sweepIncrement": "DEGREE_1",
+      "windStartAngle": {
+        "unit": "RADIAN",
+        "value": 0
+      },
+      "windEndAngle": {
+        "unit": "RADIAN",
+        "value": 0.017453292519943295
+      },
+      "useStrengthResults": true,
+      "analyzeWithAverageSpan": true,
+      "maximumLoadingRatio": 1,
+      "addByDefault": false,
+      "constructionType": "NEW",
+      "checkUtilityWireTension": false,
+      "maximumAllowableUtilityWireTensionRatio": {
+        "unit": "PERCENT",
+        "value": 60
+      },
+      "checkCommWireTension": false,
+      "maximumAllowableCommunicationWireTensionRatio": {
+        "unit": "PERCENT",
+        "value": 60
+      },
+      "analyzeGroundLineOnly": false,
+      "components": [
+
+      ],
+      "constructionGrade": "C",
+      "loadZone": "MEDIUM",
+      "overrides": {
+
+      },
+      "valuesApplied": {
+        "linearConstant": {
+          "unit": "NEWTON_PER_METRE",
+          "value": 2.918780587441273
+        },
+        "foundationTensionMultiplier": 1.3,
+        "foundationStrengthFactor": 1,
+        "foundationVerticalLoadMultiplier": 1.9,
+        "ice": {
+          "unit": "METRE",
+          "value": 0.006350000000000001
+        },
+        "commOnlyTensionMultiplier": 0,
+        "crossArmTensionMultipliers": {
+          "WOOD": 1.3,
+          "METAL": 1.1,
+          "REINFORCED_CONCRETE": 1.3,
+          "POLYMER": 1.3,
+          "PRESTRESSED_CONCRETE": 1.1
+        },
+        "guyTensionMultiplier": 1.1,
+        "anchorTensionMultiplier": 1.1,
+        "guyVerticalLoadMultiplier": 1.5,
+        "crossArmVerticalLoadMultipliers": {
+          "WOOD": 1.9,
+          "METAL": 1.5,
+          "REINFORCED_CONCRETE": 1.9,
+          "POLYMER": 1.5,
+          "PRESTRESSED_CONCRETE": 1.5
+        },
+        "crossArmWindMultipliers": {
+          "WOOD": 1.75,
+          "METAL": 1.75,
+          "REINFORCED_CONCRETE": 1.75,
+          "POLYMER": 1.75,
+          "PRESTRESSED_CONCRETE": 1.75
+        },
+        "anchorWindMultiplier": 1.75,
+        "poleVerticalLoadMultipliers": {
+          "WOOD": 1.9,
+          "METAL": 1.5,
+          "REINFORCED_CONCRETE": 1.9,
+          "POLYMER": 1.5,
+          "PRESTRESSED_CONCRETE": 1.5
+        },
+        "anchorVerticalLoadMultiplier": 1.5,
+        "temperature": {
+          "unit": "CELSIUS",
+          "value": -9.444444444444445
+        },
+        "insulatorTensionMultiplier": 1.3,
+        "windPressure": {
+          "unit": "PASCAL",
+          "value": 191.52103592134338
+        },
+        "areaMultipliers": {
+          "ROUND": 1,
+          "SQUARE": 1.6,
+          "ROUND_LATTICE": 2,
+          "SQUARE_LATTICE": 3.2
+        },
+        "anchorStrengthFactor": 1,
+        "insulatorStrengthFactor": 1,
+        "guyWindMultiplier": 1.75,
+        "guyStrengthFactor": 0.9,
+        "poleStrengthFactors": {
+          "WOOD": 0.85,
+          "METAL": 1,
+          "REINFORCED_CONCRETE": 0.85,
+          "POLYMER": 1,
+          "PRESTRESSED_CONCRETE": 1
+        },
+        "insulatorVerticalLoadMultiplier": 1.9,
+        "foundationWindMultiplier": 1.75,
+        "insulatorWindMultiplier": 1.75,
+        "poleTensionMultipliers": {
+          "WOOD": 1.3,
+          "METAL": 1.1,
+          "REINFORCED_CONCRETE": 1.3,
+          "POLYMER": 1.3,
+          "PRESTRESSED_CONCRETE": 1.1
+        },
+        "poleWindMultipliers": {
+          "WOOD": 1.75,
+          "METAL": 1.75,
+          "REINFORCED_CONCRETE": 1.75,
+          "POLYMER": 1.75,
+          "PRESTRESSED_CONCRETE": 1.75
+        },
+        "crossArmStrengthFactors": {
+          "WOOD": 0.85,
+          "METAL": 1,
+          "REINFORCED_CONCRETE": 0.85,
+          "POLYMER": 1,
+          "PRESTRESSED_CONCRETE": 1
+        }
+      },
+      "bucklingCase": {
+        "sectionHeightMode": "LOAD",
+        "diameterMethod": "TAPERED_DIAMETER",
+        "analysisMethod": "TRADITIONAL_EULER",
+        "unguyedConstant": 2,
+        "bucklingCoefficient": 0.384,
+        "loadingHeightPercent": 1,
+        "diameterHeightPercent": 0.33,
+        "guyedConstants": [
+          {
+            "angle": {
+              "unit": "RADIAN",
+              "value": 6.283185307179586
+            },
+            "constant": 0.707
+          }
+        ]
+      },
+      "deflectionCase": {
+        "type": "PERCENT_OF_HEIGHT_DEFLECTION",
+        "percent": 0
+      }
+    },
+    "structure": {
+      "pole": {
+        "glc": {
+          "unit": "METRE",
+          "value": 0.859756268414574
+        },
+        "agl": {
+          "unit": "METRE",
+          "value": 6.096000000000001
+        },
+        "autoGLC": true,
+        "autoAGL": true,
+        "environment": "NONE",
+        "temperature": {
+          "unit": "CELSIUS",
+          "value": 15.555555555555555
+        },
+        "stressRatio": 1,
+        "leanAngle": 0,
+        "leanDirection": 0,
+        "clientItemVersion": "6c4181af39f1141485fab587d505bd03",
+        "clientItem": {
+          "species": "Douglas Fir",
+          "classOfPole": "1",
+          "height": {
+            "unit": "METRE",
+            "value": 7.620000000000001
+          }
+        },
+        "externalId": "5bfc5b7103642d0ed0ff17d4",
+        "owner": {
+          "id": "Acme Power",
+          "industry": "UTILITY",
+          "externalId": "43e130a1-3c21-41c9-b420-0e5b966eb2f2"
+        }
+      },
+      "wireEndPoints": [
+
+      ],
+      "spanPoints": [
+
+      ],
+      "anchors": [
+
+      ],
+      "notePoints": [
+
+      ],
+      "pointLoads": [
+        {
+          "attachHeight": {
+            "unit": "METRE",
+            "value": 5.909999999999999
+          },
+          "id": "PointLoad#1",
+          "externalId": "5bfc5b7e03642d0ed0ff17df",
+          "owner": {
+            "id": "Acme Power",
+            "industry": "UTILITY",
+            "externalId": "43e130a1-3c21-41c9-b420-0e5b966eb2f2"
+          },
+          "XForce": {
+            "unit": "NEWTON",
+            "value": 2000
+          },
+          "YForce": {
+            "unit": "NEWTON",
+            "value": 0
+          },
+          "ZForce": {
+            "unit": "NEWTON",
+            "value": 0
+          }
+        }
+      ],
+      "wirePointLoads": [
+
+      ],
+      "damages": [
+        {
+          "id": "Damage#1",
+          "externalId": "5bfc5bbd03642d0ed0ff181b",
+          "attachHeight": {
+            "unit": "METRE",
+            "value": -0.01
+          },
+          "damageHeight": {
+            "unit": "METRE",
+            "value": 0.025400000000000002
+          },
+          "damageType": "SLICE",
+          "direction": 0,
+          "width": {
+            "unit": "METRE",
+            "value": 0.2736689199448436
+          }
+        }
+      ],
+      "wires": [
+
+      ],
+      "spanGuys": [
+
+      ],
+      "guys": [
+
+      ],
+      "equipments": [
+
+      ],
+      "guyAttachPoints": [
+
+      ],
+      "crossArms": [
+
+      ],
+      "insulators": [
+
+      ],
+      "pushBraces": [
+
+      ],
+      "sidewalkBraces": [
+
+      ],
+      "foundations": [
+
+      ],
+      "assemblies": [
+
+      ]
+    },
+    "clientData": {
+      "poles": [
+        {
+          "aliases": [
+
+          ],
+          "shape": "ROUND",
+          "materialCategory": "WOOD",
+          "classOfPole": "1",
+          "species": "Douglas Fir",
+          "height": {
+            "unit": "METRE",
+            "value": 7.620000000000001
+          },
+          "taper": 0.109,
+          "density": {
+            "unit": "KILOGRAM_PER_CUBIC_METRE",
+            "value": 496.5723645927643
+          },
+          "allowable": {
+            "unit": "PASCAL",
+            "value": 55158058.34534689
+          },
+          "ptc": {
+            "unit": "METRE",
+            "value": 0.6858000000000001
+          },
+          "modulus": {
+            "unit": "PASCAL",
+            "value": 13237934002.88325
+          },
+          "wallThickness": {
+            "unit": "METRE",
+            "value": -1
+          },
+          "poissonRatio": 0.3
+        }
+      ],
+      "analysisCases": [
+        {
+          "name": "NESC ZONE",
+          "addByDefault": false,
+          "includeThroughBolts": false,
+          "minimumAllowableRatio": 0.6666666666666666,
+          "heightToIncludeAtGroundline": {
+            "unit": "METRE",
+            "value": 0
+          }
+        }
+      ],
+      "wires": [
+
+      ]
+    }
+  },
+  "requestIP": "12.158.48.92",
+  "submitDate": 1544644045637,
+  "analysisType": "DIRECT-STIFFNESS",
+  "analysisCaseName": "Medium C with strength",
+  "userId": "5b93423874c94eec69049b7e",
+  "userEmail": "kevin.gentile@spidasoftware.com",
+  "accountId": "5954ed887eb8a300017f7968",
+  "estimatedAnalysisTime": 41857.015069000205,
+  "priority": 41857.015069000205,
+  "startDate": 1544644052809,
+  "workerId": "b09746d4-c80d-4f2d-945c-e91ea0e0fb0b",
+  "serverSize": 4,
+  "finishDate": 1544644061705,
+  "output": {
+    "results": [
+      {
+        "analysisCase": "Medium C with strength",
+        "analysisCaseVersion": "c566d0904735ff066992f1e2d41ad455",
+        "analysisDate": 1544644061135,
+        "engineVersion": "7.1.0-201812101913",
+        "components": [
+          {
+            "id": "Pole",
+            "clientItem": "25'-1 Douglas Fir",
+            "owner": "Acme Power",
+            "resultsType": "PERCENT_LOADED",
+            "analysisType": "STRESS",
+            "failingRatio": 1,
+            "allowable": 100,
+            "additionalValues": [
+              {
+                "name": "heightOfMaximumStress",
+                "value": {
+                  "unit": "METRE",
+                  "value": 0.02
+                },
+                "tags": [
+                  "ATTACH_HEIGHT"
+                ]
+              }
+            ],
+            "allowableEngineering": {
+              "unit": "PASCAL",
+              "value": 46884349.593544856
+            },
+            "actualEngineering": {
+              "unit": "PASCAL",
+              "value": 27283748.720677186
+            },
+            "atDirection": [
+              {
+                "direction": {
+                  "unit": "RADIAN",
+                  "value": 0
+                },
+                "value": {
+                  "unit": "PASCAL",
+                  "value": 27283748.720677186
+                },
+                "status": "PASSING",
+                "actual": 58.193723400683965,
+                "ratio": 0.5819372340068396
+              }
+            ],
+            "actual": 58.193723400683965,
+            "ratio": 0.5819372340068396,
+            "status": "PASSING",
+            "windDirection": 0,
+            "atHeight": [
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 0
+                },
+                "deflection": {
+                  "vector": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+                  "Damage#1"
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -2501.668227239512,
+                      0,
+                      2686.306272175587
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -13294.704376502385,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      0.916847076246666,
+                      0,
+                      -5.437902936894869
+                    ],
+                    "unit": "NEWTON"
+                  }
+                },
+                "actualEngineering": {
+                  "unit": "PASCAL",
+                  "value": 27181412.656358425
+                },
+                "actual": 57.97544999984563,
+                "ratio": 0.5797544999984563,
+                "status": "PASSING"
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 0.02
+                },
+                "deflection": {
+                  "vector": [
+                    0.000005214006365257774,
+                    0,
+                    -1.379966455711225e-7
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+                  "Damage#1"
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -2498.9192325575277,
+                      0,
+                      2670.010901064576
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -13244.67101195777,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      2.7489946804148464,
+                      0,
+                      -16.29537111100869
+                    ],
+                    "unit": "NEWTON"
+                  }
+                },
+                "actualEngineering": {
+                  "unit": "PASCAL",
+                  "value": 27283748.720677186
+                },
+                "actual": 58.193723400683965,
+                "ratio": 0.5819372340068396,
+                "status": "PASSING"
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 0.06
+                },
+                "deflection": {
+                  "vector": [
+                    0.00002897129523032965,
+                    0,
+                    -2.754992954670989e-7
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -2495.2572571774945,
+                      0,
+                      2648.3234422546493
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -13144.714242655205,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      3.6619753858486352,
+                      0,
+                      -21.687458809927925
+                    ],
+                    "unit": "NEWTON"
+                  }
+                },
+                "actualEngineering": {
+                  "unit": "PASCAL",
+                  "value": 6652645.879328908
+                },
+                "actual": 14.189481003795049,
+                "ratio": 0.1418948100379505,
+                "status": "PASSING"
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 0.1
+                },
+                "deflection": {
+                  "vector": [
+                    0.000058542613030807056,
+                    0,
+                    -4.122310989040092e-7
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -2484.316954195965,
+                      0,
+                      2583.800200258812
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -13044.903952368055,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      10.940302981953945,
+                      0,
+                      -64.52324199583515
+                    ],
+                    "unit": "NEWTON"
+                  }
+                },
+                "actualEngineering": {
+                  "unit": "PASCAL",
+                  "value": 6627498.284751937
+                },
+                "actual": 14.13584350045975,
+                "ratio": 0.1413584350045975,
+                "status": "PASSING"
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 0.3
+                },
+                "deflection": {
+                  "vector": [
+                    0.0002935055897002224,
+                    0,
+                    -0.0000010849069414337176
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -2466.157865729416,
+                      0,
+                      2477.1403975608882
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -12548.040561528513,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      18.159088467540933,
+                      0,
+                      -106.6598026979237
+                    ],
+                    "unit": "NEWTON"
+                  }
+                },
+                "actualEngineering": {
+                  "unit": "PASCAL",
+                  "value": 6660310.86826582
+                },
+                "actual": 14.205829719311765,
+                "ratio": 0.14205829719311766,
+                "status": "PASSING"
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 0.5
+                },
+                "deflection": {
+                  "vector": [
+                    0.000671885769421883,
+                    0,
+                    -0.0000017386627070543085
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -2434.74869932374,
+                      0,
+                      2294.795165246863
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -12054.808988382978,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      31.409166405566793,
+                      0,
+                      -182.34523231402687
+                    ],
+                    "unit": "NEWTON"
+                  }
+                },
+                "actualEngineering": {
+                  "unit": "PASCAL",
+                  "value": 6538486.867894007
+                },
+                "actual": 13.945990345559236,
+                "ratio": 0.13945990345559237,
+                "status": "PASSING"
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 1
+                },
+                "deflection": {
+                  "vector": [
+                    0.0022366438345433073,
+                    0,
+                    -0.000003288292050112421
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -2390.404564201017,
+                      0,
+                      2040.3633593283105
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -10837.434638721152,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      44.344135122343104,
+                      0,
+                      -254.43180591855284
+                    ],
+                    "unit": "NEWTON"
+                  }
+                },
+                "actualEngineering": {
+                  "unit": "PASCAL",
+                  "value": 6501978.517452527
+                },
+                "actual": 13.868121396201975,
+                "ratio": 0.13868121396201974,
+                "status": "PASSING"
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 1.5
+                },
+                "deflection": {
+                  "vector": [
+                    0.004651646282046884,
+                    0,
+                    -0.000004713767005582508
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -2346.8240373146837,
+                      0,
+                      1794.6171809730847
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -9642.232356620512,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      43.5805268867997,
+                      0,
+                      -245.7461783552234
+                    ],
+                    "unit": "NEWTON"
+                  }
+                },
+                "actualEngineering": {
+                  "unit": "PASCAL",
+                  "value": 6150183.981255295
+                },
+                "actual": 13.11777604802705,
+                "ratio": 0.1311777604802705,
+                "status": "PASSING"
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 2
+                },
+                "deflection": {
+                  "vector": [
+                    0.007877479267201993,
+                    0,
+                    -0.0000060128478259330945
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -2304.0071186626446,
+                      0,
+                      1557.4076575965887
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -8468.820337963258,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      42.816918651256316,
+                      0,
+                      -237.20952337649948
+                    ],
+                    "unit": "NEWTON"
+                  }
+                },
+                "actualEngineering": {
+                  "unit": "PASCAL",
+                  "value": 5770066.927622411
+                },
+                "actual": 12.307021378444903,
+                "ratio": 0.12307021378444903,
+                "status": "PASSING"
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 2.5
+                },
+                "deflection": {
+                  "vector": [
+                    0.011867550764756159,
+                    0,
+                    -0.00000718062938139478
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -2261.9441423196695,
+                      0,
+                      1328.477757690429
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -7316.816778631601,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      42.06297634274512,
+                      0,
+                      -228.92989990616238
+                    ],
+                    "unit": "NEWTON"
+                  }
+                },
+                "actualEngineering": {
+                  "unit": "PASCAL",
+                  "value": 5341866.857030021
+                },
+                "actual": 11.393710061759077,
+                "ratio": 0.11393710061759077,
+                "status": "PASSING"
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 3
+                },
+                "deflection": {
+                  "vector": [
+                    0.016566411873937367,
+                    0,
+                    -0.000008213111913211985
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -2220.644774213026,
+                      0,
+                      1107.7827477839123
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -6185.844707471868,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      41.29936810720173,
+                      0,
+                      -220.69500990651102
+                    ],
+                    "unit": "NEWTON"
+                  }
+                },
+                "actualEngineering": {
+                  "unit": "PASCAL",
+                  "value": 4869338.894735175
+                },
+                "actual": 10.385851434325104,
+                "ratio": 0.10385851434325105,
+                "status": "PASSING"
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 3.5
+                },
+                "deflection": {
+                  "vector": [
+                    0.021909907177662974,
+                    0,
+                    -0.000009106924852833574
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -2180.109014339454,
+                      0,
+                      895.1736552924418
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -5075.522320365311,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      40.535759871658335,
+                      0,
+                      -212.6090924914651
+                    ],
+                    "unit": "NEWTON"
+                  }
+                },
+                "actualEngineering": {
+                  "unit": "PASCAL",
+                  "value": 4353758.3508405015
+                },
+                "actual": 9.286165615145778,
+                "ratio": 0.09286165615145778,
+                "status": "PASSING"
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 4
+                },
+                "deflection": {
+                  "vector": [
+                    0.0278231368563545,
+                    0,
+                    -0.000009856568843996516
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -2140.327196778904,
+                      0,
+                      690.3991542464182
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -3985.4678131955843,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      39.781817563147136,
+                      0,
+                      -204.7745010460252
+                    ],
+                    "unit": "NEWTON"
+                  }
+                },
+                "actualEngineering": {
+                  "unit": "PASCAL",
+                  "value": 3776600.4423425393
+                },
+                "actual": 8.055140948062785,
+                "ratio": 0.08055140948062785,
+                "status": "PASSING"
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 4.5
+                },
+                "deflection": {
+                  "vector": [
+                    0.03421837221162523,
+                    0,
+                    -0.00001045706461639393
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -2101.3089874495636,
+                      0,
+                      493.4088056363689
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -2915.3042148062195,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      39.01820932760374,
+                      0,
+                      -196.99034861005188
+                    ],
+                    "unit": "NEWTON"
+                  }
+                },
+                "actualEngineering": {
+                  "unit": "PASCAL",
+                  "value": 3138410.5312599745
+                },
+                "actual": 6.693940640038394,
+                "ratio": 0.06693940640038394,
+                "status": "PASSING"
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 5
+                },
+                "deflection": {
+                  "vector": [
+                    0.04099422114310467,
+                    0,
+                    -0.00001090357453469242
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -2063.0640522869653,
+                      0,
+                      304.14835064296005
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -1864.6497210814814,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      38.24493516502817,
+                      0,
+                      -189.26045499340682
+                    ],
+                    "unit": "NEWTON"
+                  }
+                },
+                "actualEngineering": {
+                  "unit": "PASCAL",
+                  "value": 2435809.599204027
+                },
+                "actual": 5.195357556030584,
+                "ratio": 0.05195357556030584,
+                "status": "PASSING"
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 5.5
+                },
+                "deflection": {
+                  "vector": [
+                    0.0480332552985204,
+                    0,
+                    -0.00001119017195342444
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -2028.898339187086,
+                      0,
+                      138.17278226524465
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -833.1176949374458,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      34.165713090213316,
+                      0,
+                      -165.9755683777082
+                    ],
+                    "unit": "NEWTON"
+                  }
+                },
+                "actualEngineering": {
+                  "unit": "PASCAL",
+                  "value": 1654944.8653175659
+                },
+                "actual": 3.5298449902041993,
+                "ratio": 0.03529844990204199,
+                "status": "PASSING"
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 5.909999999999999
+                },
+                "deflection": {
+                  "vector": [
+                    0.05390626928288266,
+                    0,
+                    -0.000011300971751005266
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+                  "PointLoad#1"
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -10.350221072614659,
+                      0,
+                      49.149494802463224
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -1.2693758588676474,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      2018.5481181982611,
+                      0,
+                      -89.02328746278215
+                    ],
+                    "unit": "NEWTON"
+                  }
+                },
+                "actualEngineering": {
+                  "unit": "PASCAL",
+                  "value": 781740.3533425726
+                },
+                "actual": 1.667380181488546,
+                "ratio": 0.01667380181488546,
+                "status": "PASSING"
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 6
+                },
+                "deflection": {
+                  "vector": [
+                    0.055198740425615844,
+                    0,
+                    -0.000011309796895847448
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -3.5193339766119607,
+                      0,
+                      16.69234040771937
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -0.33785596867695544,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      6.830887570565794,
+                      0,
+                      -32.457154394748805
+                    ],
+                    "unit": "NEWTON"
+                  }
+                },
+                "actualEngineering": {
+                  "unit": "PASCAL",
+                  "value": 2519.581137009728
+                },
+                "actual": 0.005374034531464695,
+                "ratio": 0.00005374034531464695,
+                "status": "PASSING"
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 6.096000000000001
+                },
+                "deflection": {
+                  "vector": [
+                    0.05657737886324262,
+                    0,
+                    -0.00001131301758701136
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -3.3836113288998604e-7,
+                      0,
+                      6.799893981224159e-12
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      8.178550997550715e-8,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      3.5193334206478633,
+                      0,
+                      -16.692340407706524
+                    ],
+                    "unit": "NEWTON"
+                  }
+                },
+                "actualEngineering": {
+                  "unit": "PASCAL",
+                  "value": 772.8465490844924
+                },
+                "actual": 0.0016484105160560862,
+                "ratio": 0.000016484105160560862,
+                "status": "PASSING"
+              }
+            ],
+            "poles": [
+              {
+                "id": "Pole",
+                "clientItem": "25'-1 Douglas Fir",
+                "owner": "Acme Power",
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      2502.585074315043,
+                      0,
+                      -2691.7441751124607
+                    ],
+                    "unit": "NEWTON"
+                  }
+                },
+                "reaction": {
+                  "translational": {
+                    "vector": [
+                      -2501.668227239512,
+                      0,
+                      2686.306272175587
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -13294.704376502385,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                }
+              }
+            ],
+            "wires": [
+
+            ],
+            "insulators": [
+
+            ],
+            "pushBraces": [
+
+            ],
+            "anchors": [
+
+            ],
+            "guys": [
+
+            ],
+            "spanGuys": [
+
+            ],
+            "pointLoads": [
+              {
+                "id": "PointLoad#1",
+                "owner": "Acme Power",
+                "position": {
+                  "unit": "METRE",
+                  "value": 5.909999999999999
+                },
+                "actingOn": [
+                  {
+                    "component": "Pole",
+                    "load": {
+                      "translational": {
+                        "vector": [
+                          2000,
+                          0,
+                          0
+                        ],
+                        "unit": "NEWTON"
+                      }
+                    }
+                  }
+                ]
+              }
+            ],
+            "crossArms": [
+
+            ],
+            "sidewalkBraces": [
+
+            ],
+            "equipments": [
+
+            ],
+            "usage": [
+              {
+                "owner": "Acme Power",
+                "portion": {
+                  "value": 0.5819372340068396,
+                  "unit": "RATIO"
+                }
+              },
+              {
+                "owner": "Remaining Capacity",
+                "portion": {
+                  "value": 0.4180627659931604,
+                  "unit": "RATIO"
+                }
+              }
+            ]
+          },
+          {
+            "id": "Pole",
+            "clientItem": "25'-1 Douglas Fir",
+            "owner": "Acme Power",
+            "resultsType": "PERCENT_LOADED",
+            "analysisType": "BUCKLING",
+            "failingRatio": 1,
+            "allowable": 100,
+            "additionalValues": [
+              {
+                "name": "columnDiameter",
+                "value": {
+                  "unit": "METRE",
+                  "value": 0.265626579131148
+                },
+                "tags": [
+                  "SMALL_LENGTH"
+                ]
+              },
+              {
+                "name": "columnSectionHeight",
+                "value": {
+                  "unit": "METRE",
+                  "value": 2.8271576381900316
+                },
+                "tags": [
+                  "ATTACH_HEIGHT"
+                ]
+              },
+              {
+                "name": "bucklingConstant",
+                "value": 2,
+                "tags": [
+
+                ]
+              }
+            ],
+            "allowableEngineering": {
+              "unit": "NEWTON",
+              "value": 848857.6316104361
+            },
+            "actualEngineering": {
+              "unit": "NEWTON",
+              "value": 2686.306272175587
+            },
+            "atDirection": [
+              {
+                "direction": {
+                  "unit": "RADIAN",
+                  "value": 0
+                },
+                "value": {
+                  "unit": "NEWTON",
+                  "value": 2686.306272175587
+                },
+                "status": "PASSING",
+                "actual": 0.3164613442985933,
+                "ratio": 0.003164613442985933
+              }
+            ],
+            "actual": 0.3164613442985933,
+            "ratio": 0.003164613442985933,
+            "status": "PASSING",
+            "windDirection": 0,
+            "atHeight": [
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 0
+                },
+                "deflection": {
+                  "vector": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+                  "Damage#1"
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -2501.668227239512,
+                      0,
+                      2686.306272175587
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -13294.704376502385,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      0.916847076246666,
+                      0,
+                      -5.437902936894869
+                    ],
+                    "unit": "NEWTON"
+                  }
+                },
+                "actualEngineering": {
+                  "unit": "NEWTON",
+                  "value": 2686.306272175587
+                },
+                "actual": 0.3164613442985933,
+                "status": "PASSING"
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 0.02
+                },
+                "deflection": {
+                  "vector": [
+                    0.000005214006365257774,
+                    0,
+                    -1.379966455711225e-7
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+                  "Damage#1"
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -2498.9192325575277,
+                      0,
+                      2670.010901064576
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -13244.67101195777,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      2.7489946804148464,
+                      0,
+                      -16.29537111100869
+                    ],
+                    "unit": "NEWTON"
+                  }
+                },
+                "actualEngineering": {
+                  "unit": "NEWTON",
+                  "value": 2670.010901064576
+                },
+                "actual": 0.3145416618331019,
+                "status": "PASSING"
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 0.06
+                },
+                "deflection": {
+                  "vector": [
+                    0.00002897129523032965,
+                    0,
+                    -2.754992954670989e-7
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -2495.2572571774945,
+                      0,
+                      2648.3234422546493
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -13144.714242655205,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      3.6619753858486352,
+                      0,
+                      -21.687458809927925
+                    ],
+                    "unit": "NEWTON"
+                  }
+                },
+                "actualEngineering": {
+                  "unit": "NEWTON",
+                  "value": 2648.3234422546493
+                },
+                "actual": 0.31198676240093426,
+                "status": "PASSING"
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 0.1
+                },
+                "deflection": {
+                  "vector": [
+                    0.000058542613030807056,
+                    0,
+                    -4.122310989040092e-7
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -2484.316954195965,
+                      0,
+                      2583.800200258812
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -13044.903952368055,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      10.940302981953945,
+                      0,
+                      -64.52324199583515
+                    ],
+                    "unit": "NEWTON"
+                  }
+                },
+                "actualEngineering": {
+                  "unit": "NEWTON",
+                  "value": 2583.800200258812
+                },
+                "actual": 0.30438557704392394,
+                "status": "PASSING"
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 0.3
+                },
+                "deflection": {
+                  "vector": [
+                    0.0002935055897002224,
+                    0,
+                    -0.0000010849069414337176
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -2466.157865729416,
+                      0,
+                      2477.1403975608882
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -12548.040561528513,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      18.159088467540933,
+                      0,
+                      -106.6598026979237
+                    ],
+                    "unit": "NEWTON"
+                  }
+                },
+                "actualEngineering": {
+                  "unit": "NEWTON",
+                  "value": 2477.1403975608882
+                },
+                "actual": 0.29182047793589433,
+                "status": "PASSING"
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 0.5
+                },
+                "deflection": {
+                  "vector": [
+                    0.000671885769421883,
+                    0,
+                    -0.0000017386627070543085
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -2434.74869932374,
+                      0,
+                      2294.795165246863
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -12054.808988382978,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      31.409166405566793,
+                      0,
+                      -182.34523231402687
+                    ],
+                    "unit": "NEWTON"
+                  }
+                },
+                "actualEngineering": {
+                  "unit": "NEWTON",
+                  "value": 2294.795165246863
+                },
+                "actual": 0.27033922766214896,
+                "status": "PASSING"
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 1
+                },
+                "deflection": {
+                  "vector": [
+                    0.0022366438345433073,
+                    0,
+                    -0.000003288292050112421
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -2390.404564201017,
+                      0,
+                      2040.3633593283105
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -10837.434638721152,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      44.344135122343104,
+                      0,
+                      -254.43180591855284
+                    ],
+                    "unit": "NEWTON"
+                  }
+                },
+                "actualEngineering": {
+                  "unit": "NEWTON",
+                  "value": 2040.3633593283105
+                },
+                "actual": 0.2403657908402582,
+                "status": "PASSING"
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 1.5
+                },
+                "deflection": {
+                  "vector": [
+                    0.004651646282046884,
+                    0,
+                    -0.000004713767005582508
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -2346.8240373146837,
+                      0,
+                      1794.6171809730847
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -9642.232356620512,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      43.5805268867997,
+                      0,
+                      -245.7461783552234
+                    ],
+                    "unit": "NEWTON"
+                  }
+                },
+                "actualEngineering": {
+                  "unit": "NEWTON",
+                  "value": 1794.6171809730847
+                },
+                "actual": 0.21141556771638748,
+                "status": "PASSING"
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 2
+                },
+                "deflection": {
+                  "vector": [
+                    0.007877479267201993,
+                    0,
+                    -0.0000060128478259330945
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -2304.0071186626446,
+                      0,
+                      1557.4076575965887
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -8468.820337963258,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      42.816918651256316,
+                      0,
+                      -237.20952337649948
+                    ],
+                    "unit": "NEWTON"
+                  }
+                },
+                "actualEngineering": {
+                  "unit": "NEWTON",
+                  "value": 1557.4076575965887
+                },
+                "actual": 0.18347100851787188,
+                "status": "PASSING"
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 2.5
+                },
+                "deflection": {
+                  "vector": [
+                    0.011867550764756159,
+                    0,
+                    -0.00000718062938139478
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -2261.9441423196695,
+                      0,
+                      1328.477757690429
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -7316.816778631601,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      42.06297634274512,
+                      0,
+                      -228.92989990616238
+                    ],
+                    "unit": "NEWTON"
+                  }
+                },
+                "actualEngineering": {
+                  "unit": "NEWTON",
+                  "value": 1328.477757690429
+                },
+                "actual": 0.15650183354893882,
+                "status": "PASSING"
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 3
+                },
+                "deflection": {
+                  "vector": [
+                    0.016566411873937367,
+                    0,
+                    -0.000008213111913211985
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -2220.644774213026,
+                      0,
+                      1107.7827477839123
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -6185.844707471868,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      41.29936810720173,
+                      0,
+                      -220.69500990651102
+                    ],
+                    "unit": "NEWTON"
+                  }
+                },
+                "actualEngineering": {
+                  "unit": "NEWTON",
+                  "value": 1107.7827477839123
+                },
+                "actual": 0.1305027729658563,
+                "status": "PASSING"
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 3.5
+                },
+                "deflection": {
+                  "vector": [
+                    0.021909907177662974,
+                    0,
+                    -0.000009106924852833574
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -2180.109014339454,
+                      0,
+                      895.1736552924418
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -5075.522320365311,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      40.535759871658335,
+                      0,
+                      -212.6090924914651
+                    ],
+                    "unit": "NEWTON"
+                  }
+                },
+                "actualEngineering": {
+                  "unit": "NEWTON",
+                  "value": 895.1736552924418
+                },
+                "actual": 0.10545627699595937,
+                "status": "PASSING"
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 4
+                },
+                "deflection": {
+                  "vector": [
+                    0.0278231368563545,
+                    0,
+                    -0.000009856568843996516
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -2140.327196778904,
+                      0,
+                      690.3991542464182
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -3985.4678131955843,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      39.781817563147136,
+                      0,
+                      -204.7745010460252
+                    ],
+                    "unit": "NEWTON"
+                  }
+                },
+                "actualEngineering": {
+                  "unit": "NEWTON",
+                  "value": 690.3991542464182
+                },
+                "actual": 0.08133273808666908,
+                "status": "PASSING"
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 4.5
+                },
+                "deflection": {
+                  "vector": [
+                    0.03421837221162523,
+                    0,
+                    -0.00001045706461639393
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -2101.3089874495636,
+                      0,
+                      493.4088056363689
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -2915.3042148062195,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      39.01820932760374,
+                      0,
+                      -196.99034861005188
+                    ],
+                    "unit": "NEWTON"
+                  }
+                },
+                "actualEngineering": {
+                  "unit": "NEWTON",
+                  "value": 493.4088056363689
+                },
+                "actual": 0.058126214251061556,
+                "status": "PASSING"
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 5
+                },
+                "deflection": {
+                  "vector": [
+                    0.04099422114310467,
+                    0,
+                    -0.00001090357453469242
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -2063.0640522869653,
+                      0,
+                      304.14835064296005
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -1864.6497210814814,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      38.24493516502817,
+                      0,
+                      -189.26045499340682
+                    ],
+                    "unit": "NEWTON"
+                  }
+                },
+                "actualEngineering": {
+                  "unit": "NEWTON",
+                  "value": 304.14835064296005
+                },
+                "actual": 0.03583031350804207,
+                "status": "PASSING"
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 5.5
+                },
+                "deflection": {
+                  "vector": [
+                    0.0480332552985204,
+                    0,
+                    -0.00001119017195342444
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -2028.898339187086,
+                      0,
+                      138.17278226524465
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -833.1176949374458,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      34.165713090213316,
+                      0,
+                      -165.9755683777082
+                    ],
+                    "unit": "NEWTON"
+                  }
+                },
+                "actualEngineering": {
+                  "unit": "NEWTON",
+                  "value": 138.17278226524465
+                },
+                "actual": 0.01627749779466622,
+                "status": "PASSING"
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 5.909999999999999
+                },
+                "deflection": {
+                  "vector": [
+                    0.05390626928288266,
+                    0,
+                    -0.000011300971751005266
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+                  "PointLoad#1"
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -10.350221072614659,
+                      0,
+                      49.149494802463224
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -1.2693758588676474,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      2018.5481181982611,
+                      0,
+                      -89.02328746278215
+                    ],
+                    "unit": "NEWTON"
+                  }
+                },
+                "actualEngineering": {
+                  "unit": "NEWTON",
+                  "value": 49.149494802463224
+                },
+                "actual": 0.005790075151850583,
+                "status": "PASSING"
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 6
+                },
+                "deflection": {
+                  "vector": [
+                    0.055198740425615844,
+                    0,
+                    -0.000011309796895847448
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -3.5193339766119607,
+                      0,
+                      16.69234040771937
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -0.33785596867695544,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      6.830887570565794,
+                      0,
+                      -32.457154394748805
+                    ],
+                    "unit": "NEWTON"
+                  }
+                },
+                "actualEngineering": {
+                  "unit": "NEWTON",
+                  "value": 16.69234040771937
+                },
+                "actual": 0.0019664475862755677,
+                "status": "PASSING"
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 6.096000000000001
+                },
+                "deflection": {
+                  "vector": [
+                    0.05657737886324262,
+                    0,
+                    -0.00001131301758701136
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -3.3836113288998604e-7,
+                      0,
+                      6.799893981224159e-12
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      8.178550997550715e-8,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      3.5193334206478633,
+                      0,
+                      -16.692340407706524
+                    ],
+                    "unit": "NEWTON"
+                  }
+                },
+                "actualEngineering": {
+                  "unit": "NEWTON",
+                  "value": 6.799893981224159e-12
+                },
+                "actual": 8.01064127599764e-16,
+                "status": "PASSING"
+              }
+            ],
+            "poles": [
+              {
+                "id": "Pole",
+                "clientItem": "25'-1 Douglas Fir",
+                "owner": "Acme Power",
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      2502.585074315043,
+                      0,
+                      -2691.7441751124607
+                    ],
+                    "unit": "NEWTON"
+                  }
+                },
+                "reaction": {
+                  "translational": {
+                    "vector": [
+                      -2501.668227239512,
+                      0,
+                      2686.306272175587
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -13294.704376502385,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                }
+              }
+            ],
+            "wires": [
+
+            ],
+            "insulators": [
+
+            ],
+            "pushBraces": [
+
+            ],
+            "anchors": [
+
+            ],
+            "guys": [
+
+            ],
+            "spanGuys": [
+
+            ],
+            "pointLoads": [
+              {
+                "id": "PointLoad#1",
+                "owner": "Acme Power",
+                "position": {
+                  "unit": "METRE",
+                  "value": 5.909999999999999
+                },
+                "actingOn": [
+                  {
+                    "component": "Pole",
+                    "load": {
+                      "translational": {
+                        "vector": [
+                          2000,
+                          0,
+                          0
+                        ],
+                        "unit": "NEWTON"
+                      }
+                    }
+                  }
+                ]
+              }
+            ],
+            "crossArms": [
+
+            ],
+            "sidewalkBraces": [
+
+            ],
+            "equipments": [
+
+            ]
+          },
+          {
+            "id": "Pole",
+            "clientItem": "25'-1 Douglas Fir",
+            "owner": "Acme Power",
+            "resultsType": "PERCENT_LOADED",
+            "analysisType": "DEFLECTION",
+            "failingRatio": 1,
+            "allowable": 100,
+            "additionalValues": [
+              {
+                "name": "heightOfMaximumRatio",
+                "value": {
+                  "unit": "METRE",
+                  "value": 0.02
+                },
+                "tags": [
+                  "ATTACH_HEIGHT"
+                ]
+              }
+            ],
+            "allowableEngineering": {
+              "unit": "METRE",
+              "value": 0
+            },
+            "actualEngineering": {
+              "unit": "METRE",
+              "value": 0.000005215832191619806
+            },
+            "atDirection": [
+              {
+                "direction": {
+                  "unit": "RADIAN",
+                  "value": 0
+                },
+                "value": {
+                  "unit": "METRE",
+                  "value": 0.000005215832191619806
+                },
+                "status": "FAILING",
+                "actual": 1.7976931348623157e+308,
+                "ratio": 1.7976931348623157e+308
+              }
+            ],
+            "actual": 1.7976931348623157e+308,
+            "ratio": 1.7976931348623157e+308,
+            "status": "FAILING",
+            "windDirection": 0,
+            "atHeight": [
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 0
+                },
+                "deflection": {
+                  "vector": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+                  "Damage#1"
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -2501.668227239512,
+                      0,
+                      2686.306272175587
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -13294.704376502385,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      0.916847076246666,
+                      0,
+                      -5.437902936894869
+                    ],
+                    "unit": "NEWTON"
+                  }
+                }
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 0.02
+                },
+                "deflection": {
+                  "vector": [
+                    0.000005214006365257774,
+                    0,
+                    -1.379966455711225e-7
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+                  "Damage#1"
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -2498.9192325575277,
+                      0,
+                      2670.010901064576
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -13244.67101195777,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      2.7489946804148464,
+                      0,
+                      -16.29537111100869
+                    ],
+                    "unit": "NEWTON"
+                  }
+                }
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 0.06
+                },
+                "deflection": {
+                  "vector": [
+                    0.00002897129523032965,
+                    0,
+                    -2.754992954670989e-7
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -2495.2572571774945,
+                      0,
+                      2648.3234422546493
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -13144.714242655205,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      3.6619753858486352,
+                      0,
+                      -21.687458809927925
+                    ],
+                    "unit": "NEWTON"
+                  }
+                }
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 0.1
+                },
+                "deflection": {
+                  "vector": [
+                    0.000058542613030807056,
+                    0,
+                    -4.122310989040092e-7
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -2484.316954195965,
+                      0,
+                      2583.800200258812
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -13044.903952368055,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      10.940302981953945,
+                      0,
+                      -64.52324199583515
+                    ],
+                    "unit": "NEWTON"
+                  }
+                }
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 0.3
+                },
+                "deflection": {
+                  "vector": [
+                    0.0002935055897002224,
+                    0,
+                    -0.0000010849069414337176
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -2466.157865729416,
+                      0,
+                      2477.1403975608882
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -12548.040561528513,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      18.159088467540933,
+                      0,
+                      -106.6598026979237
+                    ],
+                    "unit": "NEWTON"
+                  }
+                }
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 0.5
+                },
+                "deflection": {
+                  "vector": [
+                    0.000671885769421883,
+                    0,
+                    -0.0000017386627070543085
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -2434.74869932374,
+                      0,
+                      2294.795165246863
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -12054.808988382978,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      31.409166405566793,
+                      0,
+                      -182.34523231402687
+                    ],
+                    "unit": "NEWTON"
+                  }
+                }
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 1
+                },
+                "deflection": {
+                  "vector": [
+                    0.0022366438345433073,
+                    0,
+                    -0.000003288292050112421
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -2390.404564201017,
+                      0,
+                      2040.3633593283105
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -10837.434638721152,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      44.344135122343104,
+                      0,
+                      -254.43180591855284
+                    ],
+                    "unit": "NEWTON"
+                  }
+                }
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 1.5
+                },
+                "deflection": {
+                  "vector": [
+                    0.004651646282046884,
+                    0,
+                    -0.000004713767005582508
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -2346.8240373146837,
+                      0,
+                      1794.6171809730847
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -9642.232356620512,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      43.5805268867997,
+                      0,
+                      -245.7461783552234
+                    ],
+                    "unit": "NEWTON"
+                  }
+                }
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 2
+                },
+                "deflection": {
+                  "vector": [
+                    0.007877479267201993,
+                    0,
+                    -0.0000060128478259330945
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -2304.0071186626446,
+                      0,
+                      1557.4076575965887
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -8468.820337963258,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      42.816918651256316,
+                      0,
+                      -237.20952337649948
+                    ],
+                    "unit": "NEWTON"
+                  }
+                }
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 2.5
+                },
+                "deflection": {
+                  "vector": [
+                    0.011867550764756159,
+                    0,
+                    -0.00000718062938139478
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -2261.9441423196695,
+                      0,
+                      1328.477757690429
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -7316.816778631601,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      42.06297634274512,
+                      0,
+                      -228.92989990616238
+                    ],
+                    "unit": "NEWTON"
+                  }
+                }
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 3
+                },
+                "deflection": {
+                  "vector": [
+                    0.016566411873937367,
+                    0,
+                    -0.000008213111913211985
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -2220.644774213026,
+                      0,
+                      1107.7827477839123
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -6185.844707471868,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      41.29936810720173,
+                      0,
+                      -220.69500990651102
+                    ],
+                    "unit": "NEWTON"
+                  }
+                }
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 3.5
+                },
+                "deflection": {
+                  "vector": [
+                    0.021909907177662974,
+                    0,
+                    -0.000009106924852833574
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -2180.109014339454,
+                      0,
+                      895.1736552924418
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -5075.522320365311,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      40.535759871658335,
+                      0,
+                      -212.6090924914651
+                    ],
+                    "unit": "NEWTON"
+                  }
+                }
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 4
+                },
+                "deflection": {
+                  "vector": [
+                    0.0278231368563545,
+                    0,
+                    -0.000009856568843996516
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -2140.327196778904,
+                      0,
+                      690.3991542464182
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -3985.4678131955843,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      39.781817563147136,
+                      0,
+                      -204.7745010460252
+                    ],
+                    "unit": "NEWTON"
+                  }
+                }
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 4.5
+                },
+                "deflection": {
+                  "vector": [
+                    0.03421837221162523,
+                    0,
+                    -0.00001045706461639393
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -2101.3089874495636,
+                      0,
+                      493.4088056363689
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -2915.3042148062195,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      39.01820932760374,
+                      0,
+                      -196.99034861005188
+                    ],
+                    "unit": "NEWTON"
+                  }
+                }
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 5
+                },
+                "deflection": {
+                  "vector": [
+                    0.04099422114310467,
+                    0,
+                    -0.00001090357453469242
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -2063.0640522869653,
+                      0,
+                      304.14835064296005
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -1864.6497210814814,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      38.24493516502817,
+                      0,
+                      -189.26045499340682
+                    ],
+                    "unit": "NEWTON"
+                  }
+                }
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 5.5
+                },
+                "deflection": {
+                  "vector": [
+                    0.0480332552985204,
+                    0,
+                    -0.00001119017195342444
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -2028.898339187086,
+                      0,
+                      138.17278226524465
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -833.1176949374458,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      34.165713090213316,
+                      0,
+                      -165.9755683777082
+                    ],
+                    "unit": "NEWTON"
+                  }
+                }
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 5.909999999999999
+                },
+                "deflection": {
+                  "vector": [
+                    0.05390626928288266,
+                    0,
+                    -0.000011300971751005266
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+                  "PointLoad#1"
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -10.350221072614659,
+                      0,
+                      49.149494802463224
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -1.2693758588676474,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      2018.5481181982611,
+                      0,
+                      -89.02328746278215
+                    ],
+                    "unit": "NEWTON"
+                  }
+                }
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 6
+                },
+                "deflection": {
+                  "vector": [
+                    0.055198740425615844,
+                    0,
+                    -0.000011309796895847448
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -3.5193339766119607,
+                      0,
+                      16.69234040771937
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -0.33785596867695544,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      6.830887570565794,
+                      0,
+                      -32.457154394748805
+                    ],
+                    "unit": "NEWTON"
+                  }
+                }
+              },
+              {
+                "height": {
+                  "unit": "METRE",
+                  "value": 6.096000000000001
+                },
+                "deflection": {
+                  "vector": [
+                    0.05657737886324262,
+                    0,
+                    -0.00001131301758701136
+                  ],
+                  "unit": "METRE"
+                },
+                "components": [
+
+                ],
+                "internal": {
+                  "translational": {
+                    "vector": [
+                      -3.3836113288998604e-7,
+                      0,
+                      6.799893981224159e-12
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      8.178550997550715e-8,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                },
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      3.5193334206478633,
+                      0,
+                      -16.692340407706524
+                    ],
+                    "unit": "NEWTON"
+                  }
+                }
+              }
+            ],
+            "poles": [
+              {
+                "id": "Pole",
+                "clientItem": "25'-1 Douglas Fir",
+                "owner": "Acme Power",
+                "applied": {
+                  "translational": {
+                    "vector": [
+                      2502.585074315043,
+                      0,
+                      -2691.7441751124607
+                    ],
+                    "unit": "NEWTON"
+                  }
+                },
+                "reaction": {
+                  "translational": {
+                    "vector": [
+                      -2501.668227239512,
+                      0,
+                      2686.306272175587
+                    ],
+                    "unit": "NEWTON"
+                  },
+                  "rotational": {
+                    "vector": [
+                      0,
+                      -13294.704376502385,
+                      0
+                    ],
+                    "unit": "NEWTON_METRE"
+                  }
+                }
+              }
+            ],
+            "wires": [
+
+            ],
+            "insulators": [
+
+            ],
+            "pushBraces": [
+
+            ],
+            "anchors": [
+
+            ],
+            "guys": [
+
+            ],
+            "spanGuys": [
+
+            ],
+            "pointLoads": [
+              {
+                "id": "PointLoad#1",
+                "owner": "Acme Power",
+                "position": {
+                  "unit": "METRE",
+                  "value": 5.909999999999999
+                },
+                "actingOn": [
+                  {
+                    "component": "Pole",
+                    "load": {
+                      "translational": {
+                        "vector": [
+                          2000,
+                          0,
+                          0
+                        ],
+                        "unit": "NEWTON"
+                      }
+                    }
+                  }
+                ]
+              }
+            ],
+            "crossArms": [
+
+            ],
+            "sidewalkBraces": [
+
+            ],
+            "equipments": [
+
+            ]
+          }
+        ]
+      }
+    ],
+    "id": "5c1165dbe4b02193dcc64952"
+  },
+  "success": true
+}
