@@ -251,7 +251,6 @@ function createPartialPayload(argv) {
             return clientDataP.then(clientData => {
                 let name;
                 let type;
-                //TODO allow users to pass -l and -s. Handle fail for useStrengthCaseResults false
                 if (argv.loadCaseName) {
                     type = 'load';
                     name = argv.loadCaseName;
@@ -281,9 +280,9 @@ function createPartialPayload(argv) {
 function maybeAddStrengthCase(analysisCase, clientData, structureComponents){
     if(analysisCase.useStrengthResults === true){
         if(Object.keys(clientData.analysisCases.strength).length < 1){
-            Promise.reject("\nLoad case has useStrengthResults: TRUE, but no strength case exists in client data");
+            throw("\nLoad case has useStrengthResults: TRUE, but no strength case exists in client data");
         } else if (Object.keys(clientData.analysisCases.strength).length > 1) {
-            Promise.reject("\nClient data contains more than one strength case. Only one strength case was expected");
+            throw("\nClient data contains more than one strength case. Only one strength case was expected");
         }
         let useCaseKey;
         for(let key in clientData.analysisCases.strength){
