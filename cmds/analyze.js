@@ -1,6 +1,8 @@
 'use strict';
 
 const BATCH_SIZE = 100;
+const REQUEST_RETRY_COUNT = 5;
+const RETRY_TIMEOUT_MS = 5000;
 
 const Promise = require('bluebird');
 const request = Promise.promisify(require('request'));
@@ -59,7 +61,7 @@ module.exports = {
             batchJobs(argv).mapSeries(batch => 
                 zlib.gzipAsync(JSON.stringify(batch))
                     .then(jobData => 
-                        request({
+                        requestAndRetry({
                             url: config.server + '/job?apiToken=' + config.apiToken,
                             proxy: config.proxy,
                             gzip: true,
@@ -71,15 +73,14 @@ module.exports = {
                                 'Content-Encoding': 'gzip'
                             },
                             body: jobData
+                        }, (response) => {
+                            try {
+                                return JSON.parse(response.body);
+                            } catch (e) {
+                                console.log(`Unable to parse response JSON: ${response.body}`);
+                            }
                         })
-                    ).then(response => {
-                        try {
-                            return JSON.parse(response.body);
-                        } catch (e) {
-                            console.log(`Unable to parse response JSON: ${response.body}`);
-                            return [];
-                        }
-                    })
+                    )
             ).then(responses => {
                 responses = _.flatten(responses);
 
@@ -113,7 +114,8 @@ module.exports = {
 function pollFor(jobIds, status, config, onUpdate) {
     return co(function*() {
         while(jobIds.length > 0) {
-            const response = yield request({
+            var response;
+            yield requestAndRetry({
                 url: config.server + '/job/poll',
                 proxy: config.proxy,
                 qs: { apiToken: config.apiToken, status, ids: JSON.stringify(jobIds.slice(0,BATCH_SIZE)) },
@@ -122,8 +124,7 @@ function pollFor(jobIds, status, config, onUpdate) {
                     'User-Agent': 'cee-cli',
                     'Accept': 'application/json',
                 }
-            });
-
+            }, (res) => {response = res});
             const updatedJobIds = JSON.parse(response.body).map(j => j.id);
 
             _.pullAll(jobIds,updatedJobIds);
@@ -158,7 +159,7 @@ function showProgress(jobIds,argv,config) {
                 displayProgress(validCount, startedCount, finishedCount);
             }),
             pollFor(unfinishedJobs, 'FINISHED', config, jobIds =>
-                request({
+                requestAndRetry({
                     url: config.server + '/job',
                     qs: {
                         apiToken: config.apiToken,
@@ -170,7 +171,7 @@ function showProgress(jobIds,argv,config) {
                         'User-Agent': 'cee-cli',
                         'Accept': 'application/json',
                     }
-                }).then(response => 
+                }, (response) => 
                     Promise.all(
                         JSON.parse(response.body).map(result =>
                             fs.writeFileAsync(path.join(output,result.externalId),JSON.stringify(result))
@@ -355,6 +356,25 @@ function batchJobs(argv) {
     )
     .then(batch); 
 }
+
+function rejectDelay() {
+    return new Promise(function(resolve, reject) {
+        setTimeout(resolve, RETRY_TIMEOUT_MS);
+    })
+}
+
+function requestAndRetry(requestParams, responseHandler, retryCount = 0){
+    return request(requestParams).then(responseHandler).catch((err) => {
+        if(retryCount < REQUEST_RETRY_COUNT){
+            console.log(`Error during request. Retrying: ${retryCount+1}/${REQUEST_RETRY_COUNT}`)
+            return rejectDelay().then(() => requestAndRetry(requestParams, responseHandler, ++retryCount));
+        } else {
+            console.log("Could not complete action.");
+            throw err
+        }
+    });
+}
+
 
 
 
