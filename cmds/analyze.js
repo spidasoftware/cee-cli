@@ -1,15 +1,11 @@
 'use strict';
 
 const BATCH_SIZE = 100;
-const REQUEST_RETRY_COUNT = 5;
-const RETRY_TIMEOUT_MS = 5000;
 
 const Promise = require('bluebird');
-const request = Promise.promisify(require('request'));
 const fs = Promise.promisifyAll(require('fs'));
 const zlib = Promise.promisifyAll(require('zlib'));
 const mkdirp = Promise.promisify(require('mkdirp'));
-const querystring = require('querystring');
 const _ = require('lodash');
 const path = require('path');
 const co = require('co');
@@ -17,6 +13,7 @@ const util = require('util');
 
 const api = require('../lib/api');
 const { loadClientData } = require('../lib/clientData');
+const { requestAndRetry } = require('../lib/retrier');
 
 const command = 'analyze [json..]';
 const desc =  'Send analysis or job in each file to CEE, then optionally poll CEE until analysis is complete  and retrieve results.  If polling is enabled analysis results will be written to a directory specified by the output parameter.';
@@ -355,24 +352,6 @@ function batchJobs(argv) {
         })
     )
     .then(batch); 
-}
-
-function rejectDelay() {
-    return new Promise(function(resolve, reject) {
-        setTimeout(resolve, RETRY_TIMEOUT_MS);
-    })
-}
-
-function requestAndRetry(requestParams, responseHandler, retryCount = 0){
-    return request(requestParams).then(responseHandler).catch((err) => {
-        if(retryCount < REQUEST_RETRY_COUNT){
-            console.log(`Error during request. Retrying: ${retryCount+1}/${REQUEST_RETRY_COUNT}`)
-            return rejectDelay().then(() => requestAndRetry(requestParams, responseHandler, ++retryCount));
-        } else {
-            console.log("Could not complete action.");
-            throw err
-        }
-    });
 }
 
 

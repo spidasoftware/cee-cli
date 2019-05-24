@@ -1,7 +1,7 @@
 'use strict';
 
 const Promise = require('bluebird');
-const request = Promise.promisify(require('request'));
+const { requestAndRetry } = require('../lib/retrier');
 const fs = Promise.promisifyAll(require('fs'));
 const mkdirp = Promise.promisify(require('mkdirp'));
 const path = require('path');
@@ -39,7 +39,7 @@ module.exports = {
             let jobIdsP;
 
             if (typeof argv.offset !== 'undefined') {
-                jobIdsP = request({
+                jobIdsP = requestAndRetry({
                     url: config.server + '/api/jobs',
                     proxy: config.proxy,
                     headers: {
@@ -52,14 +52,14 @@ module.exports = {
                         offset: argv.offset
                     },
                     gzip: true
-                }).then(resp => JSON.parse(resp.body).data.map(j => j.id));
+                }, (resp) => JSON.parse(resp.body).data.map(j => j.id));
             } else {
                 jobIdsP = Promise.resolve(argv.jobIds);
             }
 
             return jobIdsP.then(allJobIds =>
                 Promise.all(_.chunk(allJobIds, 100).map(jobIds =>
-                    request({
+                    requestAndRetry({
                         url: config.server + '/job',
                         proxy: config.proxy,
                         headers: {
@@ -71,10 +71,12 @@ module.exports = {
                             ids: JSON.stringify(jobIds)
                         },
                         gzip: true
+                    }, (response) => {
+                        return JSON.parse(response.body);
                     })
                 ))
-            ).then(responses => {
-                const jobs = _.flatten(responses.map(r => JSON.parse(r.body)));
+            ).then(bodies => {
+                const jobs = _.flatten(bodies);
                 if (argv.stdout) {
                     console.log(JSON.stringify(jobs));
                 } else {
