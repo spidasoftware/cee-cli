@@ -75,6 +75,7 @@ module.exports = {
                                 return JSON.parse(response.body);
                             } catch (e) {
                                 console.log(`Unable to parse response JSON: ${response.body}`);
+                                return [];
                             }
                         })
                     )
@@ -111,8 +112,7 @@ module.exports = {
 function pollFor(jobIds, status, config, onUpdate) {
     return co(function*() {
         while(jobIds.length > 0) {
-            var response;
-            yield requestAndRetry({
+            const response = yield requestAndRetry({
                 url: config.server + '/job/poll',
                 proxy: config.proxy,
                 qs: { apiToken: config.apiToken, status, ids: JSON.stringify(jobIds.slice(0,BATCH_SIZE)) },
@@ -121,7 +121,7 @@ function pollFor(jobIds, status, config, onUpdate) {
                     'User-Agent': 'cee-cli',
                     'Accept': 'application/json',
                 }
-            }, (res) => {response = res});
+            });
             const updatedJobIds = JSON.parse(response.body).map(j => j.id);
 
             _.pullAll(jobIds,updatedJobIds);
