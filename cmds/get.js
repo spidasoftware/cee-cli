@@ -52,7 +52,14 @@ module.exports = {
                         offset: argv.offset
                     },
                     gzip: true
-                }, (resp) => JSON.parse(resp.body).data.map(j => j.id));
+                }, (resp) => {
+                    try {
+                        return JSON.parse(resp.body).data.map(j => j.id);
+                    } catch(e) {
+                        console.log(`Failed to get jobs at offset: ${resp.body}`)
+                        throw e;
+                    }
+                });
             } else {
                 jobIdsP = Promise.resolve(argv.jobIds);
             }
@@ -72,7 +79,12 @@ module.exports = {
                         },
                         gzip: true
                     }, (response) => {
-                        return JSON.parse(response.body);
+                        try {
+                            return JSON.parse(response.body);
+                        } catch(e) {
+                            console.log(`Failed to get jobs: ${response.body}`)
+                            throw e;
+                        }
                     })
                 ))
             ).then(bodies => {

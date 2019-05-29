@@ -28,10 +28,15 @@ module.exports = {
                     ids: JSON.stringify(argv.jobId)
                 },
                 gzip: true
-            }, (response) => 
-                JSON.parse(response.body).forEach(job => 
-                    console.log(`${job.id} -- ${job.status}`)
-                ) 
-            )
+            }, (response) => {
+                try {
+                    JSON.parse(response.body).forEach(job => 
+                        console.log(`${job.id} -- ${job.status}`)
+                    )
+                } catch(e) {
+                    console.log(`Failed to get job status: ${response.body}`)
+                    throw e;
+                }
+            })
         )
 };
