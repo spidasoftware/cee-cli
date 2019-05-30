@@ -3,11 +3,9 @@
 const BATCH_SIZE = 100;
 
 const Promise = require('bluebird');
-const request = Promise.promisify(require('request'));
 const fs = Promise.promisifyAll(require('fs'));
 const zlib = Promise.promisifyAll(require('zlib'));
 const mkdirp = Promise.promisify(require('mkdirp'));
-const querystring = require('querystring');
 const _ = require('lodash');
 const path = require('path');
 const co = require('co');
@@ -15,6 +13,7 @@ const util = require('util');
 
 const api = require('../lib/api');
 const { loadClientData } = require('../lib/clientData');
+const { requestAndRetry } = require('../lib/retrier');
 
 const command = 'analyze [json..]';
 const desc =  'Send analysis or job in each file to CEE, then optionally poll CEE until analysis is complete  and retrieve results.  If polling is enabled analysis results will be written to a directory specified by the output parameter.';
@@ -59,7 +58,7 @@ module.exports = {
             batchJobs(argv).mapSeries(batch => 
                 zlib.gzipAsync(JSON.stringify(batch))
                     .then(jobData => 
-                        request({
+                        requestAndRetry({
                             url: config.server + '/job?apiToken=' + config.apiToken,
                             proxy: config.proxy,
                             gzip: true,
@@ -71,15 +70,15 @@ module.exports = {
                                 'Content-Encoding': 'gzip'
                             },
                             body: jobData
+                        }, (response) => {
+                            try {
+                                return JSON.parse(response.body);
+                            } catch (e) {
+                                console.log(`Unable to parse response JSON: ${response.body}`);
+                                throw e;
+                            }
                         })
-                    ).then(response => {
-                        try {
-                            return JSON.parse(response.body);
-                        } catch (e) {
-                            console.log(`Unable to parse response JSON: ${response.body}`);
-                            return [];
-                        }
-                    })
+                    )
             ).then(responses => {
                 responses = _.flatten(responses);
 
@@ -103,7 +102,6 @@ module.exports = {
                         console.log('The following errors occured:');
                         console.log(util.inspect(errors, { depth: null}));
                     }
-
                     return showProgress(jobIds,argv,config).then(() => console.log('Done.'));
                 }
             })
@@ -113,7 +111,7 @@ module.exports = {
 function pollFor(jobIds, status, config, onUpdate) {
     return co(function*() {
         while(jobIds.length > 0) {
-            const response = yield request({
+            const updatedJobIds = yield requestAndRetry({
                 url: config.server + '/job/poll',
                 proxy: config.proxy,
                 qs: { apiToken: config.apiToken, status, ids: JSON.stringify(jobIds.slice(0,BATCH_SIZE)) },
@@ -122,9 +120,14 @@ function pollFor(jobIds, status, config, onUpdate) {
                     'User-Agent': 'cee-cli',
                     'Accept': 'application/json',
                 }
+            }, (response) => {
+                try {
+                    return JSON.parse(response.body).map(j => j.id)
+                } catch(e) {
+                    console.log(`Failed to poll for jobs ${response.body}`)
+                    throw e
+                }
             });
-
-            const updatedJobIds = JSON.parse(response.body).map(j => j.id);
 
             _.pullAll(jobIds,updatedJobIds);
             const updateP = onUpdate(updatedJobIds);
@@ -158,7 +161,7 @@ function showProgress(jobIds,argv,config) {
                 displayProgress(validCount, startedCount, finishedCount);
             }),
             pollFor(unfinishedJobs, 'FINISHED', config, jobIds =>
-                request({
+                requestAndRetry({
                     url: config.server + '/job',
                     qs: {
                         apiToken: config.apiToken,
@@ -170,7 +173,7 @@ function showProgress(jobIds,argv,config) {
                         'User-Agent': 'cee-cli',
                         'Accept': 'application/json',
                     }
-                }).then(response => 
+                }, (response) => 
                     Promise.all(
                         JSON.parse(response.body).map(result =>
                             fs.writeFileAsync(path.join(output,result.externalId),JSON.stringify(result))
@@ -355,6 +358,7 @@ function batchJobs(argv) {
     )
     .then(batch); 
 }
+
 
 
 

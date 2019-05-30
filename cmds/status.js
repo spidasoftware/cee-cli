@@ -1,8 +1,6 @@
 'use strict';
 
-const Promise = require('bluebird');
-const request = Promise.promisify(require('request'));
-
+const { requestAndRetry } = require('../lib/retrier');
 const api = require('../lib/api');
 
 const command = 'status [jobId..]';
@@ -18,7 +16,7 @@ module.exports = {
         .default('config',api.defaultConfigPath),
     handler: argv =>
         api.loadConfig(argv.config).then(config =>
-            request({
+            requestAndRetry({
                 url: config.server + '/job/status',
                 proxy: config.proxy,
                 headers: {
@@ -30,10 +28,15 @@ module.exports = {
                     ids: JSON.stringify(argv.jobId)
                 },
                 gzip: true
-            }).then(response => 
-                JSON.parse(response.body).forEach(job => 
-                    console.log(`${job.id} -- ${job.status}`)
-                ) 
-            )
+            }, (response) => {
+                try {
+                    JSON.parse(response.body).forEach(job => 
+                        console.log(`${job.id} -- ${job.status}`)
+                    )
+                } catch(e) {
+                    console.log(`Failed to get job status: ${response.body}`)
+                    throw e;
+                }
+            })
         )
 };
