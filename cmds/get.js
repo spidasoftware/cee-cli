@@ -95,7 +95,7 @@ module.exports = {
                     const output = api.resolveOutputPath(argv.output);
                     return mkdirp(output).then(() => 
                         Promise.all(jobs.map(job => {
-                            const name = ((!argv.id && job.externalId) || job.id);
+                            let name = ((!argv.id && job.externalId) || job.id);
 
                             if (!name.endsWith('.json')) {
                                 name = name + '.json';
