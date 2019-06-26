@@ -95,7 +95,11 @@ module.exports = {
                     const output = api.resolveOutputPath(argv.output);
                     return mkdirp(output).then(() => 
                         Promise.all(jobs.map(job => {
-                            const name = ((!argv.id && job.externalId) || job.id) + '.json';
+                            const name = ((!argv.id && job.externalId) || job.id);
+
+                            if (!name.endsWith('.json')) {
+                                name = name + '.json';
+                            }
 
                             return fs.writeFileAsync(path.join(output,name),JSON.stringify(argv.strip ? job.payload : job));
                         }))
