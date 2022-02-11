@@ -24,7 +24,7 @@
     "scripts/prepublish.sh"
   ],
   "dependencies": {
-    "ajv": "^4.1.5",
+    "ajv": "^6.12.3",
     "bluebird": "^3.4.1",
     "co": "^4.6.0",
     "lodash": "^4.17.13",
